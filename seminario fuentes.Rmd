@@ -25,9 +25,9 @@ arboles_altitud <- read.delim("C:\\Users\\Pablo\\Desktop\\uni\\3º\\Fuentes\\Sem
 arboles_altitud
 
 ```
+
 ```{r}
-arboles_superficie <- read.delim("C:\Users\Pablo\Desktop\uni\3º\Fuentes\SeminarioFuentes\Datos_arboles\provincia_superficie_uso.csv", delim = ",")
-arboles_extensionterritorio <- read.delim("C:\Users\Pablo\Desktop\uni\3º\Fuentes\SeminarioFuentes\Datos_arboles\provincia_extensionterritorio.csv", delim =",")
+
 ```
 
 
