@@ -1,0 +1,3001 @@
+[{"Nombre":"Ambos sexos, Total, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":349, "Nombre":"Total Nacional", "Codigo":"NAC"}
+, "Nombre":"Total", "Codigo":"00"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Ambos sexos, Total, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":349, "Nombre":"Total Nacional", "Codigo":"NAC"}
+, "Nombre":"Total", "Codigo":"00"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":19.78}
+]
+}
+,{"Nombre":"Ambos sexos, Total, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":349, "Nombre":"Total Nacional", "Codigo":"NAC"}
+, "Nombre":"Total", "Codigo":"00"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":2.33}
+]
+}
+,{"Nombre":"Ambos sexos, Total, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":349, "Nombre":"Total Nacional", "Codigo":"NAC"}
+, "Nombre":"Total", "Codigo":"00"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":22.01}
+]
+}
+,{"Nombre":"Ambos sexos, Total, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":349, "Nombre":"Total Nacional", "Codigo":"NAC"}
+, "Nombre":"Total", "Codigo":"00"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":55.88}
+]
+}
+,{"Nombre":"Ambos sexos, Andalucía, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Andalucía", "Codigo":"01"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Ambos sexos, Andalucía, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Andalucía", "Codigo":"01"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":20.93}
+]
+}
+,{"Nombre":"Ambos sexos, Andalucía, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Andalucía", "Codigo":"01"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":2.81}
+]
+}
+,{"Nombre":"Ambos sexos, Andalucía, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Andalucía", "Codigo":"01"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":16.87}
+]
+}
+,{"Nombre":"Ambos sexos, Andalucía, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Andalucía", "Codigo":"01"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":59.39}
+]
+}
+,{"Nombre":"Ambos sexos, Aragón, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Aragón", "Codigo":"02"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Ambos sexos, Aragón, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Aragón", "Codigo":"02"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":17.76}
+]
+}
+,{"Nombre":"Ambos sexos, Aragón, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Aragón", "Codigo":"02"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":3.14}
+]
+}
+,{"Nombre":"Ambos sexos, Aragón, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Aragón", "Codigo":"02"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":18.48}
+]
+}
+,{"Nombre":"Ambos sexos, Aragón, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Aragón", "Codigo":"02"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":60.62}
+]
+}
+,{"Nombre":"Ambos sexos, Asturias (Principado de), TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Asturias (Principado de)", "Codigo":"03"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Ambos sexos, Asturias (Principado de), Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Asturias (Principado de)", "Codigo":"03"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":19.24}
+]
+}
+,{"Nombre":"Ambos sexos, Asturias (Principado de), Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Asturias (Principado de)", "Codigo":"03"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":1.93}
+]
+}
+,{"Nombre":"Ambos sexos, Asturias (Principado de), Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Asturias (Principado de)", "Codigo":"03"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":31.3}
+]
+}
+,{"Nombre":"Ambos sexos, Asturias (Principado de), Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Asturias (Principado de)", "Codigo":"03"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":47.54}
+]
+}
+,{"Nombre":"Ambos sexos, Balears (Illes), TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Balears (Illes)", "Codigo":"04"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Ambos sexos, Balears (Illes), Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Balears (Illes)", "Codigo":"04"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":20.54}
+]
+}
+,{"Nombre":"Ambos sexos, Balears (Illes), Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Balears (Illes)", "Codigo":"04"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":3.11}
+]
+}
+,{"Nombre":"Ambos sexos, Balears (Illes), Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Balears (Illes)", "Codigo":"04"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":23.89}
+]
+}
+,{"Nombre":"Ambos sexos, Balears (Illes), Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Balears (Illes)", "Codigo":"04"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":52.45}
+]
+}
+,{"Nombre":"Ambos sexos, Canarias, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Canarias", "Codigo":"05"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Ambos sexos, Canarias, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Canarias", "Codigo":"05"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":20.69}
+]
+}
+,{"Nombre":"Ambos sexos, Canarias, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Canarias", "Codigo":"05"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":1.27}
+]
+}
+,{"Nombre":"Ambos sexos, Canarias, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Canarias", "Codigo":"05"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":18.29}
+]
+}
+,{"Nombre":"Ambos sexos, Canarias, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Canarias", "Codigo":"05"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":59.76}
+]
+}
+,{"Nombre":"Ambos sexos, Cantabria, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cantabria", "Codigo":"06"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Ambos sexos, Cantabria, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cantabria", "Codigo":"06"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":18.88}
+]
+}
+,{"Nombre":"Ambos sexos, Cantabria, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cantabria", "Codigo":"06"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":0.87}
+]
+}
+,{"Nombre":"Ambos sexos, Cantabria, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cantabria", "Codigo":"06"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":22.68}
+]
+}
+,{"Nombre":"Ambos sexos, Cantabria, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cantabria", "Codigo":"06"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":57.56}
+]
+}
+,{"Nombre":"Ambos sexos, Castilla y León, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla y León", "Codigo":"07"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Ambos sexos, Castilla y León, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla y León", "Codigo":"07"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":18.98}
+]
+}
+,{"Nombre":"Ambos sexos, Castilla y León, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla y León", "Codigo":"07"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":2.08}
+]
+}
+,{"Nombre":"Ambos sexos, Castilla y León, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla y León", "Codigo":"07"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":23.01}
+]
+}
+,{"Nombre":"Ambos sexos, Castilla y León, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla y León", "Codigo":"07"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":55.94}
+]
+}
+,{"Nombre":"Ambos sexos, Castilla-La Mancha, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla-La Mancha", "Codigo":"08"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Ambos sexos, Castilla-La Mancha, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla-La Mancha", "Codigo":"08"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":20.6}
+]
+}
+,{"Nombre":"Ambos sexos, Castilla-La Mancha, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla-La Mancha", "Codigo":"08"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":1.86}
+]
+}
+,{"Nombre":"Ambos sexos, Castilla-La Mancha, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla-La Mancha", "Codigo":"08"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":19.94}
+]
+}
+,{"Nombre":"Ambos sexos, Castilla-La Mancha, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla-La Mancha", "Codigo":"08"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":57.6}
+]
+}
+,{"Nombre":"Ambos sexos, Cataluña, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cataluña", "Codigo":"09"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Ambos sexos, Cataluña, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cataluña", "Codigo":"09"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":20.91}
+]
+}
+,{"Nombre":"Ambos sexos, Cataluña, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cataluña", "Codigo":"09"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":2.8}
+]
+}
+,{"Nombre":"Ambos sexos, Cataluña, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cataluña", "Codigo":"09"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":22.35}
+]
+}
+,{"Nombre":"Ambos sexos, Cataluña, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cataluña", "Codigo":"09"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":53.94}
+]
+}
+,{"Nombre":"Ambos sexos, Comunitat Valenciana, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Comunitat Valenciana", "Codigo":"10"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Ambos sexos, Comunitat Valenciana, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Comunitat Valenciana", "Codigo":"10"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":19.88}
+]
+}
+,{"Nombre":"Ambos sexos, Comunitat Valenciana, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Comunitat Valenciana", "Codigo":"10"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":2.14}
+]
+}
+,{"Nombre":"Ambos sexos, Comunitat Valenciana, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Comunitat Valenciana", "Codigo":"10"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":26.03}
+]
+}
+,{"Nombre":"Ambos sexos, Comunitat Valenciana, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Comunitat Valenciana", "Codigo":"10"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":51.96}
+]
+}
+,{"Nombre":"Ambos sexos, Extremadura, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Extremadura", "Codigo":"11"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Ambos sexos, Extremadura, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Extremadura", "Codigo":"11"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":25.32}
+]
+}
+,{"Nombre":"Ambos sexos, Extremadura, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Extremadura", "Codigo":"11"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":2.05}
+]
+}
+,{"Nombre":"Ambos sexos, Extremadura, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Extremadura", "Codigo":"11"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":24.18}
+]
+}
+,{"Nombre":"Ambos sexos, Extremadura, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Extremadura", "Codigo":"11"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":48.45}
+]
+}
+,{"Nombre":"Ambos sexos, Galicia, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Galicia", "Codigo":"12"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Ambos sexos, Galicia, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Galicia", "Codigo":"12"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":17.71}
+]
+}
+,{"Nombre":"Ambos sexos, Galicia, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Galicia", "Codigo":"12"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":2.34}
+]
+}
+,{"Nombre":"Ambos sexos, Galicia, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Galicia", "Codigo":"12"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":16.71}
+]
+}
+,{"Nombre":"Ambos sexos, Galicia, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Galicia", "Codigo":"12"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":63.25}
+]
+}
+,{"Nombre":"Ambos sexos, Madrid (Comunidad de), TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Madrid (Comunidad de)", "Codigo":"13"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Ambos sexos, Madrid (Comunidad de), Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Madrid (Comunidad de)", "Codigo":"13"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":17.74}
+]
+}
+,{"Nombre":"Ambos sexos, Madrid (Comunidad de), Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Madrid (Comunidad de)", "Codigo":"13"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":1.75}
+]
+}
+,{"Nombre":"Ambos sexos, Madrid (Comunidad de), Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Madrid (Comunidad de)", "Codigo":"13"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":24.76}
+]
+}
+,{"Nombre":"Ambos sexos, Madrid (Comunidad de), Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Madrid (Comunidad de)", "Codigo":"13"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":55.75}
+]
+}
+,{"Nombre":"Ambos sexos, Murcia (Región de), TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Murcia (Región de)", "Codigo":"14"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Ambos sexos, Murcia (Región de), Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Murcia (Región de)", "Codigo":"14"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":23.65}
+]
+}
+,{"Nombre":"Ambos sexos, Murcia (Región de), Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Murcia (Región de)", "Codigo":"14"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":2.98}
+]
+}
+,{"Nombre":"Ambos sexos, Murcia (Región de), Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Murcia (Región de)", "Codigo":"14"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":23.18}
+]
+}
+,{"Nombre":"Ambos sexos, Murcia (Región de), Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Murcia (Región de)", "Codigo":"14"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":50.19}
+]
+}
+,{"Nombre":"Ambos sexos, Navarra (Comunidad Foral de), TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Navarra (Comunidad Foral de)", "Codigo":"15"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Ambos sexos, Navarra (Comunidad Foral de), Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Navarra (Comunidad Foral de)", "Codigo":"15"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":18.17}
+]
+}
+,{"Nombre":"Ambos sexos, Navarra (Comunidad Foral de), Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Navarra (Comunidad Foral de)", "Codigo":"15"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":3.94}
+]
+}
+,{"Nombre":"Ambos sexos, Navarra (Comunidad Foral de), Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Navarra (Comunidad Foral de)", "Codigo":"15"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":26.67}
+]
+}
+,{"Nombre":"Ambos sexos, Navarra (Comunidad Foral de), Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Navarra (Comunidad Foral de)", "Codigo":"15"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":51.22}
+]
+}
+,{"Nombre":"Ambos sexos, País Vasco, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"País Vasco", "Codigo":"16"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Ambos sexos, País Vasco, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"País Vasco", "Codigo":"16"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":16.09}
+]
+}
+,{"Nombre":"Ambos sexos, País Vasco, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"País Vasco", "Codigo":"16"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":1.66}
+]
+}
+,{"Nombre":"Ambos sexos, País Vasco, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"País Vasco", "Codigo":"16"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":27.51}
+]
+}
+,{"Nombre":"Ambos sexos, País Vasco, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"País Vasco", "Codigo":"16"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":54.74}
+]
+}
+,{"Nombre":"Ambos sexos, Rioja (La), TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Rioja (La)", "Codigo":"17"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Ambos sexos, Rioja (La), Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Rioja (La)", "Codigo":"17"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":18.74}
+]
+}
+,{"Nombre":"Ambos sexos, Rioja (La), Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Rioja (La)", "Codigo":"17"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":3.92}
+]
+}
+,{"Nombre":"Ambos sexos, Rioja (La), Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Rioja (La)", "Codigo":"17"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":28.37}
+]
+}
+,{"Nombre":"Ambos sexos, Rioja (La), Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Rioja (La)", "Codigo":"17"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":48.97}
+]
+}
+,{"Nombre":"Ambos sexos, Ceuta (Ciudad Autónoma de), TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Ceuta (Ciudad Autónoma de)", "Codigo":"18"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Ambos sexos, Ceuta (Ciudad Autónoma de), Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Ceuta (Ciudad Autónoma de)", "Codigo":"18"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":20.09}
+]
+}
+,{"Nombre":"Ambos sexos, Ceuta (Ciudad Autónoma de), Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Ceuta (Ciudad Autónoma de)", "Codigo":"18"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":0.84}
+]
+}
+,{"Nombre":"Ambos sexos, Ceuta (Ciudad Autónoma de), Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Ceuta (Ciudad Autónoma de)", "Codigo":"18"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":12.51}
+]
+}
+,{"Nombre":"Ambos sexos, Ceuta (Ciudad Autónoma de), Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Ceuta (Ciudad Autónoma de)", "Codigo":"18"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":66.56}
+]
+}
+,{"Nombre":"Ambos sexos, Melilla (Ciudad Autónoma de), TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Melilla (Ciudad Autónoma de)", "Codigo":"19"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Ambos sexos, Melilla (Ciudad Autónoma de), Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Melilla (Ciudad Autónoma de)", "Codigo":"19"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":15.18}
+]
+}
+,{"Nombre":"Ambos sexos, Melilla (Ciudad Autónoma de), Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Melilla (Ciudad Autónoma de)", "Codigo":"19"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":1.11}
+]
+}
+,{"Nombre":"Ambos sexos, Melilla (Ciudad Autónoma de), Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Melilla (Ciudad Autónoma de)", "Codigo":"19"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":6.67}
+]
+}
+,{"Nombre":"Ambos sexos, Melilla (Ciudad Autónoma de), Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Ambos sexos", "Codigo":"ambossexos"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Melilla (Ciudad Autónoma de)", "Codigo":"19"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":77.04}
+]
+}
+,{"Nombre":"Hombres, Total, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":349, "Nombre":"Total Nacional", "Codigo":"NAC"}
+, "Nombre":"Total", "Codigo":"00"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Hombres, Total, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":349, "Nombre":"Total Nacional", "Codigo":"NAC"}
+, "Nombre":"Total", "Codigo":"00"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":23.31}
+]
+}
+,{"Nombre":"Hombres, Total, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":349, "Nombre":"Total Nacional", "Codigo":"NAC"}
+, "Nombre":"Total", "Codigo":"00"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":2.62}
+]
+}
+,{"Nombre":"Hombres, Total, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":349, "Nombre":"Total Nacional", "Codigo":"NAC"}
+, "Nombre":"Total", "Codigo":"00"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":27.63}
+]
+}
+,{"Nombre":"Hombres, Total, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":349, "Nombre":"Total Nacional", "Codigo":"NAC"}
+, "Nombre":"Total", "Codigo":"00"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":46.44}
+]
+}
+,{"Nombre":"Hombres, Andalucía, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Andalucía", "Codigo":"01"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Hombres, Andalucía, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Andalucía", "Codigo":"01"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":23.89}
+]
+}
+,{"Nombre":"Hombres, Andalucía, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Andalucía", "Codigo":"01"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":2.71}
+]
+}
+,{"Nombre":"Hombres, Andalucía, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Andalucía", "Codigo":"01"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":22.4}
+]
+}
+,{"Nombre":"Hombres, Andalucía, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Andalucía", "Codigo":"01"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":51.01}
+]
+}
+,{"Nombre":"Hombres, Aragón, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Aragón", "Codigo":"02"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Hombres, Aragón, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Aragón", "Codigo":"02"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":24.48}
+]
+}
+,{"Nombre":"Hombres, Aragón, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Aragón", "Codigo":"02"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":2.48}
+]
+}
+,{"Nombre":"Hombres, Aragón, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Aragón", "Codigo":"02"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":24.34}
+]
+}
+,{"Nombre":"Hombres, Aragón, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Aragón", "Codigo":"02"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":48.7}
+]
+}
+,{"Nombre":"Hombres, Asturias (Principado de), TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Asturias (Principado de)", "Codigo":"03"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Hombres, Asturias (Principado de), Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Asturias (Principado de)", "Codigo":"03"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":22.35}
+]
+}
+,{"Nombre":"Hombres, Asturias (Principado de), Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Asturias (Principado de)", "Codigo":"03"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":2.39}
+]
+}
+,{"Nombre":"Hombres, Asturias (Principado de), Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Asturias (Principado de)", "Codigo":"03"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":39.14}
+]
+}
+,{"Nombre":"Hombres, Asturias (Principado de), Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Asturias (Principado de)", "Codigo":"03"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":36.12}
+]
+}
+,{"Nombre":"Hombres, Balears (Illes), TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Balears (Illes)", "Codigo":"04"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Hombres, Balears (Illes), Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Balears (Illes)", "Codigo":"04"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":24.55}
+]
+}
+,{"Nombre":"Hombres, Balears (Illes), Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Balears (Illes)", "Codigo":"04"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":3.57}
+]
+}
+,{"Nombre":"Hombres, Balears (Illes), Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Balears (Illes)", "Codigo":"04"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":29.76}
+]
+}
+,{"Nombre":"Hombres, Balears (Illes), Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Balears (Illes)", "Codigo":"04"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":42.13}
+]
+}
+,{"Nombre":"Hombres, Canarias, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Canarias", "Codigo":"05"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Hombres, Canarias, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Canarias", "Codigo":"05"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":24.46}
+]
+}
+,{"Nombre":"Hombres, Canarias, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Canarias", "Codigo":"05"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":1.33}
+]
+}
+,{"Nombre":"Hombres, Canarias, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Canarias", "Codigo":"05"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":21.93}
+]
+}
+,{"Nombre":"Hombres, Canarias, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Canarias", "Codigo":"05"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":52.28}
+]
+}
+,{"Nombre":"Hombres, Cantabria, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cantabria", "Codigo":"06"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Hombres, Cantabria, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cantabria", "Codigo":"06"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":20.21}
+]
+}
+,{"Nombre":"Hombres, Cantabria, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cantabria", "Codigo":"06"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":1.56}
+]
+}
+,{"Nombre":"Hombres, Cantabria, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cantabria", "Codigo":"06"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":28.11}
+]
+}
+,{"Nombre":"Hombres, Cantabria, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cantabria", "Codigo":"06"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":50.12}
+]
+}
+,{"Nombre":"Hombres, Castilla y León, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla y León", "Codigo":"07"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Hombres, Castilla y León, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla y León", "Codigo":"07"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":22.92}
+]
+}
+,{"Nombre":"Hombres, Castilla y León, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla y León", "Codigo":"07"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":2.28}
+]
+}
+,{"Nombre":"Hombres, Castilla y León, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla y León", "Codigo":"07"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":26.75}
+]
+}
+,{"Nombre":"Hombres, Castilla y León, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla y León", "Codigo":"07"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":48.05}
+]
+}
+,{"Nombre":"Hombres, Castilla-La Mancha, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla-La Mancha", "Codigo":"08"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Hombres, Castilla-La Mancha, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla-La Mancha", "Codigo":"08"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":24.2}
+]
+}
+,{"Nombre":"Hombres, Castilla-La Mancha, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla-La Mancha", "Codigo":"08"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":2.63}
+]
+}
+,{"Nombre":"Hombres, Castilla-La Mancha, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla-La Mancha", "Codigo":"08"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":26.08}
+]
+}
+,{"Nombre":"Hombres, Castilla-La Mancha, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla-La Mancha", "Codigo":"08"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":47.1}
+]
+}
+,{"Nombre":"Hombres, Cataluña, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cataluña", "Codigo":"09"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Hombres, Cataluña, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cataluña", "Codigo":"09"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":23.96}
+]
+}
+,{"Nombre":"Hombres, Cataluña, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cataluña", "Codigo":"09"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":3.03}
+]
+}
+,{"Nombre":"Hombres, Cataluña, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cataluña", "Codigo":"09"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":27.52}
+]
+}
+,{"Nombre":"Hombres, Cataluña, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cataluña", "Codigo":"09"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":45.49}
+]
+}
+,{"Nombre":"Hombres, Comunitat Valenciana, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Comunitat Valenciana", "Codigo":"10"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Hombres, Comunitat Valenciana, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Comunitat Valenciana", "Codigo":"10"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":23.64}
+]
+}
+,{"Nombre":"Hombres, Comunitat Valenciana, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Comunitat Valenciana", "Codigo":"10"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":2.46}
+]
+}
+,{"Nombre":"Hombres, Comunitat Valenciana, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Comunitat Valenciana", "Codigo":"10"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":33.77}
+]
+}
+,{"Nombre":"Hombres, Comunitat Valenciana, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Comunitat Valenciana", "Codigo":"10"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":40.13}
+]
+}
+,{"Nombre":"Hombres, Extremadura, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Extremadura", "Codigo":"11"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Hombres, Extremadura, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Extremadura", "Codigo":"11"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":32.21}
+]
+}
+,{"Nombre":"Hombres, Extremadura, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Extremadura", "Codigo":"11"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":2.77}
+]
+}
+,{"Nombre":"Hombres, Extremadura, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Extremadura", "Codigo":"11"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":29.72}
+]
+}
+,{"Nombre":"Hombres, Extremadura, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Extremadura", "Codigo":"11"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":35.3}
+]
+}
+,{"Nombre":"Hombres, Galicia, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Galicia", "Codigo":"12"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Hombres, Galicia, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Galicia", "Codigo":"12"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":20.93}
+]
+}
+,{"Nombre":"Hombres, Galicia, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Galicia", "Codigo":"12"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":2.8}
+]
+}
+,{"Nombre":"Hombres, Galicia, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Galicia", "Codigo":"12"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":23.37}
+]
+}
+,{"Nombre":"Hombres, Galicia, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Galicia", "Codigo":"12"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":52.9}
+]
+}
+,{"Nombre":"Hombres, Madrid (Comunidad de), TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Madrid (Comunidad de)", "Codigo":"13"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Hombres, Madrid (Comunidad de), Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Madrid (Comunidad de)", "Codigo":"13"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":21.02}
+]
+}
+,{"Nombre":"Hombres, Madrid (Comunidad de), Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Madrid (Comunidad de)", "Codigo":"13"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":2.37}
+]
+}
+,{"Nombre":"Hombres, Madrid (Comunidad de), Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Madrid (Comunidad de)", "Codigo":"13"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":30.45}
+]
+}
+,{"Nombre":"Hombres, Madrid (Comunidad de), Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Madrid (Comunidad de)", "Codigo":"13"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":46.16}
+]
+}
+,{"Nombre":"Hombres, Murcia (Región de), TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Murcia (Región de)", "Codigo":"14"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Hombres, Murcia (Región de), Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Murcia (Región de)", "Codigo":"14"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":28.92}
+]
+}
+,{"Nombre":"Hombres, Murcia (Región de), Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Murcia (Región de)", "Codigo":"14"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":3.62}
+]
+}
+,{"Nombre":"Hombres, Murcia (Región de), Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Murcia (Región de)", "Codigo":"14"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":27.93}
+]
+}
+,{"Nombre":"Hombres, Murcia (Región de), Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Murcia (Región de)", "Codigo":"14"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":39.53}
+]
+}
+,{"Nombre":"Hombres, Navarra (Comunidad Foral de), TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Navarra (Comunidad Foral de)", "Codigo":"15"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Hombres, Navarra (Comunidad Foral de), Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Navarra (Comunidad Foral de)", "Codigo":"15"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":19.62}
+]
+}
+,{"Nombre":"Hombres, Navarra (Comunidad Foral de), Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Navarra (Comunidad Foral de)", "Codigo":"15"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":5.4}
+]
+}
+,{"Nombre":"Hombres, Navarra (Comunidad Foral de), Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Navarra (Comunidad Foral de)", "Codigo":"15"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":31.64}
+]
+}
+,{"Nombre":"Hombres, Navarra (Comunidad Foral de), Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Navarra (Comunidad Foral de)", "Codigo":"15"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":43.34}
+]
+}
+,{"Nombre":"Hombres, País Vasco, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"País Vasco", "Codigo":"16"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Hombres, País Vasco, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"País Vasco", "Codigo":"16"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":19.45}
+]
+}
+,{"Nombre":"Hombres, País Vasco, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"País Vasco", "Codigo":"16"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":1.74}
+]
+}
+,{"Nombre":"Hombres, País Vasco, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"País Vasco", "Codigo":"16"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":32.35}
+]
+}
+,{"Nombre":"Hombres, País Vasco, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"País Vasco", "Codigo":"16"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":46.46}
+]
+}
+,{"Nombre":"Hombres, Rioja (La), TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Rioja (La)", "Codigo":"17"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Hombres, Rioja (La), Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Rioja (La)", "Codigo":"17"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":20.68}
+]
+}
+,{"Nombre":"Hombres, Rioja (La), Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Rioja (La)", "Codigo":"17"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":4.3}
+]
+}
+,{"Nombre":"Hombres, Rioja (La), Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Rioja (La)", "Codigo":"17"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":33.68}
+]
+}
+,{"Nombre":"Hombres, Rioja (La), Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Rioja (La)", "Codigo":"17"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":41.35}
+]
+}
+,{"Nombre":"Hombres, Ceuta (Ciudad Autónoma de), TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Ceuta (Ciudad Autónoma de)", "Codigo":"18"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Hombres, Ceuta (Ciudad Autónoma de), Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Ceuta (Ciudad Autónoma de)", "Codigo":"18"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":20.19}
+]
+}
+,{"Nombre":"Hombres, Ceuta (Ciudad Autónoma de), Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Ceuta (Ciudad Autónoma de)", "Codigo":"18"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":1.46}
+]
+}
+,{"Nombre":"Hombres, Ceuta (Ciudad Autónoma de), Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Ceuta (Ciudad Autónoma de)", "Codigo":"18"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":18.78}
+]
+}
+,{"Nombre":"Hombres, Ceuta (Ciudad Autónoma de), Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Ceuta (Ciudad Autónoma de)", "Codigo":"18"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":59.56}
+]
+}
+,{"Nombre":"Hombres, Melilla (Ciudad Autónoma de), TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Melilla (Ciudad Autónoma de)", "Codigo":"19"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Hombres, Melilla (Ciudad Autónoma de), Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Melilla (Ciudad Autónoma de)", "Codigo":"19"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":21.35}
+]
+}
+,{"Nombre":"Hombres, Melilla (Ciudad Autónoma de), Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Melilla (Ciudad Autónoma de)", "Codigo":"19"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":2.07}
+]
+}
+,{"Nombre":"Hombres, Melilla (Ciudad Autónoma de), Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Melilla (Ciudad Autónoma de)", "Codigo":"19"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":8.53}
+]
+}
+,{"Nombre":"Hombres, Melilla (Ciudad Autónoma de), Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Hombres", "Codigo":"hombres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Melilla (Ciudad Autónoma de)", "Codigo":"19"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":68.05}
+]
+}
+,{"Nombre":"Mujeres, Total, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":349, "Nombre":"Total Nacional", "Codigo":"NAC"}
+, "Nombre":"Total", "Codigo":"00"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Mujeres, Total, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":349, "Nombre":"Total Nacional", "Codigo":"NAC"}
+, "Nombre":"Total", "Codigo":"00"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":16.44}
+]
+}
+,{"Nombre":"Mujeres, Total, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":349, "Nombre":"Total Nacional", "Codigo":"NAC"}
+, "Nombre":"Total", "Codigo":"00"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":2.05}
+]
+}
+,{"Nombre":"Mujeres, Total, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":349, "Nombre":"Total Nacional", "Codigo":"NAC"}
+, "Nombre":"Total", "Codigo":"00"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":16.7}
+]
+}
+,{"Nombre":"Mujeres, Total, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":349, "Nombre":"Total Nacional", "Codigo":"NAC"}
+, "Nombre":"Total", "Codigo":"00"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":64.81}
+]
+}
+,{"Nombre":"Mujeres, Andalucía, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Andalucía", "Codigo":"01"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Mujeres, Andalucía, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Andalucía", "Codigo":"01"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":18.1}
+]
+}
+,{"Nombre":"Mujeres, Andalucía, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Andalucía", "Codigo":"01"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":2.91}
+]
+}
+,{"Nombre":"Mujeres, Andalucía, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Andalucía", "Codigo":"01"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":11.58}
+]
+}
+,{"Nombre":"Mujeres, Andalucía, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Andalucía", "Codigo":"01"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":67.4}
+]
+}
+,{"Nombre":"Mujeres, Aragón, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Aragón", "Codigo":"02"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Mujeres, Aragón, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Aragón", "Codigo":"02"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":11.25}
+]
+}
+,{"Nombre":"Mujeres, Aragón, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Aragón", "Codigo":"02"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":3.78}
+]
+}
+,{"Nombre":"Mujeres, Aragón, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Aragón", "Codigo":"02"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":12.82}
+]
+}
+,{"Nombre":"Mujeres, Aragón, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Aragón", "Codigo":"02"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":72.16}
+]
+}
+,{"Nombre":"Mujeres, Asturias (Principado de), TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Asturias (Principado de)", "Codigo":"03"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Mujeres, Asturias (Principado de), Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Asturias (Principado de)", "Codigo":"03"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":16.42}
+]
+}
+,{"Nombre":"Mujeres, Asturias (Principado de), Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Asturias (Principado de)", "Codigo":"03"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":1.51}
+]
+}
+,{"Nombre":"Mujeres, Asturias (Principado de), Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Asturias (Principado de)", "Codigo":"03"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":24.2}
+]
+}
+,{"Nombre":"Mujeres, Asturias (Principado de), Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Asturias (Principado de)", "Codigo":"03"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":57.87}
+]
+}
+,{"Nombre":"Mujeres, Balears (Illes), TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Balears (Illes)", "Codigo":"04"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Mujeres, Balears (Illes), Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Balears (Illes)", "Codigo":"04"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":16.63}
+]
+}
+,{"Nombre":"Mujeres, Balears (Illes), Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Balears (Illes)", "Codigo":"04"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":2.66}
+]
+}
+,{"Nombre":"Mujeres, Balears (Illes), Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Balears (Illes)", "Codigo":"04"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":18.15}
+]
+}
+,{"Nombre":"Mujeres, Balears (Illes), Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Balears (Illes)", "Codigo":"04"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":62.56}
+]
+}
+,{"Nombre":"Mujeres, Canarias, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Canarias", "Codigo":"05"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Mujeres, Canarias, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Canarias", "Codigo":"05"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":17.04}
+]
+}
+,{"Nombre":"Mujeres, Canarias, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Canarias", "Codigo":"05"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":1.2}
+]
+}
+,{"Nombre":"Mujeres, Canarias, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Canarias", "Codigo":"05"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":14.78}
+]
+}
+,{"Nombre":"Mujeres, Canarias, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Canarias", "Codigo":"05"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":66.98}
+]
+}
+,{"Nombre":"Mujeres, Cantabria, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cantabria", "Codigo":"06"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Mujeres, Cantabria, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cantabria", "Codigo":"06"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":17.62}
+]
+}
+,{"Nombre":"Mujeres, Cantabria, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cantabria", "Codigo":"06"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":0.23}
+]
+}
+,{"Nombre":"Mujeres, Cantabria, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cantabria", "Codigo":"06"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":17.55}
+]
+}
+,{"Nombre":"Mujeres, Cantabria, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cantabria", "Codigo":"06"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":64.6}
+]
+}
+,{"Nombre":"Mujeres, Castilla y León, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla y León", "Codigo":"07"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Mujeres, Castilla y León, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla y León", "Codigo":"07"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":15.18}
+]
+}
+,{"Nombre":"Mujeres, Castilla y León, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla y León", "Codigo":"07"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":1.89}
+]
+}
+,{"Nombre":"Mujeres, Castilla y León, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla y León", "Codigo":"07"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":19.39}
+]
+}
+,{"Nombre":"Mujeres, Castilla y León, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla y León", "Codigo":"07"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":63.54}
+]
+}
+,{"Nombre":"Mujeres, Castilla-La Mancha, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla-La Mancha", "Codigo":"08"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Mujeres, Castilla-La Mancha, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla-La Mancha", "Codigo":"08"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":16.99}
+]
+}
+,{"Nombre":"Mujeres, Castilla-La Mancha, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla-La Mancha", "Codigo":"08"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":1.09}
+]
+}
+,{"Nombre":"Mujeres, Castilla-La Mancha, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla-La Mancha", "Codigo":"08"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":13.78}
+]
+}
+,{"Nombre":"Mujeres, Castilla-La Mancha, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla-La Mancha", "Codigo":"08"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":68.14}
+]
+}
+,{"Nombre":"Mujeres, Cataluña, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cataluña", "Codigo":"09"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Mujeres, Cataluña, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cataluña", "Codigo":"09"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":18.03}
+]
+}
+,{"Nombre":"Mujeres, Cataluña, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cataluña", "Codigo":"09"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":2.58}
+]
+}
+,{"Nombre":"Mujeres, Cataluña, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cataluña", "Codigo":"09"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":17.48}
+]
+}
+,{"Nombre":"Mujeres, Cataluña, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cataluña", "Codigo":"09"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":61.92}
+]
+}
+,{"Nombre":"Mujeres, Comunitat Valenciana, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Comunitat Valenciana", "Codigo":"10"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Mujeres, Comunitat Valenciana, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Comunitat Valenciana", "Codigo":"10"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":16.28}
+]
+}
+,{"Nombre":"Mujeres, Comunitat Valenciana, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Comunitat Valenciana", "Codigo":"10"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":1.83}
+]
+}
+,{"Nombre":"Mujeres, Comunitat Valenciana, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Comunitat Valenciana", "Codigo":"10"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":18.61}
+]
+}
+,{"Nombre":"Mujeres, Comunitat Valenciana, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Comunitat Valenciana", "Codigo":"10"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":63.29}
+]
+}
+,{"Nombre":"Mujeres, Extremadura, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Extremadura", "Codigo":"11"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Mujeres, Extremadura, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Extremadura", "Codigo":"11"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":18.59}
+]
+}
+,{"Nombre":"Mujeres, Extremadura, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Extremadura", "Codigo":"11"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":1.36}
+]
+}
+,{"Nombre":"Mujeres, Extremadura, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Extremadura", "Codigo":"11"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":18.77}
+]
+}
+,{"Nombre":"Mujeres, Extremadura, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Extremadura", "Codigo":"11"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":61.28}
+]
+}
+,{"Nombre":"Mujeres, Galicia, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Galicia", "Codigo":"12"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Mujeres, Galicia, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Galicia", "Codigo":"12"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":14.78}
+]
+}
+,{"Nombre":"Mujeres, Galicia, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Galicia", "Codigo":"12"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":1.91}
+]
+}
+,{"Nombre":"Mujeres, Galicia, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Galicia", "Codigo":"12"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":10.64}
+]
+}
+,{"Nombre":"Mujeres, Galicia, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Galicia", "Codigo":"12"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":72.66}
+]
+}
+,{"Nombre":"Mujeres, Madrid (Comunidad de), TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Madrid (Comunidad de)", "Codigo":"13"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Mujeres, Madrid (Comunidad de), Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Madrid (Comunidad de)", "Codigo":"13"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":14.79}
+]
+}
+,{"Nombre":"Mujeres, Madrid (Comunidad de), Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Madrid (Comunidad de)", "Codigo":"13"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":1.18}
+]
+}
+,{"Nombre":"Mujeres, Madrid (Comunidad de), Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Madrid (Comunidad de)", "Codigo":"13"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":19.64}
+]
+}
+,{"Nombre":"Mujeres, Madrid (Comunidad de), Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Madrid (Comunidad de)", "Codigo":"13"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":64.39}
+]
+}
+,{"Nombre":"Mujeres, Murcia (Región de), TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Murcia (Región de)", "Codigo":"14"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Mujeres, Murcia (Región de), Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Murcia (Región de)", "Codigo":"14"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":18.46}
+]
+}
+,{"Nombre":"Mujeres, Murcia (Región de), Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Murcia (Región de)", "Codigo":"14"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":2.34}
+]
+}
+,{"Nombre":"Mujeres, Murcia (Región de), Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Murcia (Región de)", "Codigo":"14"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":18.51}
+]
+}
+,{"Nombre":"Mujeres, Murcia (Región de), Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Murcia (Región de)", "Codigo":"14"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":60.69}
+]
+}
+,{"Nombre":"Mujeres, Navarra (Comunidad Foral de), TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Navarra (Comunidad Foral de)", "Codigo":"15"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Mujeres, Navarra (Comunidad Foral de), Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Navarra (Comunidad Foral de)", "Codigo":"15"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":16.76}
+]
+}
+,{"Nombre":"Mujeres, Navarra (Comunidad Foral de), Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Navarra (Comunidad Foral de)", "Codigo":"15"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":2.53}
+]
+}
+,{"Nombre":"Mujeres, Navarra (Comunidad Foral de), Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Navarra (Comunidad Foral de)", "Codigo":"15"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":21.87}
+]
+}
+,{"Nombre":"Mujeres, Navarra (Comunidad Foral de), Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Navarra (Comunidad Foral de)", "Codigo":"15"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":58.84}
+]
+}
+,{"Nombre":"Mujeres, País Vasco, TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"País Vasco", "Codigo":"16"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Mujeres, País Vasco, Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"País Vasco", "Codigo":"16"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":12.98}
+]
+}
+,{"Nombre":"Mujeres, País Vasco, Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"País Vasco", "Codigo":"16"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":1.59}
+]
+}
+,{"Nombre":"Mujeres, País Vasco, Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"País Vasco", "Codigo":"16"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":23.05}
+]
+}
+,{"Nombre":"Mujeres, País Vasco, Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"País Vasco", "Codigo":"16"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":62.38}
+]
+}
+,{"Nombre":"Mujeres, Rioja (La), TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Rioja (La)", "Codigo":"17"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Mujeres, Rioja (La), Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Rioja (La)", "Codigo":"17"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":16.87}
+]
+}
+,{"Nombre":"Mujeres, Rioja (La), Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Rioja (La)", "Codigo":"17"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":3.56}
+]
+}
+,{"Nombre":"Mujeres, Rioja (La), Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Rioja (La)", "Codigo":"17"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":23.28}
+]
+}
+,{"Nombre":"Mujeres, Rioja (La), Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Rioja (La)", "Codigo":"17"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":56.3}
+]
+}
+,{"Nombre":"Mujeres, Ceuta (Ciudad Autónoma de), TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Ceuta (Ciudad Autónoma de)", "Codigo":"18"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Mujeres, Ceuta (Ciudad Autónoma de), Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Ceuta (Ciudad Autónoma de)", "Codigo":"18"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":19.98}
+]
+}
+,{"Nombre":"Mujeres, Ceuta (Ciudad Autónoma de), Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Ceuta (Ciudad Autónoma de)", "Codigo":"18"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":0.21}
+]
+}
+,{"Nombre":"Mujeres, Ceuta (Ciudad Autónoma de), Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Ceuta (Ciudad Autónoma de)", "Codigo":"18"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":6.16}
+]
+}
+,{"Nombre":"Mujeres, Ceuta (Ciudad Autónoma de), Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Ceuta (Ciudad Autónoma de)", "Codigo":"18"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":73.65}
+]
+}
+,{"Nombre":"Mujeres, Melilla (Ciudad Autónoma de), TOTAL", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Melilla (Ciudad Autónoma de)", "Codigo":"19"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"TOTAL", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Mujeres, Melilla (Ciudad Autónoma de), Fumador diario", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Melilla (Ciudad Autónoma de)", "Codigo":"19"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador diario", "Codigo":"fumadordiario"}
+]
+, "Data":[{"Valor":9.08}
+]
+}
+,{"Nombre":"Mujeres, Melilla (Ciudad Autónoma de), Fumador ocasional", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Melilla (Ciudad Autónoma de)", "Codigo":"19"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Fumador ocasional", "Codigo":"fumadorocasional"}
+]
+, "Data":[{"Valor":0.16}
+]
+}
+,{"Nombre":"Mujeres, Melilla (Ciudad Autónoma de), Ex fumador", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Melilla (Ciudad Autónoma de)", "Codigo":"19"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Ex fumador", "Codigo":"exfumador"}
+]
+, "Data":[{"Valor":4.83}
+]
+}
+,{"Nombre":"Mujeres, Melilla (Ciudad Autónoma de), Nunca ha fumado", "MetaData":[{"Variable":{"Nombre":"sexo", "Codigo":"sexo"}
+, "Nombre":"Mujeres", "Codigo":"mujeres"}
+,{"Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Melilla (Ciudad Autónoma de)", "Codigo":"19"}
+,{"Variable":{"Nombre":"consumo de tabaco", "Codigo":"consumodetabaco"}
+, "Nombre":"Nunca ha fumado", "Codigo":"nuncahafumado"}
+]
+, "Data":[{"Valor":85.93}
+]
+}
+]
