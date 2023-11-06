@@ -18,9 +18,16 @@ When you click the **Knit** button a document will be generated that includes bo
 ```{r cars}
 summary(cars)
 ```
-
+Importamos las bases de datos
 ```{r}
-date()
+library(readr)
+arboles_altitud <- read.delim("C:\\Users\\Pablo\\Desktop\\uni\\3º\\Fuentes\\SeminarioFuentes\\Datos_arboles\\provincia_superficie_altura.csv", delim = ",")
+arboles_altitud
+
+```
+```{r}
+arboles_superficie <- read.delim("C:\Users\Pablo\Desktop\uni\3º\Fuentes\SeminarioFuentes\Datos_arboles\provincia_superficie_uso.csv", delim = ",")
+arboles_extensionterritorio <- read.delim("C:\Users\Pablo\Desktop\uni\3º\Fuentes\SeminarioFuentes\Datos_arboles\provincia_extensionterritorio.csv", delim =",")
 ```
 
 
