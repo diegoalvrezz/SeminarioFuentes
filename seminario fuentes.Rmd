@@ -22,7 +22,10 @@ Importamos las bases de datos
 ```{r}
 library(readr)
 aire <- read.delim("./C6H6_BaP__2021_Irreg.csv")
-aire
+
+fumadores<-read.delim("./Datos_fumadores/Fumadores.csv", delim = ";")
+fumadores
+
 
 ```
 
