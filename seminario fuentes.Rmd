@@ -23,9 +23,10 @@ Importamos las bases de datos
 library(readr)
 aire <- read.delim("./C6H6_BaP__2021_Irreg.csv")
 
-fumadores<-read.delim("./Datos_fumadores/Fumadores.csv", delim = ";")
-fumadores
+fumadores<-read.delim("./Datos_fumadores/Fumadores.csv")
 
+defunciones_mes<-read.delim("./DATA/defuncion_mes.csv")
+defunciones_mes
 
 ```
 
