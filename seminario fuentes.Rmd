@@ -21,11 +21,19 @@ summary(cars)
 Importamos las bases de datos
 ```{r}
 library(readr)
-aire <- read.delim("./C6H6_BaP__2021_Irreg.csv")
+aire <- read_delim("./C6H6_BaP__2021_Irreg.csv")
 
-fumadores<-read.delim("./Datos_fumadores/Fumadores.csv", delim = ";")
-fumadores
+fumadores<-read_delim("./Datos_fumadores/Fumadores.csv", delim = ";")
 
+defunciones_mes <- read_delim("./DATA/defuncion_mes.csv", delim =";")
+
+defuncion_poblacion <- read_delim("./DATA/defuncion_poblacion.csv", delim =";")
+
+arboles_superficie <- read_delim("./Datos_arboles/provincia_superficie_altura.csv", delim = ";")
+
+arboles_uso <- read_delim("./Datos_arboles/provincia_superficie_uso.csv", delim = ";")
+
+arboles_extension <- read_delim("./Datos_arboles/provincia_extensionterritorio.csv", delim = ";")
 
 ```
 
