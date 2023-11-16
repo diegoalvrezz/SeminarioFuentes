@@ -34,10 +34,45 @@ arboles_superficie <- read_delim("./Datos_arboles/provincia_superficie_altura.cs
 arboles_uso <- read_delim("./Datos_arboles/provincia_superficie_uso.csv", delim = ";")
 
 arboles_extension <- read_delim("./Datos_arboles/provincia_extensionterritorio.csv", delim = ";")
+```
+
+
+
+```{r}
+fumadores
+fumadores$`Comunidadesy Ciudades Autónomas`
 
 ```
 
 ```{r}
+fumadores <- fumadores%>%
+  mutate(
+    CCAA= case_when(
+      fumadores$`Comunidades y Ciudades Autónomas`== "Andalucía" ~ "Andalucia",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Aragón" ~ "Aragon",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Asturias (Principado de)" ~ "Asturias",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Balears (Illes)" ~ "Baleares",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Canarias" ~ "Canarias",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Cantabria" ~ "Cantabria",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Castilla y León" ~ "CyL",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Castilla - La Mancha" ~ "Castilla la Mancha",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Cataluña" ~ "Cataluña",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Comunitat Valenciana" ~ "C.Valencia",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Extremadura" ~ "Extremadura",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Galicia" ~ "Galicia",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Madrid (Comunidad de)" ~ "Madrid",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Murcia (Región de)" ~ "Murcia",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Navarra (Comunidad Foral de)" ~ "Navarra",
+      fumadores$`Comunidades y Ciudades Autónomas`== "País Vasco" ~ "País Vasco",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Rioja (La)" ~ "La Rioja",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Ceuta (Ciudad Autónoma de)" ~ "Ceuta",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Melilla (Ciudad Autónoma de)" ~ "Melilla",
+    )) ## y definimos que los nombres "antiguos", van a tener un "nuevo" nombre
+      
+    
+  
+  
+
 
 ```
 
