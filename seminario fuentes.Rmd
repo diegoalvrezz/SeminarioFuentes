@@ -42,6 +42,8 @@ arboles_extension <- read_delim("./Datos_arboles/provincia_extensionterritorio.c
 fumadores
 fumadores$`Comunidadesy Ciudades Autónomas`
 
+aire
+
 ```
 
 ```{r}
@@ -73,7 +75,34 @@ fumadores <- fumadores%>%
     
   
   
+aire<- aire%>%
+  mutate(
+    CCAA=case_when(
+      aire$PROVINCIA=="18" ~ "Granada",
+      aire$PROVINCIA=="33" ~ "Asturias",
+      aire$PROVINCIA=="46" ~ "Valencia",
+      aire$PROVINCIA=="25" ~ "Lerida",
+      aire$PROVINCIA=="45" ~ "Toledo",
+      aire$PROVINCIA=="50" ~ "Zaragoza",
+      aire$PROVINCIA=="41" ~ "Sevilla",
+      aire$PROVINCIA=="23" ~ "Jaén",
+      aire$PROVINCIA=="13" ~ "Ciudad Real",
+      aire$PROVINCIA=="16" ~ "Cuenca",
+      aire$PROVINCIA=="4" ~ "Almería",
+      aire$PROVINCIA=="14" ~ "Córdoba",
+      aire$PROVINCIA=="29" ~ "Málaga",
+      aire$PROVINCIA=="19"~ "Guadalajara",
+      aire$PROVINCIA=="2" ~ "Albacete",
+      aire$PROVINCIA=="47" ~ "Valladolid",
+      aire$PROVINCIA=="24" ~ "León",
+      aire$PROVINCIA=="9" ~ "Burgos",
+      aire$PROVINCIA=="22" ~ "Huesca",
+      aire$PROVINCIA=="12" ~ "Castellón",
+    )
+  )
 
+```
+```{r}
 
 ```
 

@@ -503,6 +503,22 @@ chunk like this:</p>
 <pre class="r"><code>fumadores$`Comunidadesy Ciudades Autónomas`</code></pre>
 <pre><code>## Warning: Unknown or uninitialised column: `Comunidadesy Ciudades Autónomas`.</code></pre>
 <pre><code>## NULL</code></pre>
+<pre class="r"><code>aire</code></pre>
+<pre><code>## # A tibble: 402 × 8
+##    PROVINCIA MUNICIPIO ESTACION MAGNITUD PUNTO_MUESTREO FECHA_INICIAL      
+##        &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt; &lt;chr&gt;          &lt;dttm&gt;             
+##  1        18       189      999       27 18189999_27_M  2021-05-01 00:00:00
+##  2        18       189      999       27 18189999_27_M  2021-06-01 00:00:00
+##  3        18       189      999       27 18189999_27_M  2021-07-01 00:00:00
+##  4        18       189      999       27 18189999_27_M  2021-08-01 00:00:00
+##  5        18       189      999       27 18189999_27_M  2021-09-01 00:00:00
+##  6        18       189      999       27 18189999_27_M  2021-10-01 00:00:00
+##  7        18       189      999       27 18189999_27_M  2021-11-01 00:00:00
+##  8        18       189      999       27 18189999_27_M  2021-04-01 00:00:00
+##  9        18       189      999       27 18189999_27_M  2021-12-01 00:00:00
+## 10        33        36      999       27 33036999_27_M  2021-01-01 00:00:00
+## # ℹ 392 more rows
+## # ℹ 2 more variables: FECHA_FINAL &lt;dttm&gt;, VALOR &lt;dbl&gt;</code></pre>
 <pre class="r"><code>library(dplyr)</code></pre>
 <pre><code>## Warning: package &#39;dplyr&#39; was built under R version 4.3.2</code></pre>
 <pre><code>## 
@@ -535,7 +551,36 @@ chunk like this:</p>
       fumadores$`Comunidades y Ciudades Autónomas`== &quot;Rioja (La)&quot; ~ &quot;La Rioja&quot;,
       fumadores$`Comunidades y Ciudades Autónomas`== &quot;Ceuta (Ciudad Autónoma de)&quot; ~ &quot;Ceuta&quot;,
       fumadores$`Comunidades y Ciudades Autónomas`== &quot;Melilla (Ciudad Autónoma de)&quot; ~ &quot;Melilla&quot;,
-    )) ## y definimos que los nombres &quot;antiguos&quot;, van a tener un &quot;nuevo&quot; nombre</code></pre>
+    )) ## y definimos que los nombres &quot;antiguos&quot;, van a tener un &quot;nuevo&quot; nombre
+      
+    
+  
+  
+aire&lt;- aire%&gt;%
+  mutate(
+    CCAA=case_when(
+      aire$PROVINCIA==&quot;18&quot; ~ &quot;Granada&quot;,
+      aire$PROVINCIA==&quot;33&quot; ~ &quot;Asturias&quot;,
+      aire$PROVINCIA==&quot;46&quot; ~ &quot;Valencia&quot;,
+      aire$PROVINCIA==&quot;25&quot; ~ &quot;Lerida&quot;,
+      aire$PROVINCIA==&quot;45&quot; ~ &quot;Toledo&quot;,
+      aire$PROVINCIA==&quot;50&quot; ~ &quot;Zaragoza&quot;,
+      aire$PROVINCIA==&quot;41&quot; ~ &quot;Sevilla&quot;,
+      aire$PROVINCIA==&quot;23&quot; ~ &quot;Jaén&quot;,
+      aire$PROVINCIA==&quot;13&quot; ~ &quot;Ciudad Real&quot;,
+      aire$PROVINCIA==&quot;16&quot; ~ &quot;Cuenca&quot;,
+      aire$PROVINCIA==&quot;4&quot; ~ &quot;Almería&quot;,
+      aire$PROVINCIA==&quot;14&quot; ~ &quot;Córdoba&quot;,
+      aire$PROVINCIA==&quot;29&quot; ~ &quot;Málaga&quot;,
+      aire$PROVINCIA==&quot;19&quot;~ &quot;Guadalajara&quot;,
+      aire$PROVINCIA==&quot;2&quot; ~ &quot;Albacete&quot;,
+      aire$PROVINCIA==&quot;47&quot; ~ &quot;Valladolid&quot;,
+      aire$PROVINCIA==&quot;24&quot; ~ &quot;León&quot;,
+      aire$PROVINCIA==&quot;9&quot; ~ &quot;Burgos&quot;,
+      aire$PROVINCIA==&quot;22&quot; ~ &quot;Huesca&quot;,
+      aire$PROVINCIA==&quot;12&quot; ~ &quot;Castellón&quot;,
+    )
+  )</code></pre>
 <div id="including-plots" class="section level3">
 <h3>Including Plots</h3>
 <p>You can also embed plots, for example:</p>
