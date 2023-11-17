@@ -612,7 +612,7 @@ aire&lt;- aire%&gt;%
       aire$PROVINCIA==&quot;18&quot; ~ &quot;Granada&quot;,
       aire$PROVINCIA==&quot;33&quot; ~ &quot;Asturias&quot;,
       aire$PROVINCIA==&quot;46&quot; ~ &quot;Valencia&quot;,
-      aire$PROVINCIA==&quot;25&quot; ~ &quot;Lerida&quot;,
+      aire$PROVINCIA==&quot;25&quot; ~ &quot;Cataluña&quot;,
       aire$PROVINCIA==&quot;45&quot; ~ &quot;Toledo&quot;,
       aire$PROVINCIA==&quot;50&quot; ~ &quot;Zaragoza&quot;,
       aire$PROVINCIA==&quot;41&quot; ~ &quot;Sevilla&quot;,
@@ -638,32 +638,40 @@ library(dplyr)
 # Agrupa los datos por CCAA y calcula la media
 aire_agrupado &lt;- aire %&gt;%
   group_by(CCAA_aire) %&gt;%
-  summarise(media = mean(VALOR, na.rm = TRUE))
+  summarise(media = mean(VALOR, na.rm = TRUE))</code></pre>
+<pre class="r"><code># Asegúrate de que la biblioteca dplyr está cargada
+library(dplyr)
 
-aire_agrupado</code></pre>
-<pre><code>## # A tibble: 20 × 2
-##    CCAA_aire    media
-##    &lt;chr&gt;        &lt;dbl&gt;
-##  1 Albacete    0.270 
-##  2 Almería     0.293 
-##  3 Asturias    0.0447
-##  4 Burgos      0.126 
-##  5 Castellón   0.135 
-##  6 Ciudad Real 1.16  
-##  7 Cuenca      0.648 
-##  8 Córdoba     0.404 
-##  9 Granada     0.0321
-## 10 Guadalajara 0.524 
-## 11 Huesca      0.0586
-## 12 Jaén        0.752 
-## 13 Lerida      0.0405
-## 14 León        0.0985
-## 15 Málaga      0.196 
-## 16 Sevilla     0.489 
-## 17 Toledo      0.291 
-## 18 Valencia    0.0328
-## 19 Valladolid  0.498 
-## 20 Zaragoza    0.271</code></pre>
+# Crea una nueva columna de grupos
+aire_agrupado &lt;- aire_agrupado %&gt;%
+  mutate(
+    grupo = case_when(
+      CCAA_aire %in% c(&quot;Granada&quot;, &quot;Almería&quot;, &quot;Sevilla&quot;, &quot;Jaén&quot;, &quot;Córdoba&quot;, &quot;Málaga&quot;) ~ &quot;Andalucia&quot;,
+      CCAA_aire %in% c(&quot;León&quot;, &quot;Burgos&quot;, &quot;Valladolid&quot;) ~ &quot;Castilla y León&quot;,
+      CCAA_aire %in% c(&quot;Huesca&quot;, &quot;Zaragoza&quot;) ~ &quot;Aragón&quot;,
+      CCAA_aire %in% c(&quot;Cuenca&quot;, &quot;Toledo&quot;, &quot;Ciudad Real&quot;, &quot;Guadalajara&quot;, &quot;Albacete&quot;) ~ &quot;Castilla la Mancha&quot;,
+      CCAA_aire %in% c(&quot;Castellón&quot;, &quot;Valencia&quot;) ~ &quot;C.Valencia&quot;,
+     
+      TRUE ~ CCAA_aire
+    )
+  )
+
+# Calcula la media por grupo
+media_por_grupo &lt;- aire_agrupado %&gt;%
+  group_by(grupo) %&gt;%
+  summarise(media = mean(media, na.rm = TRUE))
+
+media_por_grupo</code></pre>
+<pre><code>## # A tibble: 7 × 2
+##   grupo               media
+##   &lt;chr&gt;               &lt;dbl&gt;
+## 1 Andalucia          0.361 
+## 2 Aragón             0.165 
+## 3 Asturias           0.0447
+## 4 C.Valencia         0.0839
+## 5 Castilla la Mancha 0.578 
+## 6 Castilla y León    0.241 
+## 7 Cataluña           0.0405</code></pre>
 <div id="including-plots" class="section level3">
 <h3>Including Plots</h3>
 <p>You can also embed plots, for example:</p>

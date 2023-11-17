@@ -86,7 +86,7 @@ aire<- aire%>%
       aire$PROVINCIA=="18" ~ "Granada",
       aire$PROVINCIA=="33" ~ "Asturias",
       aire$PROVINCIA=="46" ~ "Valencia",
-      aire$PROVINCIA=="25" ~ "Lerida",
+      aire$PROVINCIA=="25" ~ "Cataluña",
       aire$PROVINCIA=="45" ~ "Toledo",
       aire$PROVINCIA=="50" ~ "Zaragoza",
       aire$PROVINCIA=="41" ~ "Sevilla",
@@ -117,8 +117,34 @@ library(dplyr)
 aire_agrupado <- aire %>%
   group_by(CCAA_aire) %>%
   summarise(media = mean(VALOR, na.rm = TRUE))
+```
 
-aire_agrupado
+
+```{r}
+# Asegúrate de que la biblioteca dplyr está cargada
+library(dplyr)
+
+# Crea una nueva columna de grupos
+aire_agrupado <- aire_agrupado %>%
+  mutate(
+    grupo = case_when(
+      CCAA_aire %in% c("Granada", "Almería", "Sevilla", "Jaén", "Córdoba", "Málaga") ~ "Andalucia",
+      CCAA_aire %in% c("León", "Burgos", "Valladolid") ~ "Castilla y León",
+      CCAA_aire %in% c("Huesca", "Zaragoza") ~ "Aragón",
+      CCAA_aire %in% c("Cuenca", "Toledo", "Ciudad Real", "Guadalajara", "Albacete") ~ "Castilla la Mancha",
+      CCAA_aire %in% c("Castellón", "Valencia") ~ "C.Valencia",
+     
+      TRUE ~ CCAA_aire
+    )
+  )
+
+# Calcula la media por grupo
+media_por_grupo <- aire_agrupado %>%
+  group_by(grupo) %>%
+  summarise(media = mean(media, na.rm = TRUE))
+
+media_por_grupo
+
 
 ```
 
