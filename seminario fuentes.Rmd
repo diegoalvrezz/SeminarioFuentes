@@ -45,9 +45,10 @@ fumadores$`Comunidadesy Ciudades Autónomas`
 ```
 
 ```{r}
+library(dplyr)
 fumadores <- fumadores%>%
   mutate(
-    CCAA= case_when(
+    CCAA= case_when( ## cambiamos el nombre con un case_When
       fumadores$`Comunidades y Ciudades Autónomas`== "Andalucía" ~ "Andalucia",
       fumadores$`Comunidades y Ciudades Autónomas`== "Aragón" ~ "Aragon",
       fumadores$`Comunidades y Ciudades Autónomas`== "Asturias (Principado de)" ~ "Asturias",

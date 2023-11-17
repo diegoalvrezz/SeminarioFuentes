@@ -11,7 +11,7 @@
 
 <meta name="author" content="Pablo, Diego y Dario" />
 
-<meta name="date" content="2023-11-13" />
+<meta name="date" content="2023-11-17" />
 
 <title>seminario fuentes</title>
 
@@ -352,7 +352,7 @@ display: none;
 
 <h1 class="title toc-ignore">seminario fuentes</h1>
 <h4 class="author">Pablo, Diego y Dario</h4>
-<h4 class="date">2023-11-13</h4>
+<h4 class="date">2023-11-17</h4>
 
 </div>
 
@@ -500,157 +500,42 @@ chunk like this:</p>
 ## 10 Ambos sexos Total            Andalucía              Nunca ha fumado     59,39
 ## # ℹ 290 more rows
 ## # ℹ abbreviated name: ¹​`Comunidades y Ciudades Autónomas`</code></pre>
-<pre class="r"><code>fumadores$`Comunidades y Ciudades Autónomas`</code></pre>
-<pre><code>##   [1] NA                             NA                            
-##   [3] NA                             NA                            
-##   [5] NA                             &quot;Andalucía&quot;                   
-##   [7] &quot;Andalucía&quot;                    &quot;Andalucía&quot;                   
-##   [9] &quot;Andalucía&quot;                    &quot;Andalucía&quot;                   
-##  [11] &quot;Aragón&quot;                       &quot;Aragón&quot;                      
-##  [13] &quot;Aragón&quot;                       &quot;Aragón&quot;                      
-##  [15] &quot;Aragón&quot;                       &quot;Asturias (Principado de)&quot;    
-##  [17] &quot;Asturias (Principado de)&quot;     &quot;Asturias (Principado de)&quot;    
-##  [19] &quot;Asturias (Principado de)&quot;     &quot;Asturias (Principado de)&quot;    
-##  [21] &quot;Balears (Illes)&quot;              &quot;Balears (Illes)&quot;             
-##  [23] &quot;Balears (Illes)&quot;              &quot;Balears (Illes)&quot;             
-##  [25] &quot;Balears (Illes)&quot;              &quot;Canarias&quot;                    
-##  [27] &quot;Canarias&quot;                     &quot;Canarias&quot;                    
-##  [29] &quot;Canarias&quot;                     &quot;Canarias&quot;                    
-##  [31] &quot;Cantabria&quot;                    &quot;Cantabria&quot;                   
-##  [33] &quot;Cantabria&quot;                    &quot;Cantabria&quot;                   
-##  [35] &quot;Cantabria&quot;                    &quot;Castilla y León&quot;             
-##  [37] &quot;Castilla y León&quot;              &quot;Castilla y León&quot;             
-##  [39] &quot;Castilla y León&quot;              &quot;Castilla y León&quot;             
-##  [41] &quot;Castilla-La Mancha&quot;           &quot;Castilla-La Mancha&quot;          
-##  [43] &quot;Castilla-La Mancha&quot;           &quot;Castilla-La Mancha&quot;          
-##  [45] &quot;Castilla-La Mancha&quot;           &quot;Cataluña&quot;                    
-##  [47] &quot;Cataluña&quot;                     &quot;Cataluña&quot;                    
-##  [49] &quot;Cataluña&quot;                     &quot;Cataluña&quot;                    
-##  [51] &quot;Comunitat Valenciana&quot;         &quot;Comunitat Valenciana&quot;        
-##  [53] &quot;Comunitat Valenciana&quot;         &quot;Comunitat Valenciana&quot;        
-##  [55] &quot;Comunitat Valenciana&quot;         &quot;Extremadura&quot;                 
-##  [57] &quot;Extremadura&quot;                  &quot;Extremadura&quot;                 
-##  [59] &quot;Extremadura&quot;                  &quot;Extremadura&quot;                 
-##  [61] &quot;Galicia&quot;                      &quot;Galicia&quot;                     
-##  [63] &quot;Galicia&quot;                      &quot;Galicia&quot;                     
-##  [65] &quot;Galicia&quot;                      &quot;Madrid (Comunidad de)&quot;       
-##  [67] &quot;Madrid (Comunidad de)&quot;        &quot;Madrid (Comunidad de)&quot;       
-##  [69] &quot;Madrid (Comunidad de)&quot;        &quot;Madrid (Comunidad de)&quot;       
-##  [71] &quot;Murcia (Región de)&quot;           &quot;Murcia (Región de)&quot;          
-##  [73] &quot;Murcia (Región de)&quot;           &quot;Murcia (Región de)&quot;          
-##  [75] &quot;Murcia (Región de)&quot;           &quot;Navarra (Comunidad Foral de)&quot;
-##  [77] &quot;Navarra (Comunidad Foral de)&quot; &quot;Navarra (Comunidad Foral de)&quot;
-##  [79] &quot;Navarra (Comunidad Foral de)&quot; &quot;Navarra (Comunidad Foral de)&quot;
-##  [81] &quot;País Vasco&quot;                   &quot;País Vasco&quot;                  
-##  [83] &quot;País Vasco&quot;                   &quot;País Vasco&quot;                  
-##  [85] &quot;País Vasco&quot;                   &quot;Rioja (La)&quot;                  
-##  [87] &quot;Rioja (La)&quot;                   &quot;Rioja (La)&quot;                  
-##  [89] &quot;Rioja (La)&quot;                   &quot;Rioja (La)&quot;                  
-##  [91] &quot;Ceuta (Ciudad Autónoma de)&quot;   &quot;Ceuta (Ciudad Autónoma de)&quot;  
-##  [93] &quot;Ceuta (Ciudad Autónoma de)&quot;   &quot;Ceuta (Ciudad Autónoma de)&quot;  
-##  [95] &quot;Ceuta (Ciudad Autónoma de)&quot;   &quot;Melilla (Ciudad Autónoma de)&quot;
-##  [97] &quot;Melilla (Ciudad Autónoma de)&quot; &quot;Melilla (Ciudad Autónoma de)&quot;
-##  [99] &quot;Melilla (Ciudad Autónoma de)&quot; &quot;Melilla (Ciudad Autónoma de)&quot;
-## [101] NA                             NA                            
-## [103] NA                             NA                            
-## [105] NA                             &quot;Andalucía&quot;                   
-## [107] &quot;Andalucía&quot;                    &quot;Andalucía&quot;                   
-## [109] &quot;Andalucía&quot;                    &quot;Andalucía&quot;                   
-## [111] &quot;Aragón&quot;                       &quot;Aragón&quot;                      
-## [113] &quot;Aragón&quot;                       &quot;Aragón&quot;                      
-## [115] &quot;Aragón&quot;                       &quot;Asturias (Principado de)&quot;    
-## [117] &quot;Asturias (Principado de)&quot;     &quot;Asturias (Principado de)&quot;    
-## [119] &quot;Asturias (Principado de)&quot;     &quot;Asturias (Principado de)&quot;    
-## [121] &quot;Balears (Illes)&quot;              &quot;Balears (Illes)&quot;             
-## [123] &quot;Balears (Illes)&quot;              &quot;Balears (Illes)&quot;             
-## [125] &quot;Balears (Illes)&quot;              &quot;Canarias&quot;                    
-## [127] &quot;Canarias&quot;                     &quot;Canarias&quot;                    
-## [129] &quot;Canarias&quot;                     &quot;Canarias&quot;                    
-## [131] &quot;Cantabria&quot;                    &quot;Cantabria&quot;                   
-## [133] &quot;Cantabria&quot;                    &quot;Cantabria&quot;                   
-## [135] &quot;Cantabria&quot;                    &quot;Castilla y León&quot;             
-## [137] &quot;Castilla y León&quot;              &quot;Castilla y León&quot;             
-## [139] &quot;Castilla y León&quot;              &quot;Castilla y León&quot;             
-## [141] &quot;Castilla-La Mancha&quot;           &quot;Castilla-La Mancha&quot;          
-## [143] &quot;Castilla-La Mancha&quot;           &quot;Castilla-La Mancha&quot;          
-## [145] &quot;Castilla-La Mancha&quot;           &quot;Cataluña&quot;                    
-## [147] &quot;Cataluña&quot;                     &quot;Cataluña&quot;                    
-## [149] &quot;Cataluña&quot;                     &quot;Cataluña&quot;                    
-## [151] &quot;Comunitat Valenciana&quot;         &quot;Comunitat Valenciana&quot;        
-## [153] &quot;Comunitat Valenciana&quot;         &quot;Comunitat Valenciana&quot;        
-## [155] &quot;Comunitat Valenciana&quot;         &quot;Extremadura&quot;                 
-## [157] &quot;Extremadura&quot;                  &quot;Extremadura&quot;                 
-## [159] &quot;Extremadura&quot;                  &quot;Extremadura&quot;                 
-## [161] &quot;Galicia&quot;                      &quot;Galicia&quot;                     
-## [163] &quot;Galicia&quot;                      &quot;Galicia&quot;                     
-## [165] &quot;Galicia&quot;                      &quot;Madrid (Comunidad de)&quot;       
-## [167] &quot;Madrid (Comunidad de)&quot;        &quot;Madrid (Comunidad de)&quot;       
-## [169] &quot;Madrid (Comunidad de)&quot;        &quot;Madrid (Comunidad de)&quot;       
-## [171] &quot;Murcia (Región de)&quot;           &quot;Murcia (Región de)&quot;          
-## [173] &quot;Murcia (Región de)&quot;           &quot;Murcia (Región de)&quot;          
-## [175] &quot;Murcia (Región de)&quot;           &quot;Navarra (Comunidad Foral de)&quot;
-## [177] &quot;Navarra (Comunidad Foral de)&quot; &quot;Navarra (Comunidad Foral de)&quot;
-## [179] &quot;Navarra (Comunidad Foral de)&quot; &quot;Navarra (Comunidad Foral de)&quot;
-## [181] &quot;País Vasco&quot;                   &quot;País Vasco&quot;                  
-## [183] &quot;País Vasco&quot;                   &quot;País Vasco&quot;                  
-## [185] &quot;País Vasco&quot;                   &quot;Rioja (La)&quot;                  
-## [187] &quot;Rioja (La)&quot;                   &quot;Rioja (La)&quot;                  
-## [189] &quot;Rioja (La)&quot;                   &quot;Rioja (La)&quot;                  
-## [191] &quot;Ceuta (Ciudad Autónoma de)&quot;   &quot;Ceuta (Ciudad Autónoma de)&quot;  
-## [193] &quot;Ceuta (Ciudad Autónoma de)&quot;   &quot;Ceuta (Ciudad Autónoma de)&quot;  
-## [195] &quot;Ceuta (Ciudad Autónoma de)&quot;   &quot;Melilla (Ciudad Autónoma de)&quot;
-## [197] &quot;Melilla (Ciudad Autónoma de)&quot; &quot;Melilla (Ciudad Autónoma de)&quot;
-## [199] &quot;Melilla (Ciudad Autónoma de)&quot; &quot;Melilla (Ciudad Autónoma de)&quot;
-## [201] NA                             NA                            
-## [203] NA                             NA                            
-## [205] NA                             &quot;Andalucía&quot;                   
-## [207] &quot;Andalucía&quot;                    &quot;Andalucía&quot;                   
-## [209] &quot;Andalucía&quot;                    &quot;Andalucía&quot;                   
-## [211] &quot;Aragón&quot;                       &quot;Aragón&quot;                      
-## [213] &quot;Aragón&quot;                       &quot;Aragón&quot;                      
-## [215] &quot;Aragón&quot;                       &quot;Asturias (Principado de)&quot;    
-## [217] &quot;Asturias (Principado de)&quot;     &quot;Asturias (Principado de)&quot;    
-## [219] &quot;Asturias (Principado de)&quot;     &quot;Asturias (Principado de)&quot;    
-## [221] &quot;Balears (Illes)&quot;              &quot;Balears (Illes)&quot;             
-## [223] &quot;Balears (Illes)&quot;              &quot;Balears (Illes)&quot;             
-## [225] &quot;Balears (Illes)&quot;              &quot;Canarias&quot;                    
-## [227] &quot;Canarias&quot;                     &quot;Canarias&quot;                    
-## [229] &quot;Canarias&quot;                     &quot;Canarias&quot;                    
-## [231] &quot;Cantabria&quot;                    &quot;Cantabria&quot;                   
-## [233] &quot;Cantabria&quot;                    &quot;Cantabria&quot;                   
-## [235] &quot;Cantabria&quot;                    &quot;Castilla y León&quot;             
-## [237] &quot;Castilla y León&quot;              &quot;Castilla y León&quot;             
-## [239] &quot;Castilla y León&quot;              &quot;Castilla y León&quot;             
-## [241] &quot;Castilla-La Mancha&quot;           &quot;Castilla-La Mancha&quot;          
-## [243] &quot;Castilla-La Mancha&quot;           &quot;Castilla-La Mancha&quot;          
-## [245] &quot;Castilla-La Mancha&quot;           &quot;Cataluña&quot;                    
-## [247] &quot;Cataluña&quot;                     &quot;Cataluña&quot;                    
-## [249] &quot;Cataluña&quot;                     &quot;Cataluña&quot;                    
-## [251] &quot;Comunitat Valenciana&quot;         &quot;Comunitat Valenciana&quot;        
-## [253] &quot;Comunitat Valenciana&quot;         &quot;Comunitat Valenciana&quot;        
-## [255] &quot;Comunitat Valenciana&quot;         &quot;Extremadura&quot;                 
-## [257] &quot;Extremadura&quot;                  &quot;Extremadura&quot;                 
-## [259] &quot;Extremadura&quot;                  &quot;Extremadura&quot;                 
-## [261] &quot;Galicia&quot;                      &quot;Galicia&quot;                     
-## [263] &quot;Galicia&quot;                      &quot;Galicia&quot;                     
-## [265] &quot;Galicia&quot;                      &quot;Madrid (Comunidad de)&quot;       
-## [267] &quot;Madrid (Comunidad de)&quot;        &quot;Madrid (Comunidad de)&quot;       
-## [269] &quot;Madrid (Comunidad de)&quot;        &quot;Madrid (Comunidad de)&quot;       
-## [271] &quot;Murcia (Región de)&quot;           &quot;Murcia (Región de)&quot;          
-## [273] &quot;Murcia (Región de)&quot;           &quot;Murcia (Región de)&quot;          
-## [275] &quot;Murcia (Región de)&quot;           &quot;Navarra (Comunidad Foral de)&quot;
-## [277] &quot;Navarra (Comunidad Foral de)&quot; &quot;Navarra (Comunidad Foral de)&quot;
-## [279] &quot;Navarra (Comunidad Foral de)&quot; &quot;Navarra (Comunidad Foral de)&quot;
-## [281] &quot;País Vasco&quot;                   &quot;País Vasco&quot;                  
-## [283] &quot;País Vasco&quot;                   &quot;País Vasco&quot;                  
-## [285] &quot;País Vasco&quot;                   &quot;Rioja (La)&quot;                  
-## [287] &quot;Rioja (La)&quot;                   &quot;Rioja (La)&quot;                  
-## [289] &quot;Rioja (La)&quot;                   &quot;Rioja (La)&quot;                  
-## [291] &quot;Ceuta (Ciudad Autónoma de)&quot;   &quot;Ceuta (Ciudad Autónoma de)&quot;  
-## [293] &quot;Ceuta (Ciudad Autónoma de)&quot;   &quot;Ceuta (Ciudad Autónoma de)&quot;  
-## [295] &quot;Ceuta (Ciudad Autónoma de)&quot;   &quot;Melilla (Ciudad Autónoma de)&quot;
-## [297] &quot;Melilla (Ciudad Autónoma de)&quot; &quot;Melilla (Ciudad Autónoma de)&quot;
-## [299] &quot;Melilla (Ciudad Autónoma de)&quot; &quot;Melilla (Ciudad Autónoma de)&quot;</code></pre>
+<pre class="r"><code>fumadores$`Comunidadesy Ciudades Autónomas`</code></pre>
+<pre><code>## Warning: Unknown or uninitialised column: `Comunidadesy Ciudades Autónomas`.</code></pre>
+<pre><code>## NULL</code></pre>
+<pre class="r"><code>library(dplyr)</code></pre>
+<pre><code>## Warning: package &#39;dplyr&#39; was built under R version 4.3.2</code></pre>
+<pre><code>## 
+## Attaching package: &#39;dplyr&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     filter, lag</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     intersect, setdiff, setequal, union</code></pre>
+<pre class="r"><code>fumadores &lt;- fumadores%&gt;%
+  mutate(
+    CCAA= case_when( ## cambiamos el nombre con un case_When
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Andalucía&quot; ~ &quot;Andalucia&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Aragón&quot; ~ &quot;Aragon&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Asturias (Principado de)&quot; ~ &quot;Asturias&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Balears (Illes)&quot; ~ &quot;Baleares&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Canarias&quot; ~ &quot;Canarias&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Cantabria&quot; ~ &quot;Cantabria&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Castilla y León&quot; ~ &quot;CyL&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Castilla - La Mancha&quot; ~ &quot;Castilla la Mancha&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Cataluña&quot; ~ &quot;Cataluña&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Comunitat Valenciana&quot; ~ &quot;C.Valencia&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Extremadura&quot; ~ &quot;Extremadura&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Galicia&quot; ~ &quot;Galicia&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Madrid (Comunidad de)&quot; ~ &quot;Madrid&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Murcia (Región de)&quot; ~ &quot;Murcia&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Navarra (Comunidad Foral de)&quot; ~ &quot;Navarra&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;País Vasco&quot; ~ &quot;País Vasco&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Rioja (La)&quot; ~ &quot;La Rioja&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Ceuta (Ciudad Autónoma de)&quot; ~ &quot;Ceuta&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Melilla (Ciudad Autónoma de)&quot; ~ &quot;Melilla&quot;,
+    )) ## y definimos que los nombres &quot;antiguos&quot;, van a tener un &quot;nuevo&quot; nombre</code></pre>
 <div id="including-plots" class="section level3">
 <h3>Including Plots</h3>
 <p>You can also embed plots, for example:</p>
