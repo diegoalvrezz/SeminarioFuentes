@@ -44,13 +44,18 @@ fumadores$`Comunidadesy Ciudades Autónomas`
 
 aire
 
+defunciones_mes
+
+arboles_superficie
+arboles_uso
+
 ```
 
 ```{r}
 library(dplyr)
 fumadores <- fumadores%>%
   mutate(
-    CCAA= case_when( ## cambiamos el nombre con un case_When
+    CCAA_fumadores= case_when( ## cambiamos el nombre con un case_When
       fumadores$`Comunidades y Ciudades Autónomas`== "Andalucía" ~ "Andalucia",
       fumadores$`Comunidades y Ciudades Autónomas`== "Aragón" ~ "Aragon",
       fumadores$`Comunidades y Ciudades Autónomas`== "Asturias (Principado de)" ~ "Asturias",
@@ -77,7 +82,7 @@ fumadores <- fumadores%>%
   
 aire<- aire%>%
   mutate(
-    CCAA=case_when(
+    CCAA_aire=case_when(
       aire$PROVINCIA=="18" ~ "Granada",
       aire$PROVINCIA=="33" ~ "Asturias",
       aire$PROVINCIA=="46" ~ "Valencia",
@@ -101,8 +106,19 @@ aire<- aire%>%
     )
   )
 
+
 ```
 ```{r}
+# Asegúrate de que la biblioteca dplyr está cargada
+library(dplyr)
+
+
+# Agrupa los datos por CCAA y calcula la media
+aire_agrupado <- aire %>%
+  group_by(CCAA_aire) %>%
+  summarise(media = mean(VALOR, na.rm = TRUE))
+
+aire_agrupado
 
 ```
 
