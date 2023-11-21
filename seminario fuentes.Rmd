@@ -37,10 +37,6 @@ arboles_extension <- read_delim("./Datos_arboles/provincia_extensionterritorio.c
 ```
 
 
-
-
-
-
 ```{r}
 library(dplyr)
 fumadores <- fumadores%>%
@@ -138,6 +134,9 @@ media_por_grupo
 
 ```
 
+```{r}
+wide_arboles_uso
+```
 
 ### Including Plots
 
