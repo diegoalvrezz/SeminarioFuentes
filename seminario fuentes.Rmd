@@ -23,12 +23,6 @@ Importamos las bases de datos
 library(readr)
 aire <- read_delim("./C6H6_BaP__2021_Irreg.csv")
 
-<<<<<<< HEAD
-fumadores<-read.delim("./Datos_fumadores/Fumadores.csv")
-
-defunciones_mes<-read.delim("./DATA/defuncion_mes.csv")
-defunciones_mes
-=======
 fumadores<-read_delim("./Datos_fumadores/Fumadores.csv", delim = ";")
 
 defunciones_mes <- read_delim("./DATA/defuncion_mes.csv", delim =";")
@@ -44,19 +38,8 @@ arboles_extension <- read_delim("./Datos_arboles/provincia_extensionterritorio.c
 
 
 
-```{r}
-fumadores
-fumadores$`Comunidadesy Ciudades Autónomas`
 
-aire
 
-defunciones_mes
-
-arboles_superficie
-arboles_uso
->>>>>>> c6e3e09c342b7bb306708f239e930992ebc59afc
-
-```
 
 ```{r}
 library(dplyr)
