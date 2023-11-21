@@ -135,7 +135,8 @@ media_por_grupo
 ```
 
 ```{r}
-wide_arboles_uso
+arboles_uso %>%
+  pivot_longer(data =., names_to = )
 ```
 
 ### Including Plots
