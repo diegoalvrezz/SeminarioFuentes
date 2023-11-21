@@ -11,7 +11,7 @@
 
 <meta name="author" content="Pablo, Diego y Dario" />
 
-<meta name="date" content="2023-11-06" />
+<meta name="date" content="2023-11-17" />
 
 <title>seminario fuentes</title>
 
@@ -352,7 +352,7 @@ display: none;
 
 <h1 class="title toc-ignore">seminario fuentes</h1>
 <h4 class="author">Pablo, Diego y Dario</h4>
-<h4 class="date">2023-11-06</h4>
+<h4 class="date">2023-11-17</h4>
 
 </div>
 
@@ -375,312 +375,303 @@ chunk like this:</p>
 ##  3rd Qu.:19.0   3rd Qu.: 56.00  
 ##  Max.   :25.0   Max.   :120.00</code></pre>
 <p>Importamos las bases de datos</p>
-<pre class="r"><code>library(readr)
-aire &lt;- read.delim(&quot;./C6H6_BaP__2021_Irreg.csv&quot;)
+<pre class="r"><code>library(readr)</code></pre>
+<pre><code>## Warning: package &#39;readr&#39; was built under R version 4.3.2</code></pre>
+<pre class="r"><code>aire &lt;- read_delim(&quot;./C6H6_BaP__2021_Irreg.csv&quot;)</code></pre>
+<pre><code>## Rows: 402 Columns: 8
+## ── Column specification ────────────────────────────────────────────────────────
+## Delimiter: &quot;;&quot;
+## chr  (1): PUNTO_MUESTREO
+## dbl  (5): PROVINCIA, MUNICIPIO, ESTACION, MAGNITUD, VALOR
+## dttm (2): FECHA_INICIAL, FECHA_FINAL
+## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<pre class="r"><code>fumadores&lt;-read_delim(&quot;./Datos_fumadores/Fumadores.csv&quot;, delim = &quot;;&quot;)</code></pre>
+<pre><code>## Rows: 300 Columns: 5
+## ── Column specification ────────────────────────────────────────────────────────
+## Delimiter: &quot;;&quot;
+## chr (5): Sexo, Total Nacional, Comunidades y Ciudades Autónomas, Consumo de ...
+## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<pre class="r"><code>defunciones_mes &lt;- read_delim(&quot;./DATA/defuncion_mes.csv&quot;, delim =&quot;;&quot;)</code></pre>
+<pre><code>## New names:
+## Rows: 488 Columns: 7
+## ── Column specification
+## ──────────────────────────────────────────────────────── Delimiter: &quot;;&quot; chr
+## (7): Defunciones según causa de muerte. Avance enero-mayo 2020, ...2, .....
+## ℹ Use `spec()` to retrieve the full column specification for this data. ℹ
+## Specify the column types or set `show_col_types = FALSE` to quiet this message.
+## • `` -&gt; `...2`
+## • `` -&gt; `...3`
+## • `` -&gt; `...4`
+## • `` -&gt; `...5`
+## • `` -&gt; `...6`
+## • `` -&gt; `...7`</code></pre>
+<pre class="r"><code>defuncion_poblacion &lt;- read_delim(&quot;./DATA/defuncion_poblacion.csv&quot;, delim =&quot;;&quot;)</code></pre>
+<pre><code>## New names:
+## Rows: 488 Columns: 11
+## ── Column specification
+## ──────────────────────────────────────────────────────── Delimiter: &quot;;&quot; chr
+## (8): Defunciones según causa de muerte. Avance enero-mayo 2020, ...2, ..... lgl
+## (3): ...9, ...10, ...11
+## ℹ Use `spec()` to retrieve the full column specification for this data. ℹ
+## Specify the column types or set `show_col_types = FALSE` to quiet this message.
+## • `` -&gt; `...2`
+## • `` -&gt; `...3`
+## • `` -&gt; `...4`
+## • `` -&gt; `...5`
+## • `` -&gt; `...6`
+## • `` -&gt; `...7`
+## • `` -&gt; `...8`
+## • `` -&gt; `...9`
+## • `` -&gt; `...10`
+## • `` -&gt; `...11`</code></pre>
+<pre class="r"><code>arboles_superficie &lt;- read_delim(&quot;./Datos_arboles/provincia_superficie_altura.csv&quot;, delim = &quot;;&quot;)</code></pre>
+<pre><code>## New names:
+## Rows: 92 Columns: 7
+## ── Column specification
+## ──────────────────────────────────────────────────────── Delimiter: &quot;;&quot; chr
+## (7): ...1, ANUARIO DE ESTADÍSTICA FORESTAL 2005, ...3, ...4, ...5, ...6,...
+## ℹ Use `spec()` to retrieve the full column specification for this data. ℹ
+## Specify the column types or set `show_col_types = FALSE` to quiet this message.
+## • `` -&gt; `...1`
+## • `` -&gt; `...3`
+## • `` -&gt; `...4`
+## • `` -&gt; `...5`
+## • `` -&gt; `...6`
+## • `` -&gt; `...7`</code></pre>
+<pre class="r"><code>arboles_uso &lt;- read_delim(&quot;./Datos_arboles/provincia_superficie_uso.csv&quot;, delim = &quot;;&quot;)</code></pre>
+<pre><code>## New names:
+## Rows: 140 Columns: 13
+## ── Column specification
+## ──────────────────────────────────────────────────────── Delimiter: &quot;;&quot; chr
+## (13): ...1, ANUARIO DE ESTADÍSTICA FORESTAL 2005, ...3, ...4, ...5, ...6...
+## ℹ Use `spec()` to retrieve the full column specification for this data. ℹ
+## Specify the column types or set `show_col_types = FALSE` to quiet this message.
+## • `` -&gt; `...1`
+## • `` -&gt; `...3`
+## • `` -&gt; `...4`
+## • `` -&gt; `...5`
+## • `` -&gt; `...6`
+## • `` -&gt; `...7`
+## • `` -&gt; `...8`
+## • `` -&gt; `...9`
+## • `` -&gt; `...10`
+## • `` -&gt; `...11`
+## • `` -&gt; `...12`
+## • `` -&gt; `...13`</code></pre>
+<pre class="r"><code>arboles_extension &lt;- read_delim(&quot;./Datos_arboles/provincia_extensionterritorio.csv&quot;, delim = &quot;;&quot;)</code></pre>
+<pre><code>## New names:
+## Rows: 94 Columns: 15
+## ── Column specification
+## ──────────────────────────────────────────────────────── Delimiter: &quot;;&quot; chr
+## (15): ...1, ANUARIO DE ESTADÍSTICA FORESTAL 2005, ...3, ...4, ...5, ...6...
+## ℹ Use `spec()` to retrieve the full column specification for this data. ℹ
+## Specify the column types or set `show_col_types = FALSE` to quiet this message.
+## • `` -&gt; `...1`
+## • `` -&gt; `...3`
+## • `` -&gt; `...4`
+## • `` -&gt; `...5`
+## • `` -&gt; `...6`
+## • `` -&gt; `...7`
+## • `` -&gt; `...8`
+## • `` -&gt; `...9`
+## • `` -&gt; `...10`
+## • `` -&gt; `...11`
+## • `` -&gt; `...12`
+## • `` -&gt; `...13`
+## • `` -&gt; `...14`
+## • `` -&gt; `...15`</code></pre>
+<pre class="r"><code>fumadores</code></pre>
+<pre><code>## # A tibble: 300 × 5
+##    Sexo        `Total Nacional` Comunidades y Ciudad…¹ `Consumo de tabaco` Total
+##    &lt;chr&gt;       &lt;chr&gt;            &lt;chr&gt;                  &lt;chr&gt;               &lt;chr&gt;
+##  1 Ambos sexos Total            &lt;NA&gt;                   TOTAL               100,…
+##  2 Ambos sexos Total            &lt;NA&gt;                   Fumador diario      19,78
+##  3 Ambos sexos Total            &lt;NA&gt;                   Fumador ocasional   2,33 
+##  4 Ambos sexos Total            &lt;NA&gt;                   Ex fumador          22,01
+##  5 Ambos sexos Total            &lt;NA&gt;                   Nunca ha fumado     55,88
+##  6 Ambos sexos Total            Andalucía              TOTAL               100,…
+##  7 Ambos sexos Total            Andalucía              Fumador diario      20,93
+##  8 Ambos sexos Total            Andalucía              Fumador ocasional   2,81 
+##  9 Ambos sexos Total            Andalucía              Ex fumador          16,87
+## 10 Ambos sexos Total            Andalucía              Nunca ha fumado     59,39
+## # ℹ 290 more rows
+## # ℹ abbreviated name: ¹​`Comunidades y Ciudades Autónomas`</code></pre>
+<pre class="r"><code>fumadores$`Comunidadesy Ciudades Autónomas`</code></pre>
+<pre><code>## Warning: Unknown or uninitialised column: `Comunidadesy Ciudades Autónomas`.</code></pre>
+<pre><code>## NULL</code></pre>
+<pre class="r"><code>aire</code></pre>
+<pre><code>## # A tibble: 402 × 8
+##    PROVINCIA MUNICIPIO ESTACION MAGNITUD PUNTO_MUESTREO FECHA_INICIAL      
+##        &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt; &lt;chr&gt;          &lt;dttm&gt;             
+##  1        18       189      999       27 18189999_27_M  2021-05-01 00:00:00
+##  2        18       189      999       27 18189999_27_M  2021-06-01 00:00:00
+##  3        18       189      999       27 18189999_27_M  2021-07-01 00:00:00
+##  4        18       189      999       27 18189999_27_M  2021-08-01 00:00:00
+##  5        18       189      999       27 18189999_27_M  2021-09-01 00:00:00
+##  6        18       189      999       27 18189999_27_M  2021-10-01 00:00:00
+##  7        18       189      999       27 18189999_27_M  2021-11-01 00:00:00
+##  8        18       189      999       27 18189999_27_M  2021-04-01 00:00:00
+##  9        18       189      999       27 18189999_27_M  2021-12-01 00:00:00
+## 10        33        36      999       27 33036999_27_M  2021-01-01 00:00:00
+## # ℹ 392 more rows
+## # ℹ 2 more variables: FECHA_FINAL &lt;dttm&gt;, VALOR &lt;dbl&gt;</code></pre>
+<pre class="r"><code>defunciones_mes</code></pre>
+<pre><code>## # A tibble: 488 × 7
+##    Defunciones según causa de muerte. Avan…¹ ...2  ...3  ...4  ...5  ...6  ...7 
+##    &lt;chr&gt;                                     &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;
+##  1 &quot;Resultados detallados. Enero 2020-Mayo … &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt; 
+##  2  &lt;NA&gt;                                     &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt; 
+##  3 &quot;Defunciones por causas (lista reducida)… &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt; 
+##  4 &quot;Units: Número de defunciones&quot;            &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt; 
+##  5  &lt;NA&gt;                                     &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt; 
+##  6 &quot; &quot;                                       Total Enero Febr… Marzo Abril Mayo 
+##  7 &quot;001-102 I-XXII.Todas las causas&quot;         &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt; 
+##  8 &quot;    Total&quot;                               231.… 42.6… 36.1… 57.5… 60.3… 34.3…
+##  9 &quot;    Hombres&quot;                             115.… 21.3… 18.1… 30.2… 28.8… 17.0…
+## 10 &quot;    Mujeres&quot;                             115.… 21.3… 18.0… 27.3… 31.4… 17.3…
+## # ℹ 478 more rows
+## # ℹ abbreviated name:
+## #   ¹​`Defunciones según causa de muerte. Avance enero-mayo 2020`</code></pre>
+<pre class="r"><code>arboles_superficie</code></pre>
+<pre><code>## # A tibble: 92 × 7
+##    ...1                     ANUARIO DE ESTADÍSTI…¹ ...3  ...4  ...5  ...6  ...7 
+##    &lt;chr&gt;                    &lt;chr&gt;                  &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;
+##  1  &lt;NA&gt;                     &lt;NA&gt;                  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt; 
+##  2 &quot;1. TERRITORIO&quot;           &lt;NA&gt;                  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt; 
+##  3  &lt;NA&gt;                     &lt;NA&gt;                  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt; 
+##  4 &quot;Distribución por Provi…  &lt;NA&gt;                  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt; 
+##  5  &lt;NA&gt;                     &lt;NA&gt;                  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt; 
+##  6 &quot;Provincias y&quot;           &quot;Extensión&quot;            Alti… &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt; 
+##  7 &quot;Comunidades Autónomas&quot;  &quot; superficial total&quot;   Hast… De 2… De 6… De 1… Más …
+##  8  &lt;NA&gt;                    &quot;(km2)&quot;                &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt; 
+##  9 &quot;  Coruña (A)&quot;           &quot;7.950&quot;                2.758 5.029 163   –     –    
+## 10 &quot;  Lugo&quot;                 &quot;9.856&quot;                572   5.991 2.807 486   –    
+## # ℹ 82 more rows
+## # ℹ abbreviated name: ¹​`ANUARIO DE ESTADÍSTICA FORESTAL 2005`</code></pre>
+<pre class="r"><code>arboles_uso</code></pre>
+<pre><code>## # A tibble: 140 × 13
+##    ...1   ANUARIO DE ESTADÍSTI…¹ ...3  ...4  ...5  ...6  ...7  ...8  ...9  ...10
+##    &lt;chr&gt;  &lt;chr&gt;                  &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;
+##  1 Super… &lt;NA&gt;                   &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt; 
+##  2 &lt;NA&gt;   &lt;NA&gt;                   &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt; 
+##  3 ANDAL… &lt;NA&gt;                   &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt; 
+##  4 Usos   0 - 199                200 … 400 … 600 … 800 … 1.00… 1.20… 1.40… 1.60…
+##  5 Fores… 287.898,60             333.… 315.… 220.… 94.5… 99.3… 78.2… 56.7… 39.7…
+##  6 Fores… 84.347,91              111.… 133.… 112.… 38.1… 35.4… 22.3… 12.6… 6.23…
+##  7 Fores… 526.444,29             347.… 409.… 274.… 219.… 156.… 94.8… 65.0… 55.2…
+##  8 No fo… 1.526.809,76           783.… 830.… 514.… 400.… 316.… 43.3… 11.0… 4.29…
+##  9 TOTAL  2.425.500,56           1.57… 1.68… 1.12… 752.… 607.… 238.… 145.… 105.…
+## 10 &lt;NA&gt;   &lt;NA&gt;                   &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt; 
+## # ℹ 130 more rows
+## # ℹ abbreviated name: ¹​`ANUARIO DE ESTADÍSTICA FORESTAL 2005`
+## # ℹ 3 more variables: ...11 &lt;chr&gt;, ...12 &lt;chr&gt;, ...13 &lt;chr&gt;</code></pre>
+<pre class="r"><code>library(dplyr)</code></pre>
+<pre><code>## Warning: package &#39;dplyr&#39; was built under R version 4.3.2</code></pre>
+<pre><code>## 
+## Attaching package: &#39;dplyr&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     filter, lag</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     intersect, setdiff, setequal, union</code></pre>
+<pre class="r"><code>fumadores &lt;- fumadores%&gt;%
+  mutate(
+    CCAA_fumadores= case_when( ## cambiamos el nombre con un case_When
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Andalucía&quot; ~ &quot;Andalucia&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Aragón&quot; ~ &quot;Aragon&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Asturias (Principado de)&quot; ~ &quot;Asturias&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Balears (Illes)&quot; ~ &quot;Baleares&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Canarias&quot; ~ &quot;Canarias&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Cantabria&quot; ~ &quot;Cantabria&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Castilla y León&quot; ~ &quot;CyL&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Castilla - La Mancha&quot; ~ &quot;Castilla la Mancha&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Cataluña&quot; ~ &quot;Cataluña&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Comunitat Valenciana&quot; ~ &quot;C.Valencia&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Extremadura&quot; ~ &quot;Extremadura&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Galicia&quot; ~ &quot;Galicia&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Madrid (Comunidad de)&quot; ~ &quot;Madrid&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Murcia (Región de)&quot; ~ &quot;Murcia&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Navarra (Comunidad Foral de)&quot; ~ &quot;Navarra&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;País Vasco&quot; ~ &quot;País Vasco&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Rioja (La)&quot; ~ &quot;La Rioja&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Ceuta (Ciudad Autónoma de)&quot; ~ &quot;Ceuta&quot;,
+      fumadores$`Comunidades y Ciudades Autónomas`== &quot;Melilla (Ciudad Autónoma de)&quot; ~ &quot;Melilla&quot;,
+    )) ## y definimos que los nombres &quot;antiguos&quot;, van a tener un &quot;nuevo&quot; nombre
+      
+    
+  
+  
+aire&lt;- aire%&gt;%
+  mutate(
+    CCAA_aire=case_when(
+      aire$PROVINCIA==&quot;18&quot; ~ &quot;Granada&quot;,
+      aire$PROVINCIA==&quot;33&quot; ~ &quot;Asturias&quot;,
+      aire$PROVINCIA==&quot;46&quot; ~ &quot;Valencia&quot;,
+      aire$PROVINCIA==&quot;25&quot; ~ &quot;Cataluña&quot;,
+      aire$PROVINCIA==&quot;45&quot; ~ &quot;Toledo&quot;,
+      aire$PROVINCIA==&quot;50&quot; ~ &quot;Zaragoza&quot;,
+      aire$PROVINCIA==&quot;41&quot; ~ &quot;Sevilla&quot;,
+      aire$PROVINCIA==&quot;23&quot; ~ &quot;Jaén&quot;,
+      aire$PROVINCIA==&quot;13&quot; ~ &quot;Ciudad Real&quot;,
+      aire$PROVINCIA==&quot;16&quot; ~ &quot;Cuenca&quot;,
+      aire$PROVINCIA==&quot;4&quot; ~ &quot;Almería&quot;,
+      aire$PROVINCIA==&quot;14&quot; ~ &quot;Córdoba&quot;,
+      aire$PROVINCIA==&quot;29&quot; ~ &quot;Málaga&quot;,
+      aire$PROVINCIA==&quot;19&quot;~ &quot;Guadalajara&quot;,
+      aire$PROVINCIA==&quot;2&quot; ~ &quot;Albacete&quot;,
+      aire$PROVINCIA==&quot;47&quot; ~ &quot;Valladolid&quot;,
+      aire$PROVINCIA==&quot;24&quot; ~ &quot;León&quot;,
+      aire$PROVINCIA==&quot;9&quot; ~ &quot;Burgos&quot;,
+      aire$PROVINCIA==&quot;22&quot; ~ &quot;Huesca&quot;,
+      aire$PROVINCIA==&quot;12&quot; ~ &quot;Castellón&quot;,
+    )
+  )</code></pre>
+<pre class="r"><code># Asegúrate de que la biblioteca dplyr está cargada
+library(dplyr)
 
-fumadores&lt;-read.delim(&quot;./Datos_fumadores/Fumadores.csv&quot;)
-fumadores</code></pre>
-<pre><code>##     Sexo.Total.Nacional.Comunidades.y.Ciudades.Autónomas.Consumo.de.tabaco.Total
-## 1                                                Ambos sexos;Total;;TOTAL;100,00
-## 2                                        Ambos sexos;Total;;Fumador diario;19,78
-## 3                                      Ambos sexos;Total;;Fumador ocasional;2,33
-## 4                                            Ambos sexos;Total;;Ex fumador;22,01
-## 5                                       Ambos sexos;Total;;Nunca ha fumado;55,88
-## 6                                       Ambos sexos;Total;Andalucía;TOTAL;100,00
-## 7                               Ambos sexos;Total;Andalucía;Fumador diario;20,93
-## 8                             Ambos sexos;Total;Andalucía;Fumador ocasional;2,81
-## 9                                   Ambos sexos;Total;Andalucía;Ex fumador;16,87
-## 10                             Ambos sexos;Total;Andalucía;Nunca ha fumado;59,39
-## 11                                         Ambos sexos;Total;Aragón;TOTAL;100,00
-## 12                                 Ambos sexos;Total;Aragón;Fumador diario;17,76
-## 13                               Ambos sexos;Total;Aragón;Fumador ocasional;3,14
-## 14                                     Ambos sexos;Total;Aragón;Ex fumador;18,48
-## 15                                Ambos sexos;Total;Aragón;Nunca ha fumado;60,62
-## 16                       Ambos sexos;Total;Asturias (Principado de);TOTAL;100,00
-## 17               Ambos sexos;Total;Asturias (Principado de);Fumador diario;19,24
-## 18             Ambos sexos;Total;Asturias (Principado de);Fumador ocasional;1,93
-## 19                   Ambos sexos;Total;Asturias (Principado de);Ex fumador;31,30
-## 20              Ambos sexos;Total;Asturias (Principado de);Nunca ha fumado;47,54
-## 21                                Ambos sexos;Total;Balears (Illes);TOTAL;100,00
-## 22                        Ambos sexos;Total;Balears (Illes);Fumador diario;20,54
-## 23                      Ambos sexos;Total;Balears (Illes);Fumador ocasional;3,11
-## 24                            Ambos sexos;Total;Balears (Illes);Ex fumador;23,89
-## 25                       Ambos sexos;Total;Balears (Illes);Nunca ha fumado;52,45
-## 26                                       Ambos sexos;Total;Canarias;TOTAL;100,00
-## 27                               Ambos sexos;Total;Canarias;Fumador diario;20,69
-## 28                             Ambos sexos;Total;Canarias;Fumador ocasional;1,27
-## 29                                   Ambos sexos;Total;Canarias;Ex fumador;18,29
-## 30                              Ambos sexos;Total;Canarias;Nunca ha fumado;59,76
-## 31                                      Ambos sexos;Total;Cantabria;TOTAL;100,00
-## 32                              Ambos sexos;Total;Cantabria;Fumador diario;18,88
-## 33                            Ambos sexos;Total;Cantabria;Fumador ocasional;0,87
-## 34                                  Ambos sexos;Total;Cantabria;Ex fumador;22,68
-## 35                             Ambos sexos;Total;Cantabria;Nunca ha fumado;57,56
-## 36                                Ambos sexos;Total;Castilla y León;TOTAL;100,00
-## 37                        Ambos sexos;Total;Castilla y León;Fumador diario;18,98
-## 38                      Ambos sexos;Total;Castilla y León;Fumador ocasional;2,08
-## 39                            Ambos sexos;Total;Castilla y León;Ex fumador;23,01
-## 40                       Ambos sexos;Total;Castilla y León;Nunca ha fumado;55,94
-## 41                             Ambos sexos;Total;Castilla-La Mancha;TOTAL;100,00
-## 42                     Ambos sexos;Total;Castilla-La Mancha;Fumador diario;20,60
-## 43                   Ambos sexos;Total;Castilla-La Mancha;Fumador ocasional;1,86
-## 44                         Ambos sexos;Total;Castilla-La Mancha;Ex fumador;19,94
-## 45                    Ambos sexos;Total;Castilla-La Mancha;Nunca ha fumado;57,60
-## 46                                       Ambos sexos;Total;Cataluña;TOTAL;100,00
-## 47                               Ambos sexos;Total;Cataluña;Fumador diario;20,91
-## 48                             Ambos sexos;Total;Cataluña;Fumador ocasional;2,80
-## 49                                   Ambos sexos;Total;Cataluña;Ex fumador;22,35
-## 50                              Ambos sexos;Total;Cataluña;Nunca ha fumado;53,94
-## 51                           Ambos sexos;Total;Comunitat Valenciana;TOTAL;100,00
-## 52                   Ambos sexos;Total;Comunitat Valenciana;Fumador diario;19,88
-## 53                 Ambos sexos;Total;Comunitat Valenciana;Fumador ocasional;2,14
-## 54                       Ambos sexos;Total;Comunitat Valenciana;Ex fumador;26,03
-## 55                  Ambos sexos;Total;Comunitat Valenciana;Nunca ha fumado;51,96
-## 56                                    Ambos sexos;Total;Extremadura;TOTAL;100,00
-## 57                            Ambos sexos;Total;Extremadura;Fumador diario;25,32
-## 58                          Ambos sexos;Total;Extremadura;Fumador ocasional;2,05
-## 59                                Ambos sexos;Total;Extremadura;Ex fumador;24,18
-## 60                           Ambos sexos;Total;Extremadura;Nunca ha fumado;48,45
-## 61                                        Ambos sexos;Total;Galicia;TOTAL;100,00
-## 62                                Ambos sexos;Total;Galicia;Fumador diario;17,71
-## 63                              Ambos sexos;Total;Galicia;Fumador ocasional;2,34
-## 64                                    Ambos sexos;Total;Galicia;Ex fumador;16,71
-## 65                               Ambos sexos;Total;Galicia;Nunca ha fumado;63,25
-## 66                          Ambos sexos;Total;Madrid (Comunidad de);TOTAL;100,00
-## 67                  Ambos sexos;Total;Madrid (Comunidad de);Fumador diario;17,74
-## 68                Ambos sexos;Total;Madrid (Comunidad de);Fumador ocasional;1,75
-## 69                      Ambos sexos;Total;Madrid (Comunidad de);Ex fumador;24,76
-## 70                 Ambos sexos;Total;Madrid (Comunidad de);Nunca ha fumado;55,75
-## 71                             Ambos sexos;Total;Murcia (Región de);TOTAL;100,00
-## 72                     Ambos sexos;Total;Murcia (Región de);Fumador diario;23,65
-## 73                   Ambos sexos;Total;Murcia (Región de);Fumador ocasional;2,98
-## 74                         Ambos sexos;Total;Murcia (Región de);Ex fumador;23,18
-## 75                    Ambos sexos;Total;Murcia (Región de);Nunca ha fumado;50,19
-## 76                   Ambos sexos;Total;Navarra (Comunidad Foral de);TOTAL;100,00
-## 77           Ambos sexos;Total;Navarra (Comunidad Foral de);Fumador diario;18,17
-## 78         Ambos sexos;Total;Navarra (Comunidad Foral de);Fumador ocasional;3,94
-## 79               Ambos sexos;Total;Navarra (Comunidad Foral de);Ex fumador;26,67
-## 80          Ambos sexos;Total;Navarra (Comunidad Foral de);Nunca ha fumado;51,22
-## 81                                     Ambos sexos;Total;País Vasco;TOTAL;100,00
-## 82                             Ambos sexos;Total;País Vasco;Fumador diario;16,09
-## 83                           Ambos sexos;Total;País Vasco;Fumador ocasional;1,66
-## 84                                 Ambos sexos;Total;País Vasco;Ex fumador;27,51
-## 85                            Ambos sexos;Total;País Vasco;Nunca ha fumado;54,74
-## 86                                     Ambos sexos;Total;Rioja (La);TOTAL;100,00
-## 87                             Ambos sexos;Total;Rioja (La);Fumador diario;18,74
-## 88                           Ambos sexos;Total;Rioja (La);Fumador ocasional;3,92
-## 89                                 Ambos sexos;Total;Rioja (La);Ex fumador;28,37
-## 90                            Ambos sexos;Total;Rioja (La);Nunca ha fumado;48,97
-## 91                     Ambos sexos;Total;Ceuta (Ciudad Autónoma de);TOTAL;100,00
-## 92             Ambos sexos;Total;Ceuta (Ciudad Autónoma de);Fumador diario;20,09
-## 93           Ambos sexos;Total;Ceuta (Ciudad Autónoma de);Fumador ocasional;0,84
-## 94                 Ambos sexos;Total;Ceuta (Ciudad Autónoma de);Ex fumador;12,51
-## 95            Ambos sexos;Total;Ceuta (Ciudad Autónoma de);Nunca ha fumado;66,56
-## 96                   Ambos sexos;Total;Melilla (Ciudad Autónoma de);TOTAL;100,00
-## 97           Ambos sexos;Total;Melilla (Ciudad Autónoma de);Fumador diario;15,18
-## 98         Ambos sexos;Total;Melilla (Ciudad Autónoma de);Fumador ocasional;1,11
-## 99                Ambos sexos;Total;Melilla (Ciudad Autónoma de);Ex fumador;6,67
-## 100         Ambos sexos;Total;Melilla (Ciudad Autónoma de);Nunca ha fumado;77,04
-## 101                                                  Hombres;Total;;TOTAL;100,00
-## 102                                          Hombres;Total;;Fumador diario;23,31
-## 103                                        Hombres;Total;;Fumador ocasional;2,62
-## 104                                              Hombres;Total;;Ex fumador;27,63
-## 105                                         Hombres;Total;;Nunca ha fumado;46,44
-## 106                                         Hombres;Total;Andalucía;TOTAL;100,00
-## 107                                 Hombres;Total;Andalucía;Fumador diario;23,89
-## 108                               Hombres;Total;Andalucía;Fumador ocasional;2,71
-## 109                                     Hombres;Total;Andalucía;Ex fumador;22,40
-## 110                                Hombres;Total;Andalucía;Nunca ha fumado;51,01
-## 111                                            Hombres;Total;Aragón;TOTAL;100,00
-## 112                                    Hombres;Total;Aragón;Fumador diario;24,48
-## 113                                  Hombres;Total;Aragón;Fumador ocasional;2,48
-## 114                                        Hombres;Total;Aragón;Ex fumador;24,34
-## 115                                   Hombres;Total;Aragón;Nunca ha fumado;48,70
-## 116                          Hombres;Total;Asturias (Principado de);TOTAL;100,00
-## 117                  Hombres;Total;Asturias (Principado de);Fumador diario;22,35
-## 118                Hombres;Total;Asturias (Principado de);Fumador ocasional;2,39
-## 119                      Hombres;Total;Asturias (Principado de);Ex fumador;39,14
-## 120                 Hombres;Total;Asturias (Principado de);Nunca ha fumado;36,12
-## 121                                   Hombres;Total;Balears (Illes);TOTAL;100,00
-## 122                           Hombres;Total;Balears (Illes);Fumador diario;24,55
-## 123                         Hombres;Total;Balears (Illes);Fumador ocasional;3,57
-## 124                               Hombres;Total;Balears (Illes);Ex fumador;29,76
-## 125                          Hombres;Total;Balears (Illes);Nunca ha fumado;42,13
-## 126                                          Hombres;Total;Canarias;TOTAL;100,00
-## 127                                  Hombres;Total;Canarias;Fumador diario;24,46
-## 128                                Hombres;Total;Canarias;Fumador ocasional;1,33
-## 129                                      Hombres;Total;Canarias;Ex fumador;21,93
-## 130                                 Hombres;Total;Canarias;Nunca ha fumado;52,28
-## 131                                         Hombres;Total;Cantabria;TOTAL;100,00
-## 132                                 Hombres;Total;Cantabria;Fumador diario;20,21
-## 133                               Hombres;Total;Cantabria;Fumador ocasional;1,56
-## 134                                     Hombres;Total;Cantabria;Ex fumador;28,11
-## 135                                Hombres;Total;Cantabria;Nunca ha fumado;50,12
-## 136                                   Hombres;Total;Castilla y León;TOTAL;100,00
-## 137                           Hombres;Total;Castilla y León;Fumador diario;22,92
-## 138                         Hombres;Total;Castilla y León;Fumador ocasional;2,28
-## 139                               Hombres;Total;Castilla y León;Ex fumador;26,75
-## 140                          Hombres;Total;Castilla y León;Nunca ha fumado;48,05
-## 141                                Hombres;Total;Castilla-La Mancha;TOTAL;100,00
-## 142                        Hombres;Total;Castilla-La Mancha;Fumador diario;24,20
-## 143                      Hombres;Total;Castilla-La Mancha;Fumador ocasional;2,63
-## 144                            Hombres;Total;Castilla-La Mancha;Ex fumador;26,08
-## 145                       Hombres;Total;Castilla-La Mancha;Nunca ha fumado;47,10
-## 146                                          Hombres;Total;Cataluña;TOTAL;100,00
-## 147                                  Hombres;Total;Cataluña;Fumador diario;23,96
-## 148                                Hombres;Total;Cataluña;Fumador ocasional;3,03
-## 149                                      Hombres;Total;Cataluña;Ex fumador;27,52
-## 150                                 Hombres;Total;Cataluña;Nunca ha fumado;45,49
-## 151                              Hombres;Total;Comunitat Valenciana;TOTAL;100,00
-## 152                      Hombres;Total;Comunitat Valenciana;Fumador diario;23,64
-## 153                    Hombres;Total;Comunitat Valenciana;Fumador ocasional;2,46
-## 154                          Hombres;Total;Comunitat Valenciana;Ex fumador;33,77
-## 155                     Hombres;Total;Comunitat Valenciana;Nunca ha fumado;40,13
-## 156                                       Hombres;Total;Extremadura;TOTAL;100,00
-## 157                               Hombres;Total;Extremadura;Fumador diario;32,21
-## 158                             Hombres;Total;Extremadura;Fumador ocasional;2,77
-## 159                                   Hombres;Total;Extremadura;Ex fumador;29,72
-## 160                              Hombres;Total;Extremadura;Nunca ha fumado;35,30
-## 161                                           Hombres;Total;Galicia;TOTAL;100,00
-## 162                                   Hombres;Total;Galicia;Fumador diario;20,93
-## 163                                 Hombres;Total;Galicia;Fumador ocasional;2,80
-## 164                                       Hombres;Total;Galicia;Ex fumador;23,37
-## 165                                  Hombres;Total;Galicia;Nunca ha fumado;52,90
-## 166                             Hombres;Total;Madrid (Comunidad de);TOTAL;100,00
-## 167                     Hombres;Total;Madrid (Comunidad de);Fumador diario;21,02
-## 168                   Hombres;Total;Madrid (Comunidad de);Fumador ocasional;2,37
-## 169                         Hombres;Total;Madrid (Comunidad de);Ex fumador;30,45
-## 170                    Hombres;Total;Madrid (Comunidad de);Nunca ha fumado;46,16
-## 171                                Hombres;Total;Murcia (Región de);TOTAL;100,00
-## 172                        Hombres;Total;Murcia (Región de);Fumador diario;28,92
-## 173                      Hombres;Total;Murcia (Región de);Fumador ocasional;3,62
-## 174                            Hombres;Total;Murcia (Región de);Ex fumador;27,93
-## 175                       Hombres;Total;Murcia (Región de);Nunca ha fumado;39,53
-## 176                      Hombres;Total;Navarra (Comunidad Foral de);TOTAL;100,00
-## 177              Hombres;Total;Navarra (Comunidad Foral de);Fumador diario;19,62
-## 178            Hombres;Total;Navarra (Comunidad Foral de);Fumador ocasional;5,40
-## 179                  Hombres;Total;Navarra (Comunidad Foral de);Ex fumador;31,64
-## 180             Hombres;Total;Navarra (Comunidad Foral de);Nunca ha fumado;43,34
-## 181                                        Hombres;Total;País Vasco;TOTAL;100,00
-## 182                                Hombres;Total;País Vasco;Fumador diario;19,45
-## 183                              Hombres;Total;País Vasco;Fumador ocasional;1,74
-## 184                                    Hombres;Total;País Vasco;Ex fumador;32,35
-## 185                               Hombres;Total;País Vasco;Nunca ha fumado;46,46
-## 186                                        Hombres;Total;Rioja (La);TOTAL;100,00
-## 187                                Hombres;Total;Rioja (La);Fumador diario;20,68
-## 188                              Hombres;Total;Rioja (La);Fumador ocasional;4,30
-## 189                                    Hombres;Total;Rioja (La);Ex fumador;33,68
-## 190                               Hombres;Total;Rioja (La);Nunca ha fumado;41,35
-## 191                        Hombres;Total;Ceuta (Ciudad Autónoma de);TOTAL;100,00
-## 192                Hombres;Total;Ceuta (Ciudad Autónoma de);Fumador diario;20,19
-## 193              Hombres;Total;Ceuta (Ciudad Autónoma de);Fumador ocasional;1,46
-## 194                    Hombres;Total;Ceuta (Ciudad Autónoma de);Ex fumador;18,78
-## 195               Hombres;Total;Ceuta (Ciudad Autónoma de);Nunca ha fumado;59,56
-## 196                      Hombres;Total;Melilla (Ciudad Autónoma de);TOTAL;100,00
-## 197              Hombres;Total;Melilla (Ciudad Autónoma de);Fumador diario;21,35
-## 198            Hombres;Total;Melilla (Ciudad Autónoma de);Fumador ocasional;2,07
-## 199                   Hombres;Total;Melilla (Ciudad Autónoma de);Ex fumador;8,53
-## 200             Hombres;Total;Melilla (Ciudad Autónoma de);Nunca ha fumado;68,05
-## 201                                                  Mujeres;Total;;TOTAL;100,00
-## 202                                          Mujeres;Total;;Fumador diario;16,44
-## 203                                        Mujeres;Total;;Fumador ocasional;2,05
-## 204                                              Mujeres;Total;;Ex fumador;16,70
-## 205                                         Mujeres;Total;;Nunca ha fumado;64,81
-## 206                                         Mujeres;Total;Andalucía;TOTAL;100,00
-## 207                                 Mujeres;Total;Andalucía;Fumador diario;18,10
-## 208                               Mujeres;Total;Andalucía;Fumador ocasional;2,91
-## 209                                     Mujeres;Total;Andalucía;Ex fumador;11,58
-## 210                                Mujeres;Total;Andalucía;Nunca ha fumado;67,40
-## 211                                            Mujeres;Total;Aragón;TOTAL;100,00
-## 212                                    Mujeres;Total;Aragón;Fumador diario;11,25
-## 213                                  Mujeres;Total;Aragón;Fumador ocasional;3,78
-## 214                                        Mujeres;Total;Aragón;Ex fumador;12,82
-## 215                                   Mujeres;Total;Aragón;Nunca ha fumado;72,16
-## 216                          Mujeres;Total;Asturias (Principado de);TOTAL;100,00
-## 217                  Mujeres;Total;Asturias (Principado de);Fumador diario;16,42
-## 218                Mujeres;Total;Asturias (Principado de);Fumador ocasional;1,51
-## 219                      Mujeres;Total;Asturias (Principado de);Ex fumador;24,20
-## 220                 Mujeres;Total;Asturias (Principado de);Nunca ha fumado;57,87
-## 221                                   Mujeres;Total;Balears (Illes);TOTAL;100,00
-## 222                           Mujeres;Total;Balears (Illes);Fumador diario;16,63
-## 223                         Mujeres;Total;Balears (Illes);Fumador ocasional;2,66
-## 224                               Mujeres;Total;Balears (Illes);Ex fumador;18,15
-## 225                          Mujeres;Total;Balears (Illes);Nunca ha fumado;62,56
-## 226                                          Mujeres;Total;Canarias;TOTAL;100,00
-## 227                                  Mujeres;Total;Canarias;Fumador diario;17,04
-## 228                                Mujeres;Total;Canarias;Fumador ocasional;1,20
-## 229                                      Mujeres;Total;Canarias;Ex fumador;14,78
-## 230                                 Mujeres;Total;Canarias;Nunca ha fumado;66,98
-## 231                                         Mujeres;Total;Cantabria;TOTAL;100,00
-## 232                                 Mujeres;Total;Cantabria;Fumador diario;17,62
-## 233                               Mujeres;Total;Cantabria;Fumador ocasional;0,23
-## 234                                     Mujeres;Total;Cantabria;Ex fumador;17,55
-## 235                                Mujeres;Total;Cantabria;Nunca ha fumado;64,60
-## 236                                   Mujeres;Total;Castilla y León;TOTAL;100,00
-## 237                           Mujeres;Total;Castilla y León;Fumador diario;15,18
-## 238                         Mujeres;Total;Castilla y León;Fumador ocasional;1,89
-## 239                               Mujeres;Total;Castilla y León;Ex fumador;19,39
-## 240                          Mujeres;Total;Castilla y León;Nunca ha fumado;63,54
-## 241                                Mujeres;Total;Castilla-La Mancha;TOTAL;100,00
-## 242                        Mujeres;Total;Castilla-La Mancha;Fumador diario;16,99
-## 243                      Mujeres;Total;Castilla-La Mancha;Fumador ocasional;1,09
-## 244                            Mujeres;Total;Castilla-La Mancha;Ex fumador;13,78
-## 245                       Mujeres;Total;Castilla-La Mancha;Nunca ha fumado;68,14
-## 246                                          Mujeres;Total;Cataluña;TOTAL;100,00
-## 247                                  Mujeres;Total;Cataluña;Fumador diario;18,03
-## 248                                Mujeres;Total;Cataluña;Fumador ocasional;2,58
-## 249                                      Mujeres;Total;Cataluña;Ex fumador;17,48
-## 250                                 Mujeres;Total;Cataluña;Nunca ha fumado;61,92
-## 251                              Mujeres;Total;Comunitat Valenciana;TOTAL;100,00
-## 252                      Mujeres;Total;Comunitat Valenciana;Fumador diario;16,28
-## 253                    Mujeres;Total;Comunitat Valenciana;Fumador ocasional;1,83
-## 254                          Mujeres;Total;Comunitat Valenciana;Ex fumador;18,61
-## 255                     Mujeres;Total;Comunitat Valenciana;Nunca ha fumado;63,29
-## 256                                       Mujeres;Total;Extremadura;TOTAL;100,00
-## 257                               Mujeres;Total;Extremadura;Fumador diario;18,59
-## 258                             Mujeres;Total;Extremadura;Fumador ocasional;1,36
-## 259                                   Mujeres;Total;Extremadura;Ex fumador;18,77
-## 260                              Mujeres;Total;Extremadura;Nunca ha fumado;61,28
-## 261                                           Mujeres;Total;Galicia;TOTAL;100,00
-## 262                                   Mujeres;Total;Galicia;Fumador diario;14,78
-## 263                                 Mujeres;Total;Galicia;Fumador ocasional;1,91
-## 264                                       Mujeres;Total;Galicia;Ex fumador;10,64
-## 265                                  Mujeres;Total;Galicia;Nunca ha fumado;72,66
-## 266                             Mujeres;Total;Madrid (Comunidad de);TOTAL;100,00
-## 267                     Mujeres;Total;Madrid (Comunidad de);Fumador diario;14,79
-## 268                   Mujeres;Total;Madrid (Comunidad de);Fumador ocasional;1,18
-## 269                         Mujeres;Total;Madrid (Comunidad de);Ex fumador;19,64
-## 270                    Mujeres;Total;Madrid (Comunidad de);Nunca ha fumado;64,39
-## 271                                Mujeres;Total;Murcia (Región de);TOTAL;100,00
-## 272                        Mujeres;Total;Murcia (Región de);Fumador diario;18,46
-## 273                      Mujeres;Total;Murcia (Región de);Fumador ocasional;2,34
-## 274                            Mujeres;Total;Murcia (Región de);Ex fumador;18,51
-## 275                       Mujeres;Total;Murcia (Región de);Nunca ha fumado;60,69
-## 276                      Mujeres;Total;Navarra (Comunidad Foral de);TOTAL;100,00
-## 277              Mujeres;Total;Navarra (Comunidad Foral de);Fumador diario;16,76
-## 278            Mujeres;Total;Navarra (Comunidad Foral de);Fumador ocasional;2,53
-## 279                  Mujeres;Total;Navarra (Comunidad Foral de);Ex fumador;21,87
-## 280             Mujeres;Total;Navarra (Comunidad Foral de);Nunca ha fumado;58,84
-## 281                                        Mujeres;Total;País Vasco;TOTAL;100,00
-## 282                                Mujeres;Total;País Vasco;Fumador diario;12,98
-## 283                              Mujeres;Total;País Vasco;Fumador ocasional;1,59
-## 284                                    Mujeres;Total;País Vasco;Ex fumador;23,05
-## 285                               Mujeres;Total;País Vasco;Nunca ha fumado;62,38
-## 286                                        Mujeres;Total;Rioja (La);TOTAL;100,00
-## 287                                Mujeres;Total;Rioja (La);Fumador diario;16,87
-## 288                              Mujeres;Total;Rioja (La);Fumador ocasional;3,56
-## 289                                    Mujeres;Total;Rioja (La);Ex fumador;23,28
-## 290                               Mujeres;Total;Rioja (La);Nunca ha fumado;56,30
-## 291                        Mujeres;Total;Ceuta (Ciudad Autónoma de);TOTAL;100,00
-## 292                Mujeres;Total;Ceuta (Ciudad Autónoma de);Fumador diario;19,98
-## 293              Mujeres;Total;Ceuta (Ciudad Autónoma de);Fumador ocasional;0,21
-## 294                     Mujeres;Total;Ceuta (Ciudad Autónoma de);Ex fumador;6,16
-## 295               Mujeres;Total;Ceuta (Ciudad Autónoma de);Nunca ha fumado;73,65
-## 296                      Mujeres;Total;Melilla (Ciudad Autónoma de);TOTAL;100,00
-## 297               Mujeres;Total;Melilla (Ciudad Autónoma de);Fumador diario;9,08
-## 298            Mujeres;Total;Melilla (Ciudad Autónoma de);Fumador ocasional;0,16
-## 299                   Mujeres;Total;Melilla (Ciudad Autónoma de);Ex fumador;4,83
-## 300             Mujeres;Total;Melilla (Ciudad Autónoma de);Nunca ha fumado;85,93</code></pre>
+
+# Agrupa los datos por CCAA y calcula la media
+aire_agrupado &lt;- aire %&gt;%
+  group_by(CCAA_aire) %&gt;%
+  summarise(media = mean(VALOR, na.rm = TRUE))</code></pre>
+<pre class="r"><code># Asegúrate de que la biblioteca dplyr está cargada
+library(dplyr)
+
+# Crea una nueva columna de grupos
+aire_agrupado &lt;- aire_agrupado %&gt;%
+  mutate(
+    grupo = case_when(
+      CCAA_aire %in% c(&quot;Granada&quot;, &quot;Almería&quot;, &quot;Sevilla&quot;, &quot;Jaén&quot;, &quot;Córdoba&quot;, &quot;Málaga&quot;) ~ &quot;Andalucia&quot;,
+      CCAA_aire %in% c(&quot;León&quot;, &quot;Burgos&quot;, &quot;Valladolid&quot;) ~ &quot;Castilla y León&quot;,
+      CCAA_aire %in% c(&quot;Huesca&quot;, &quot;Zaragoza&quot;) ~ &quot;Aragón&quot;,
+      CCAA_aire %in% c(&quot;Cuenca&quot;, &quot;Toledo&quot;, &quot;Ciudad Real&quot;, &quot;Guadalajara&quot;, &quot;Albacete&quot;) ~ &quot;Castilla la Mancha&quot;,
+      CCAA_aire %in% c(&quot;Castellón&quot;, &quot;Valencia&quot;) ~ &quot;C.Valencia&quot;,
+     
+      TRUE ~ CCAA_aire
+    )
+  )
+
+# Calcula la media por grupo
+media_por_grupo &lt;- aire_agrupado %&gt;%
+  group_by(grupo) %&gt;%
+  summarise(media = mean(media, na.rm = TRUE))
+
+media_por_grupo</code></pre>
+<pre><code>## # A tibble: 7 × 2
+##   grupo               media
+##   &lt;chr&gt;               &lt;dbl&gt;
+## 1 Andalucia          0.361 
+## 2 Aragón             0.165 
+## 3 Asturias           0.0447
+## 4 C.Valencia         0.0839
+## 5 Castilla la Mancha 0.578 
+## 6 Castilla y León    0.241 
+## 7 Cataluña           0.0405</code></pre>
 <div id="including-plots" class="section level3">
 <h3>Including Plots</h3>
 <p>You can also embed plots, for example:</p>

@@ -21,16 +21,137 @@ summary(cars)
 Importamos las bases de datos
 ```{r}
 library(readr)
-aire <- read.delim("./C6H6_BaP__2021_Irreg.csv")
+aire <- read_delim("./C6H6_BaP__2021_Irreg.csv")
 
+<<<<<<< HEAD
 fumadores<-read.delim("./Datos_fumadores/Fumadores.csv")
 
 defunciones_mes<-read.delim("./DATA/defuncion_mes.csv")
 defunciones_mes
+=======
+fumadores<-read_delim("./Datos_fumadores/Fumadores.csv", delim = ";")
+
+defunciones_mes <- read_delim("./DATA/defuncion_mes.csv", delim =";")
+
+defuncion_poblacion <- read_delim("./DATA/defuncion_poblacion.csv", delim =";")
+
+arboles_superficie <- read_delim("./Datos_arboles/provincia_superficie_altura.csv", delim = ";")
+
+arboles_uso <- read_delim("./Datos_arboles/provincia_superficie_uso.csv", delim = ";")
+
+arboles_extension <- read_delim("./Datos_arboles/provincia_extensionterritorio.csv", delim = ";")
+```
+
+
+
+```{r}
+fumadores
+fumadores$`Comunidadesy Ciudades Autónomas`
+
+aire
+
+defunciones_mes
+
+arboles_superficie
+arboles_uso
+>>>>>>> c6e3e09c342b7bb306708f239e930992ebc59afc
 
 ```
 
 ```{r}
+library(dplyr)
+fumadores <- fumadores%>%
+  mutate(
+    CCAA_fumadores= case_when( ## cambiamos el nombre con un case_When
+      fumadores$`Comunidades y Ciudades Autónomas`== "Andalucía" ~ "Andalucia",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Aragón" ~ "Aragon",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Asturias (Principado de)" ~ "Asturias",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Balears (Illes)" ~ "Baleares",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Canarias" ~ "Canarias",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Cantabria" ~ "Cantabria",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Castilla y León" ~ "CyL",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Castilla - La Mancha" ~ "Castilla la Mancha",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Cataluña" ~ "Cataluña",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Comunitat Valenciana" ~ "C.Valencia",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Extremadura" ~ "Extremadura",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Galicia" ~ "Galicia",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Madrid (Comunidad de)" ~ "Madrid",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Murcia (Región de)" ~ "Murcia",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Navarra (Comunidad Foral de)" ~ "Navarra",
+      fumadores$`Comunidades y Ciudades Autónomas`== "País Vasco" ~ "País Vasco",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Rioja (La)" ~ "La Rioja",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Ceuta (Ciudad Autónoma de)" ~ "Ceuta",
+      fumadores$`Comunidades y Ciudades Autónomas`== "Melilla (Ciudad Autónoma de)" ~ "Melilla",
+    )) ## y definimos que los nombres "antiguos", van a tener un "nuevo" nombre
+      
+    
+  
+  
+aire<- aire%>%
+  mutate(
+    CCAA_aire=case_when(
+      aire$PROVINCIA=="18" ~ "Granada",
+      aire$PROVINCIA=="33" ~ "Asturias",
+      aire$PROVINCIA=="46" ~ "Valencia",
+      aire$PROVINCIA=="25" ~ "Cataluña",
+      aire$PROVINCIA=="45" ~ "Toledo",
+      aire$PROVINCIA=="50" ~ "Zaragoza",
+      aire$PROVINCIA=="41" ~ "Sevilla",
+      aire$PROVINCIA=="23" ~ "Jaén",
+      aire$PROVINCIA=="13" ~ "Ciudad Real",
+      aire$PROVINCIA=="16" ~ "Cuenca",
+      aire$PROVINCIA=="4" ~ "Almería",
+      aire$PROVINCIA=="14" ~ "Córdoba",
+      aire$PROVINCIA=="29" ~ "Málaga",
+      aire$PROVINCIA=="19"~ "Guadalajara",
+      aire$PROVINCIA=="2" ~ "Albacete",
+      aire$PROVINCIA=="47" ~ "Valladolid",
+      aire$PROVINCIA=="24" ~ "León",
+      aire$PROVINCIA=="9" ~ "Burgos",
+      aire$PROVINCIA=="22" ~ "Huesca",
+      aire$PROVINCIA=="12" ~ "Castellón",
+    )
+  )
+
+
+```
+```{r}
+# Asegúrate de que la biblioteca dplyr está cargada
+library(dplyr)
+
+
+# Agrupa los datos por CCAA y calcula la media
+aire_agrupado <- aire %>%
+  group_by(CCAA_aire) %>%
+  summarise(media = mean(VALOR, na.rm = TRUE))
+```
+
+
+```{r}
+# Asegúrate de que la biblioteca dplyr está cargada
+library(dplyr)
+
+# Crea una nueva columna de grupos
+aire_agrupado <- aire_agrupado %>%
+  mutate(
+    grupo = case_when(
+      CCAA_aire %in% c("Granada", "Almería", "Sevilla", "Jaén", "Córdoba", "Málaga") ~ "Andalucia",
+      CCAA_aire %in% c("León", "Burgos", "Valladolid") ~ "Castilla y León",
+      CCAA_aire %in% c("Huesca", "Zaragoza") ~ "Aragón",
+      CCAA_aire %in% c("Cuenca", "Toledo", "Ciudad Real", "Guadalajara", "Albacete") ~ "Castilla la Mancha",
+      CCAA_aire %in% c("Castellón", "Valencia") ~ "C.Valencia",
+     
+      TRUE ~ CCAA_aire
+    )
+  )
+
+# Calcula la media por grupo
+media_por_grupo <- aire_agrupado %>%
+  group_by(grupo) %>%
+  summarise(media = mean(media, na.rm = TRUE))
+
+media_por_grupo
+
 
 ```
 
