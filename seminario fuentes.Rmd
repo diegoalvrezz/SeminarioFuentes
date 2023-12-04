@@ -15,9 +15,7 @@ This is an R Markdown document. Markdown is a simple formatting syntax for autho
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
-```{r cars}
-summary(cars)
-```
+
 Importamos las bases de datos
 ```{r}
 library(readr)
@@ -61,7 +59,9 @@ fumadores <- fumadores%>%
       fumadores$`Comunidades y Ciudades Autónomas`== "Rioja (La)" ~ "La Rioja",
       fumadores$`Comunidades y Ciudades Autónomas`== "Ceuta (Ciudad Autónoma de)" ~ "Ceuta",
       fumadores$`Comunidades y Ciudades Autónomas`== "Melilla (Ciudad Autónoma de)" ~ "Melilla",
-    )) ## y definimos que los nombres "antiguos", van a tener un "nuevo" nombre
+    )) %>%
+select(`Comunidades y Ciudades Autónomas`,`Consumo de tabaco`,Total)
+fumadores
       
     
   
@@ -135,8 +135,9 @@ media_por_grupo
 ```
 
 ```{r}
-arboles_uso %>%
-  pivot_longer(data =arboles_uso , names_to = )
+fumadores %>%
+  select(`Comunidades y Ciudades Autónomas`,`Consumo de tabaco`,Total)
+
 ```
 
 ### Including Plots
