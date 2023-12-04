@@ -60,8 +60,9 @@ fumadores <- fumadores%>%
       fumadores$`Comunidades y Ciudades Autónomas`== "Ceuta (Ciudad Autónoma de)" ~ "Ceuta",
       fumadores$`Comunidades y Ciudades Autónomas`== "Melilla (Ciudad Autónoma de)" ~ "Melilla",
     )) %>%
-select(`Comunidades y Ciudades Autónomas`,`Consumo de tabaco`,Total)
-fumadores
+select(`Comunidades y Ciudades Autónomas`,`Consumo de tabaco`,Total,) %>%
+  na.exclude()
+
       
     
   
@@ -113,7 +114,7 @@ library(dplyr)
 # Crea una nueva columna de grupos
 aire_agrupado <- aire_agrupado %>%
   mutate(
-    grupo = case_when(
+    grupo <- case_when(
       CCAA_aire %in% c("Granada", "Almería", "Sevilla", "Jaén", "Córdoba", "Málaga") ~ "Andalucia",
       CCAA_aire %in% c("León", "Burgos", "Valladolid") ~ "Castilla y León",
       CCAA_aire %in% c("Huesca", "Zaragoza") ~ "Aragón",
@@ -122,6 +123,7 @@ aire_agrupado <- aire_agrupado %>%
      
       TRUE ~ CCAA_aire
     )
+    
   )
 
 # Calcula la media por grupo
@@ -135,9 +137,7 @@ media_por_grupo
 ```
 
 ```{r}
-fumadores %>%
-  select(`Comunidades y Ciudades Autónomas`,`Consumo de tabaco`,Total)
-
+aire_agrupado
 ```
 
 ### Including Plots
