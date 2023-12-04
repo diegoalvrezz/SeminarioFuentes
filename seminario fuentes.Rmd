@@ -14,11 +14,15 @@ knitr::opts_chunk$set(echo = TRUE)
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+Librerias
+```{r}
+library(readr)
+library(dplyr)
+```
 
 
 Importamos las bases de datos
 ```{r}
-library(readr)
 aire <- read_delim("./C6H6_BaP__2021_Irreg.csv")
 
 fumadores<-read_delim("./Datos_fumadores/Fumadores.csv", delim = ";")
@@ -34,9 +38,9 @@ arboles_uso <- read_delim("./Datos_arboles/provincia_superficie_uso.csv", delim 
 arboles_extension <- read_delim("./Datos_arboles/provincia_extensionterritorio.csv", delim = ";")
 ```
 
+Base de datos fumadores
 
 ```{r}
-library(dplyr)
 fumadores <- fumadores%>%
   mutate(
     CCAA_fumadores= case_when( ## cambiamos el nombre con un case_When
@@ -65,7 +69,11 @@ fumadores
       
     
   
-  
+```  
+
+base de datos aire
+
+```{r}
 aire<- aire%>%
   mutate(
     CCAA_aire=case_when(
@@ -92,25 +100,11 @@ aire<- aire%>%
     )
   )
 
-
-```
-```{r}
-# Asegúrate de que la biblioteca dplyr está cargada
-library(dplyr)
-
-
 # Agrupa los datos por CCAA y calcula la media
 aire_agrupado <- aire %>%
   group_by(CCAA_aire) %>%
   summarise(media = mean(VALOR, na.rm = TRUE))
-```
 
-
-```{r}
-# Asegúrate de que la biblioteca dplyr está cargada
-library(dplyr)
-
-# Crea una nueva columna de grupos
 aire_agrupado <- aire_agrupado %>%
   mutate(
     grupo = case_when(
@@ -130,15 +124,8 @@ media_por_grupo <- aire_agrupado %>%
   summarise(media = mean(media, na.rm = TRUE))
 
 media_por_grupo
-
-
 ```
 
-```{r}
-fumadores %>%
-  select(`Comunidades y Ciudades Autónomas`,`Consumo de tabaco`,Total)
-
-```
 
 ### Including Plots
 
