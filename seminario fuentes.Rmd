@@ -14,15 +14,11 @@ knitr::opts_chunk$set(echo = TRUE)
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-Librerias
-```{r}
-library(readr)
-library(dplyr)
-```
 
 
 Importamos las bases de datos
 ```{r}
+library(readr)
 aire <- read_delim("./C6H6_BaP__2021_Irreg.csv")
 
 fumadores<-read_delim("./Datos_fumadores/Fumadores.csv", delim = ";")
@@ -31,16 +27,16 @@ defunciones_mes <- read_delim("./DATA/defuncion_mes.csv", delim =";")
 
 defuncion_poblacion <- read_delim("./DATA/defuncion_poblacion.csv", delim =";")
 
-arboles_superficie <- read_delim("./Datos_arboles/provincia_superficie_altura.csv", delim = ";")
+#arboles_superficie <- read_delim("./Datos_arboles/provincia_superficie_altura.csv", delim = ";")
 
-arboles_uso <- read_delim("./Datos_arboles/provincia_superficie_uso.csv", delim = ";")
+arboles_uso <- read_delim("./Datos_arboles/Arbolesusofinal.csv", delim = ";",show_col_types = FALSE)
 
-arboles_extension <- read_delim("./Datos_arboles/provincia_extensionterritorio.csv", delim = ";")
+#arboles_extension <- read_delim("./Datos_arboles/provincia_extensionterritorio.csv", delim = ";")
 ```
 
-Base de datos fumadores
 
 ```{r}
+library(dplyr)
 fumadores <- fumadores%>%
   mutate(
     CCAA_fumadores= case_when( ## cambiamos el nombre con un case_When
@@ -70,11 +66,7 @@ select(`Comunidades y Ciudades Autónomas`,`Consumo de tabaco`,Total,) %>%
       
     
   
-```  
-
-base de datos aire
-
-```{r}
+  
 aire<- aire%>%
   mutate(
     CCAA_aire=case_when(
@@ -101,14 +93,19 @@ aire<- aire%>%
     )
   )
 
+
+```
+```{r}
+# Asegúrate de que la biblioteca dplyr está cargada
+library(dplyr)
+
+
 # Agrupa los datos por CCAA y calcula la media
 aire_agrupado <- aire %>%
   group_by(CCAA_aire) %>%
-  summarise(media = mean(VALOR, na.rm = TRUE))
-
-aire_agrupado <- aire_agrupado %>%
-  mutate(
-    grupo <- case_when(
+  summarise(media = mean(VALOR, na.rm = TRUE))%>%
+   mutate(
+    COMUNIDADES = case_when(
       CCAA_aire %in% c("Granada", "Almería", "Sevilla", "Jaén", "Córdoba", "Málaga") ~ "Andalucia",
       CCAA_aire %in% c("León", "Burgos", "Valladolid") ~ "Castilla y León",
       CCAA_aire %in% c("Huesca", "Zaragoza") ~ "Aragón",
@@ -119,21 +116,37 @@ aire_agrupado <- aire_agrupado %>%
     )
     
   )
+```
+
+
+```{r}
+
+
 
 # Calcula la media por grupo
-media_por_grupo <- aire_agrupado %>%
-  group_by(grupo) %>%
+aire_media_comunidad <- aire_agrupado %>%
+  group_by(COMUNIDADES) %>%
   summarise(media = mean(media, na.rm = TRUE))
 
-media_por_grupo
+aire_media_comunidad
+
+
+```
+```{r}
+#library(imputeTS)
+#arboles_uso <- na.replace (arboles_uso, 0)
+#arboles_uso <- arboles_uso %>% mutate(across(everything(), as.double))
+#arboles_uso <- arboles_uso %>% mutate(across(everything(), type.convert))
+arboles_uso <- setNames(data.frame(lapply(arboles_uso, as.numeric)), colnames(arboles_uso))
 ```
 
-<<<<<<< HEAD
 ```{r}
-aire_agrupado
+aire_media_comunidad
+fumadores
+arboles_uso
+
+
 ```
-=======
->>>>>>> ca9ffe3cd247eb90b091e9bb9672cc4dbf6895fa
 
 ### Including Plots
 
