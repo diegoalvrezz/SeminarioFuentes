@@ -27,7 +27,7 @@ fumadores<-read_delim("./Datos_fumadores/Fumadores.csv", delim = ";")
 
 defunciones_mes <- read_delim("./DATA/defuncion_mes.csv", delim =";")
 
-defuncion_poblacion <- read_delim("./DATA/defuncion_poblacion.csv", delim =";")
+defuncion_poblacion <- read_delim("./DATA/defuncion_poblacion.csv", delim =";")git 
 
 arboles_superficie <- read_delim("./Datos_arboles/provincia_superficie_altura.csv", delim = ";")
 
@@ -130,13 +130,14 @@ media_por_grupo <- aire_agrupado %>%
   summarise(media = mean(media, na.rm = TRUE))
 
 media_por_grupo
+arboles_uso
 
 
 ```
 
 ```{r}
 arboles_uso %>%
-  pivot_longer(data =arboles_uso , names_to = )
+  pivot_longer(data =arboles_uso , names_to ='Variable', cols = c(ANDALUCIA) )
 ```
 
 ### Including Plots
