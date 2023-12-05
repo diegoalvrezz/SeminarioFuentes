@@ -14,13 +14,15 @@ knitr::opts_chunk$set(echo = TRUE)
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
-Importamos las bases de datos
+Librerias
 ```{r}
 library(readr)
+library(dplyr)
+```
+
+
+Importamos las bases de datos
+```{r}
 aire <- read_delim("./C6H6_BaP__2021_Irreg.csv")
 
 fumadores<-read_delim("./Datos_fumadores/Fumadores.csv", delim = ";")
@@ -36,9 +38,9 @@ arboles_uso <- read_delim("./Datos_arboles/provincia_superficie_uso.csv", delim 
 arboles_extension <- read_delim("./Datos_arboles/provincia_extensionterritorio.csv", delim = ";")
 ```
 
+Base de datos fumadores
 
 ```{r}
-library(dplyr)
 fumadores <- fumadores%>%
   mutate(
     CCAA_fumadores= case_when( ## cambiamos el nombre con un case_When
@@ -61,11 +63,18 @@ fumadores <- fumadores%>%
       fumadores$`Comunidades y Ciudades Autónomas`== "Rioja (La)" ~ "La Rioja",
       fumadores$`Comunidades y Ciudades Autónomas`== "Ceuta (Ciudad Autónoma de)" ~ "Ceuta",
       fumadores$`Comunidades y Ciudades Autónomas`== "Melilla (Ciudad Autónoma de)" ~ "Melilla",
-    )) ## y definimos que los nombres "antiguos", van a tener un "nuevo" nombre
+    )) %>%
+select(`Comunidades y Ciudades Autónomas`,`Consumo de tabaco`,Total,) %>%
+  na.exclude()
+
       
     
   
-  
+```  
+
+base de datos aire
+
+```{r}
 aire<- aire%>%
   mutate(
     CCAA_aire=case_when(
@@ -92,28 +101,14 @@ aire<- aire%>%
     )
   )
 
-
-```
-```{r}
-# Asegúrate de que la biblioteca dplyr está cargada
-library(dplyr)
-
-
 # Agrupa los datos por CCAA y calcula la media
 aire_agrupado <- aire %>%
   group_by(CCAA_aire) %>%
   summarise(media = mean(VALOR, na.rm = TRUE))
-```
 
-
-```{r}
-# Asegúrate de que la biblioteca dplyr está cargada
-library(dplyr)
-
-# Crea una nueva columna de grupos
 aire_agrupado <- aire_agrupado %>%
   mutate(
-    grupo = case_when(
+    grupo <- case_when(
       CCAA_aire %in% c("Granada", "Almería", "Sevilla", "Jaén", "Córdoba", "Málaga") ~ "Andalucia",
       CCAA_aire %in% c("León", "Burgos", "Valladolid") ~ "Castilla y León",
       CCAA_aire %in% c("Huesca", "Zaragoza") ~ "Aragón",
@@ -122,6 +117,7 @@ aire_agrupado <- aire_agrupado %>%
      
       TRUE ~ CCAA_aire
     )
+    
   )
 
 # Calcula la media por grupo
@@ -129,16 +125,11 @@ media_por_grupo <- aire_agrupado %>%
   group_by(grupo) %>%
   summarise(media = mean(media, na.rm = TRUE))
 
-media_por_grupo
-arboles_uso
-
 
 ```
 
-```{r}
-arboles_uso %>%
-  pivot_longer(data =arboles_uso , names_to ='Variable', cols = c(ANDALUCIA) )
-```
+=======
+>>>>>>> ca9ffe3cd247eb90b091e9bb9672cc4dbf6895fa
 
 ### Including Plots
 
