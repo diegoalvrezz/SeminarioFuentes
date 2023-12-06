@@ -31,6 +31,7 @@ defuncion_poblacion <- read_delim("./DATA/defuncion_poblacion.csv", delim =";")g
 #arboles_superficie <- read_delim("./Datos_arboles/provincia_superficie_altura.csv", delim = ";")
 
 arboles_uso <- read_delim("./Datos_arboles/Arbolesusofinal.csv", delim = ";",escape_double = FALSE, trim_ws = TRUE)
+arboles_uso
 
 #arboles_extension <- read_delim("./Datos_arboles/provincia_extensionterritorio.csv", delim = ";")
 ```
@@ -138,13 +139,16 @@ aire_media_comunidad <- aire_agrupado %>%
 
 ```{r}
 arboles_uso
+arboles_uso[is.na(arboles_uso)] <- 0
+arboles_uso
+
 ```
 
 
 ```
 ```{r}
 #library(imputeTS)
-#arboles_uso <- na.replace (arboles_uso, 0)
+#
 #arboles_uso <- arboles_uso %>% mutate(across(everything(), as.double))
 #arboles_uso <- arboles_uso %>% mutate(across(everything(), type.convert))
 arboles_uso <- setNames(data.frame(lapply(arboles_uso, as.numeric)), colnames(arboles_uso))
