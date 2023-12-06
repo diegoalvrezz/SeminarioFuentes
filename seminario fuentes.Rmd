@@ -26,7 +26,7 @@ fumadores<-read_delim("./Datos_fumadores/Fumadores.csv", delim = ";")
 
 defunciones_mes <- read_delim("./DATA/defuncion_mes.csv", delim =";")
 
-defuncion_poblacion <- read_delim("./DATA/defuncion_poblacion.csv", delim =";")git 
+defuncion_poblacion <- read_delim("./DATA/defuncion_poblacion.csv", delim =";")
 
 #arboles_superficie <- read_delim("./Datos_arboles/provincia_superficie_altura.csv", delim = ";")
 
@@ -138,9 +138,10 @@ aire_media_comunidad <- aire_agrupado %>%
 =======
 
 ```{r}
-arboles_uso
-arboles_uso[is.na(arboles_uso)] <- 0
-arboles_uso
+arboles_uso <- arboles_uso %>%
+  mutate(`800 - 999` = as.numeric(gsub(',', '.', gsub('\\.', '', .$`800 - 999`))))
+  arboles_uso
+
 
 ```
 
