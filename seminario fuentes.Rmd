@@ -19,6 +19,7 @@ When you click the **Knit** button a document will be generated that includes bo
 Importamos las bases de datos
 ```{r}
 library(readr)
+library(tidyverse)
 aire <- read_delim("./C6H6_BaP__2021_Irreg.csv")
 
 fumadores<-read_delim("./Datos_fumadores/Fumadores.csv", delim = ";")
@@ -29,7 +30,7 @@ defuncion_poblacion <- read_delim("./DATA/defuncion_poblacion.csv", delim =";")g
 
 #arboles_superficie <- read_delim("./Datos_arboles/provincia_superficie_altura.csv", delim = ";")
 
-arboles_uso <- read_delim("./Datos_arboles/Arbolesusofinal.csv", delim = ";",show_col_types = FALSE)
+arboles_uso <- read_delim("./Datos_arboles/Arbolesusofinal.csv", delim = ";",escape_double = FALSE, trim_ws = TRUE)
 
 #arboles_extension <- read_delim("./Datos_arboles/provincia_extensionterritorio.csv", delim = ";")
 ```
@@ -128,14 +129,16 @@ aire_media_comunidad <- aire_agrupado %>%
   group_by(COMUNIDADES) %>%
   summarise(media = mean(media, na.rm = TRUE))
 
-<<<<<<< HEAD
 
 ```
 
 =======
 >>>>>>> ca9ffe3cd247eb90b091e9bb9672cc4dbf6895fa
 =======
-aire_media_comunidad
+
+```{r}
+arboles_uso
+```
 
 
 ```
