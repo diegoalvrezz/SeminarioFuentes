@@ -128,7 +128,6 @@ aire_media_comunidad <- aire_agrupado %>%
   group_by(COMUNIDADES) %>%
   summarise(media = mean(media, na.rm = TRUE))
 
-<<<<<<< HEAD
 
 ```
 
