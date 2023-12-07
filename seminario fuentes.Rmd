@@ -19,17 +19,19 @@ When you click the **Knit** button a document will be generated that includes bo
 Importamos las bases de datos
 ```{r}
 library(readr)
+library(tidyverse)
 aire <- read_delim("./C6H6_BaP__2021_Irreg.csv")
 
 fumadores<-read_delim("./Datos_fumadores/Fumadores.csv", delim = ";")
 
 defunciones_mes <- read_delim("./DATA/defuncion_mes.csv", delim =";")
 
-defuncion_poblacion <- read_delim("./DATA/defuncion_poblacion.csv", delim =";")git 
+defuncion_poblacion <- read_delim("./DATA/defuncion_poblacion.csv", delim =";")
 
 #arboles_superficie <- read_delim("./Datos_arboles/provincia_superficie_altura.csv", delim = ";")
 
-arboles_uso <- read_delim("./Datos_arboles/Arbolesusofinal.csv", delim = ";",show_col_types = FALSE)
+arboles_uso <- read_delim("./Datos_arboles/Arbolesusofinal.csv", delim = ";",escape_double = FALSE, trim_ws = TRUE)
+arboles_uso
 
 #arboles_extension <- read_delim("./Datos_arboles/provincia_extensionterritorio.csv", delim = ";")
 ```
@@ -134,13 +136,27 @@ aire_media_comunidad <- aire_agrupado %>%
 =======
 >>>>>>> ca9ffe3cd247eb90b091e9bb9672cc4dbf6895fa
 =======
-aire_media_comunidad
+
+```{r}
+arboles_uso <- arboles_uso %>%
+  mutate(
+    `0 - 199` = as.numeric(gsub(',', '.', gsub('\\.', '', .$`0 - 199`))),
+    `600 - 799` = as.numeric(gsub(',', '.', gsub('\\.', '', .$`600 - 799`))),
+    `1.600 - 1.799` = as.numeric(gsub(',', '.', gsub('\\.', '', .$`1.600 - 1.799`)))
+     )
+
+arboles_uso <- arboles_uso %>% 
+  replace_na(list(arboles_uso))
+arboles_uso
+
+
+```
 
 
 ```
 ```{r}
 #library(imputeTS)
-#arboles_uso <- na.replace (arboles_uso, 0)
+#
 #arboles_uso <- arboles_uso %>% mutate(across(everything(), as.double))
 #arboles_uso <- arboles_uso %>% mutate(across(everything(), type.convert))
 arboles_uso <- setNames(data.frame(lapply(arboles_uso, as.numeric)), colnames(arboles_uso))
