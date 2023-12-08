@@ -225,6 +225,7 @@ arboles_uso <- arboles_uso %>%
   mutate(
     `0 - 199` = as.numeric(gsub(',', '.', gsub('\\.', '', .$`0 - 199`))),
     `600 - 799` = as.numeric(gsub(',', '.', gsub('\\.', '', .$`600 - 799`))),
+    `800 - 999` = as.numeric(gsub(',', '.', gsub('\\.', '', .$`800 - 999`))),
     `1.600 - 1.799` = as.numeric(gsub(',', '.', gsub('\\.', '', .$`1.600 - 1.799`)))
      )
 
