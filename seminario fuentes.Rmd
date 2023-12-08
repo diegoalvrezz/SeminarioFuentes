@@ -23,17 +23,28 @@ library(tidyverse)
 aire <- read_delim("./C6H6_BaP__2021_Irreg.csv")
 
 fumadores<-read_delim("./Datos_fumadores/Fumadores.csv", delim = ";")
+fumadores
 
 defunciones_mes <- read_delim("./DATA/defuncion_mes.csv", delim =";")
+defunciones_mes
 
 defuncion_poblacion <- read_delim("./DATA/defuncion_poblacion.csv", delim =";")
-
+defuncion_poblacion
 #arboles_superficie <- read_delim("./Datos_arboles/provincia_superficie_altura.csv", delim = ";")
 
 arboles_uso <- read_delim("./Datos_arboles/Arbolesusofinal.csv", delim = ";",escape_double = FALSE, trim_ws = TRUE)
 arboles_uso
 
 #arboles_extension <- read_delim("./Datos_arboles/provincia_extensionterritorio.csv", delim = ";")
+
+habitantes <- read_delim("./DATA/48254.csv", delim = ";")
+habitantes
+```
+
+
+```{r}
+library(dplyr)
+tabla_relacionada <- inner_join(fumadores, arboles_uso, by = c("Comunidades y Ciudades Autónomas" = "Comunidades"))
 ```
 
 
@@ -62,9 +73,9 @@ fumadores <- fumadores%>%
       fumadores$`Comunidades y Ciudades Autónomas`== "Ceuta (Ciudad Autónoma de)" ~ "Ceuta",
       fumadores$`Comunidades y Ciudades Autónomas`== "Melilla (Ciudad Autónoma de)" ~ "Melilla",
     )) %>%
-select(`Comunidades y Ciudades Autónomas`,`Consumo de tabaco`,Total,) %>%
+select(`CCAA_fumadores`,`Consumo de tabaco`,Total,) %>%
   na.exclude()
-
+fumadores
       
     
   
@@ -94,14 +105,47 @@ aire<- aire%>%
       aire$PROVINCIA=="12" ~ "Castellón",
     )
   )
+aire
+
+```
+
+
+
+```{r}
+library(dplyr)
+arboles_uso<- arboles_uso%>%
+  mutate(
+    CCAA_arboles_uso=case_when(
+      arboles_uso$Comunidad=="ANDALUCÍA" ~ "Andalucia",
+      arboles_uso$Comunidad=="ARAGÓN" ~ "Aragon",
+      arboles_uso$Comunidad=="CANARIAS" ~ "Canarias",
+      arboles_uso$Comunidad=="CANTABRIA" ~ "Cantabria",
+      arboles_uso$Comunidad=="CASTILLA LA MANCHA" ~ "Castilla la Mancha",
+      arboles_uso$Comunidad=="CASTILLA Y LEÓN" ~ "CyL",
+      arboles_uso$Comunidad=="CATALUÑA" ~ "Cataluña",
+      arboles_uso$Comunidad=="COMUNIDAD DE MADRID" ~ "Madrid",
+      arboles_uso$Comunidad=="COMUNIDAD FORAL DE NAVARRA" ~ "Navarra",
+      arboles_uso$Comunidad=="COMUNIDAD VALENCIANA" ~ "C.Valencia",
+      arboles_uso$Comunidad=="EXTREMADURA" ~ "Extremadura",
+      arboles_uso$Comunidad=="GALICIA" ~ "Galicia",
+      arboles_uso$Comunidad=="ILLES BALEARS" ~ "Baleares",
+      arboles_uso$Comunidad=="LA RIOJA" ~ "La Rioja",
+      arboles_uso$Comunidad=="PAÍS VASCO" ~ "País Vasco",
+      arboles_uso$Comunidad=="PRINCIPADO DE ASTURIAS" ~ "Asturias",
+      arboles_uso$Comunidad=="REGIÓN DE MURCIA" ~ "Murcia",
+    ))%>%
+select(`CCAA_arboles_uso`,`Usos`,`0 - 199`,`200 - 399`,`400 - 599`,`600 - 799`,`800 - 999`,`1.000 - 1.199`,`1.200 - 1.399`,`1.400 - 1.599`,`1.600 - 1.799`,`1.800 - 1.999`,`>= 2.000`) %>%
+  na.exclude()
+  
+
+arboles_uso
+
 
 
 ```
+
+
 ```{r}
-# Asegúrate de que la biblioteca dplyr está cargada
-library(dplyr)
-
-
 # Agrupa los datos por CCAA y calcula la media
 aire_agrupado <- aire %>%
   group_by(CCAA_aire) %>%
@@ -122,20 +166,59 @@ aire_agrupado <- aire %>%
 
 
 ```{r}
-
-
-
 # Calcula la media por grupo
 aire_media_comunidad <- aire_agrupado %>%
   group_by(COMUNIDADES) %>%
   summarise(media = mean(media, na.rm = TRUE))
+```
 
+
+```{r}
+tumores<-defuncion_poblacion %>%
+  rename("Total" = ...2,"<10000" = ...3,"10000-20000" = ...4, "20000-50000" = ...5,"50000-100000" = ...6, "<100000" = ...7, "Capital" = ...8 ) %>%
+  slice(55:58) %>%
+  select('Defunciones según causa de muerte. Avance enero-mayo 2020':Capital)
+
+tumores
+```
+
+
+```{r}
+habitantes_refinado <- habitantes %>%
+  filter(Periodo == "1/1/2020") %>%
+  select('Comunidades y Ciudades Autónomas', Total, Periodo) %>%
+  na.exclude()
+
+
+habitantes_refinado <- habitantes_refinado %>%
+  mutate(
+    CCAA_habitantes_refinado = case_when(
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == "Andalucía" ~ "Andalucia",
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == "Aragón" ~ "Aragon",
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == "Canarias" ~ "Canarias",
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == "Cantabria" ~ "Cantabria",
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == "Castilla - La Mancha" ~ "Castilla la Mancha",
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == "Castilla y León" ~ "CyL",
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == "Cataluña" ~ "Cataluña",
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == "Madrid, Comunidad de" ~ "Madrid",
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == "Navarra, Comunidad Foral de" ~ "Navarra",
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == "Comunitat Valenciana" ~ "C.Valencia",
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == "Extremadura" ~ "Extremadura",
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == "Galicia" ~ "Galicia",
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == "Balears, Illes" ~ "Baleares",
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == "Rioja, La" ~ "La Rioja",
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == "País Vasco" ~ "País Vasco",
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == "Asturias, Principado de" ~ "Asturias",
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == "Murcia, Región de" ~ "Murcia"
+    ))%>%
+select('CCAA_habitantes_refinado',Total,Periodo)%>%
+  na.exclude()
+
+habitantes_refinado
 
 ```
 
-=======
->>>>>>> ca9ffe3cd247eb90b091e9bb9672cc4dbf6895fa
-=======
+
 
 ```{r}
 arboles_uso <- arboles_uso %>%
@@ -153,30 +236,6 @@ arboles_uso
 ```
 
 
-```
-```{r}
-#library(imputeTS)
-#
-#arboles_uso <- arboles_uso %>% mutate(across(everything(), as.double))
-#arboles_uso <- arboles_uso %>% mutate(across(everything(), type.convert))
-arboles_uso <- setNames(data.frame(lapply(arboles_uso, as.numeric)), colnames(arboles_uso))
-```
-
-```{r}
-aire_media_comunidad
-fumadores
-arboles_uso
 
 
-```
->>>>>>> ddacec9ca2a35faee66b690499cc29fa94addafc
 
-### Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
