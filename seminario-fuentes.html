@@ -11,7 +11,7 @@
 
 <meta name="author" content="Pablo, Diego y Dario" />
 
-<meta name="date" content="2023-12-07" />
+<meta name="date" content="2023-12-08" />
 
 <title>seminario fuentes</title>
 
@@ -352,7 +352,7 @@ display: none;
 
 <h1 class="title toc-ignore">seminario fuentes</h1>
 <h4 class="author">Pablo, Diego y Dario</h4>
-<h4 class="date">2023-12-07</h4>
+<h4 class="date">2023-12-08</h4>
 
 </div>
 
@@ -398,6 +398,22 @@ chunk like this:</p>
 ## 
 ## ℹ Use `spec()` to retrieve the full column specification for this data.
 ## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<pre class="r"><code>fumadores</code></pre>
+<pre><code>## # A tibble: 300 × 5
+##    Sexo        `Total Nacional` Comunidades y Ciudad…¹ `Consumo de tabaco` Total
+##    &lt;chr&gt;       &lt;chr&gt;            &lt;chr&gt;                  &lt;chr&gt;               &lt;chr&gt;
+##  1 Ambos sexos Total            &lt;NA&gt;                   TOTAL               100,…
+##  2 Ambos sexos Total            &lt;NA&gt;                   Fumador diario      19,78
+##  3 Ambos sexos Total            &lt;NA&gt;                   Fumador ocasional   2,33 
+##  4 Ambos sexos Total            &lt;NA&gt;                   Ex fumador          22,01
+##  5 Ambos sexos Total            &lt;NA&gt;                   Nunca ha fumado     55,88
+##  6 Ambos sexos Total            Andalucía              TOTAL               100,…
+##  7 Ambos sexos Total            Andalucía              Fumador diario      20,93
+##  8 Ambos sexos Total            Andalucía              Fumador ocasional   2,81 
+##  9 Ambos sexos Total            Andalucía              Ex fumador          16,87
+## 10 Ambos sexos Total            Andalucía              Nunca ha fumado     59,39
+## # ℹ 290 more rows
+## # ℹ abbreviated name: ¹​`Comunidades y Ciudades Autónomas`</code></pre>
 <pre class="r"><code>defunciones_mes &lt;- read_delim(&quot;./DATA/defuncion_mes.csv&quot;, delim =&quot;;&quot;)</code></pre>
 <pre><code>## New names:
 ## Rows: 488 Columns: 7
@@ -412,6 +428,23 @@ chunk like this:</p>
 ## • `` -&gt; `...5`
 ## • `` -&gt; `...6`
 ## • `` -&gt; `...7`</code></pre>
+<pre class="r"><code>defunciones_mes</code></pre>
+<pre><code>## # A tibble: 488 × 7
+##    Defunciones según causa de muerte. Avan…¹ ...2  ...3  ...4  ...5  ...6  ...7 
+##    &lt;chr&gt;                                     &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;
+##  1 &quot;Resultados detallados. Enero 2020-Mayo … &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt; 
+##  2  &lt;NA&gt;                                     &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt; 
+##  3 &quot;Defunciones por causas (lista reducida)… &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt; 
+##  4 &quot;Units: Número de defunciones&quot;            &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt; 
+##  5  &lt;NA&gt;                                     &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt; 
+##  6 &quot; &quot;                                       Total Enero Febr… Marzo Abril Mayo 
+##  7 &quot;001-102 I-XXII.Todas las causas&quot;         &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt; 
+##  8 &quot;    Total&quot;                               231.… 42.6… 36.1… 57.5… 60.3… 34.3…
+##  9 &quot;    Hombres&quot;                             115.… 21.3… 18.1… 30.2… 28.8… 17.0…
+## 10 &quot;    Mujeres&quot;                             115.… 21.3… 18.0… 27.3… 31.4… 17.3…
+## # ℹ 478 more rows
+## # ℹ abbreviated name:
+## #   ¹​`Defunciones según causa de muerte. Avance enero-mayo 2020`</code></pre>
 <pre class="r"><code>defuncion_poblacion &lt;- read_delim(&quot;./DATA/defuncion_poblacion.csv&quot;, delim =&quot;;&quot;)</code></pre>
 <pre><code>## New names:
 ## Rows: 488 Columns: 11
@@ -431,6 +464,24 @@ chunk like this:</p>
 ## • `` -&gt; `...9`
 ## • `` -&gt; `...10`
 ## • `` -&gt; `...11`</code></pre>
+<pre class="r"><code>defuncion_poblacion</code></pre>
+<pre><code>## # A tibble: 488 × 11
+##    Defunciones según cau…¹ ...2  ...3  ...4  ...5  ...6  ...7  ...8  ...9  ...10
+##    &lt;chr&gt;                   &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;lgl&gt; &lt;lgl&gt;
+##  1 &quot;Resultados detallados… &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  NA    NA   
+##  2  &lt;NA&gt;                   &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  NA    NA   
+##  3 &quot;Tasas de mortalidad p… &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  NA    NA   
+##  4 &quot;Unidades: defunciones… &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  NA    NA   
+##  5  &lt;NA&gt;                   &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  NA    NA   
+##  6 &quot; &quot;                     Total Muni… Muni… Muni… Muni… Muni… Capi… NA    NA   
+##  7 &quot;001-102 I-XXII.Todas … &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  NA    NA   
+##  8 &quot;    Total&quot;             487,… 341,… 324,… 399,… 480,… 529,… 662,… NA    NA   
+##  9 &quot;    Hombres&quot;           497,… 316,… 305,… 406,… 492,… 569,… 706,… NA    NA   
+## 10 &quot;    Mujeres&quot;           477,… 365,… 342,… 393,… 469,… 490,… 622,… NA    NA   
+## # ℹ 478 more rows
+## # ℹ abbreviated name:
+## #   ¹​`Defunciones según causa de muerte. Avance enero-mayo 2020`
+## # ℹ 1 more variable: ...11 &lt;lgl&gt;</code></pre>
 <pre class="r"><code>#arboles_superficie &lt;- read_delim(&quot;./Datos_arboles/provincia_superficie_altura.csv&quot;, delim = &quot;;&quot;)
 
 arboles_uso &lt;- read_delim(&quot;./Datos_arboles/Arbolesusofinal.csv&quot;, delim = &quot;;&quot;,escape_double = FALSE, trim_ws = TRUE)</code></pre>
@@ -460,7 +511,32 @@ arboles_uso &lt;- read_delim(&quot;./Datos_arboles/Arbolesusofinal.csv&quot;, de
 ## # ℹ 6 more variables: `1.000 - 1.199` &lt;dbl&gt;, `1.200 - 1.399` &lt;dbl&gt;,
 ## #   `1.400 - 1.599` &lt;dbl&gt;, `1.600 - 1.799` &lt;chr&gt;, `1.800 - 1.999` &lt;dbl&gt;,
 ## #   `&gt;= 2.000` &lt;dbl&gt;</code></pre>
-<pre class="r"><code>#arboles_extension &lt;- read_delim(&quot;./Datos_arboles/provincia_extensionterritorio.csv&quot;, delim = &quot;;&quot;)</code></pre>
+<pre class="r"><code>#arboles_extension &lt;- read_delim(&quot;./Datos_arboles/provincia_extensionterritorio.csv&quot;, delim = &quot;;&quot;)
+
+habitantes &lt;- read_delim(&quot;./DATA/48254.csv&quot;, delim = &quot;;&quot;)</code></pre>
+<pre><code>## Rows: 166 Columns: 6
+## ── Column specification ────────────────────────────────────────────────────────
+## Delimiter: &quot;;&quot;
+## chr (6): Total Nacional, Comunidades y Ciudades Autónomas, Provincias, Islas...
+## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<pre class="r"><code>habitantes</code></pre>
+<pre><code>## # A tibble: 166 × 6
+##    `Total Nacional` Comunidades y Ciudades Autó…¹ Provincias Islas Periodo Total
+##    &lt;chr&gt;            &lt;chr&gt;                         &lt;chr&gt;      &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;
+##  1 Total Nacional   &lt;NA&gt;                          &lt;NA&gt;       &lt;NA&gt;  1/1/20… 47.4…
+##  2 Total Nacional   &lt;NA&gt;                          &lt;NA&gt;       &lt;NA&gt;  1/1/20… 47.0…
+##  3 Total Nacional   Andalucía                     &lt;NA&gt;       &lt;NA&gt;  1/1/20… 8.46…
+##  4 Total Nacional   Andalucía                     &lt;NA&gt;       &lt;NA&gt;  1/1/20… 8.41…
+##  5 Total Nacional   Andalucía                     Almería    &lt;NA&gt;  1/1/20… 727.…
+##  6 Total Nacional   Andalucía                     Almería    &lt;NA&gt;  1/1/20… 716.…
+##  7 Total Nacional   Andalucía                     Cádiz      &lt;NA&gt;  1/1/20… 1.24…
+##  8 Total Nacional   Andalucía                     Cádiz      &lt;NA&gt;  1/1/20… 1.24…
+##  9 Total Nacional   Andalucía                     Córdoba    &lt;NA&gt;  1/1/20… 781.…
+## 10 Total Nacional   Andalucía                     Córdoba    &lt;NA&gt;  1/1/20… 782.…
+## # ℹ 156 more rows
+## # ℹ abbreviated name: ¹​`Comunidades y Ciudades Autónomas`</code></pre>
 <pre class="r"><code>library(dplyr)
 fumadores &lt;- fumadores%&gt;%
   mutate(
@@ -485,14 +561,24 @@ fumadores &lt;- fumadores%&gt;%
       fumadores$`Comunidades y Ciudades Autónomas`== &quot;Ceuta (Ciudad Autónoma de)&quot; ~ &quot;Ceuta&quot;,
       fumadores$`Comunidades y Ciudades Autónomas`== &quot;Melilla (Ciudad Autónoma de)&quot; ~ &quot;Melilla&quot;,
     )) %&gt;%
-select(`Comunidades y Ciudades Autónomas`,`Consumo de tabaco`,Total,) %&gt;%
+select(`CCAA_fumadores`,`Consumo de tabaco`,Total,) %&gt;%
   na.exclude()
-
-      
-    
-  
-  
-aire&lt;- aire%&gt;%
+fumadores</code></pre>
+<pre><code>## # A tibble: 270 × 3
+##    CCAA_fumadores `Consumo de tabaco` Total 
+##    &lt;chr&gt;          &lt;chr&gt;               &lt;chr&gt; 
+##  1 Andalucia      TOTAL               100,00
+##  2 Andalucia      Fumador diario      20,93 
+##  3 Andalucia      Fumador ocasional   2,81  
+##  4 Andalucia      Ex fumador          16,87 
+##  5 Andalucia      Nunca ha fumado     59,39 
+##  6 Aragon         TOTAL               100,00
+##  7 Aragon         Fumador diario      17,76 
+##  8 Aragon         Fumador ocasional   3,14  
+##  9 Aragon         Ex fumador          18,48 
+## 10 Aragon         Nunca ha fumado     60,62 
+## # ℹ 260 more rows</code></pre>
+<pre class="r"><code>aire&lt;- aire%&gt;%
   mutate(
     CCAA_aire=case_when(
       aire$PROVINCIA==&quot;18&quot; ~ &quot;Granada&quot;,
@@ -516,12 +602,83 @@ aire&lt;- aire%&gt;%
       aire$PROVINCIA==&quot;22&quot; ~ &quot;Huesca&quot;,
       aire$PROVINCIA==&quot;12&quot; ~ &quot;Castellón&quot;,
     )
-  )</code></pre>
-<pre class="r"><code># Asegúrate de que la biblioteca dplyr está cargada
+  )
+aire</code></pre>
+<pre><code>## # A tibble: 402 × 9
+##    PROVINCIA MUNICIPIO ESTACION MAGNITUD PUNTO_MUESTREO FECHA_INICIAL      
+##        &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt; &lt;chr&gt;          &lt;dttm&gt;             
+##  1        18       189      999       27 18189999_27_M  2021-05-01 00:00:00
+##  2        18       189      999       27 18189999_27_M  2021-06-01 00:00:00
+##  3        18       189      999       27 18189999_27_M  2021-07-01 00:00:00
+##  4        18       189      999       27 18189999_27_M  2021-08-01 00:00:00
+##  5        18       189      999       27 18189999_27_M  2021-09-01 00:00:00
+##  6        18       189      999       27 18189999_27_M  2021-10-01 00:00:00
+##  7        18       189      999       27 18189999_27_M  2021-11-01 00:00:00
+##  8        18       189      999       27 18189999_27_M  2021-04-01 00:00:00
+##  9        18       189      999       27 18189999_27_M  2021-12-01 00:00:00
+## 10        33        36      999       27 33036999_27_M  2021-01-01 00:00:00
+## # ℹ 392 more rows
+## # ℹ 3 more variables: FECHA_FINAL &lt;dttm&gt;, VALOR &lt;dbl&gt;, CCAA_aire &lt;chr&gt;</code></pre>
+<pre class="r"><code># Carga el paquete dplyr
 library(dplyr)
+library(stringr)
 
 
-# Agrupa los datos por CCAA y calcula la media
+# Usa la función mutate() y case_when() para cambiar los valores de la columna
+arboles_uso &lt;- arboles_uso %&gt;%
+  mutate(
+    Comunidad = toupper(str_trim(Comunidad)), #Usamos la funcion toupper para converir Comunidad en mayusculas ya que si no no se lee la fuente de datos
+    CCAA_arboles_uso = case_when(
+      Comunidad == &quot;ANDALUCÍA&quot; ~ &quot;Andalucia&quot;,
+      Comunidad == &quot;ARAGÓN&quot; ~ &quot;Aragon&quot;,
+      Comunidad == &quot;CANARIAS&quot; ~ &quot;Canarias&quot;,
+      Comunidad == &quot;CANTABRIA&quot; ~ &quot;Cantabria&quot;,
+      Comunidad == &quot;CASTILLA LA MANCHA&quot; ~ &quot;Castilla la Mancha&quot;,
+      Comunidad == &quot;CASTILLA Y LEÓN&quot; ~ &quot;CyL&quot;,
+      Comunidad == &quot;CATALUÑA&quot; ~ &quot;Cataluña&quot;,
+      Comunidad == &quot;COMUNIDAD DE MADRID&quot; ~ &quot;Madrid&quot;,
+      Comunidad == &quot;COMUNIDAD FORAL DE NAVARRA&quot; ~ &quot;Navarra&quot;,
+      Comunidad == &quot;COMUNIDAD VALENCIANA&quot; ~ &quot;C.Valencia&quot;,
+      Comunidad == &quot;EXTREMADURA&quot; ~ &quot;Extremadura&quot;,
+      Comunidad == &quot;GALICIA&quot; ~ &quot;Galicia&quot;,
+      Comunidad == &quot;ILLES BALEARS&quot; ~ &quot;Baleares&quot;,
+      Comunidad == &quot;LA RIOJA&quot; ~ &quot;La Rioja&quot;,
+      Comunidad == &quot;PAÍS VASCO&quot; ~ &quot;País Vasco&quot;,
+      Comunidad == &quot;PRINCIPADO DE ASTURIAS&quot; ~ &quot;Asturias&quot;,
+      Comunidad == &quot;REGIÓN DE MURCIA&quot; ~ &quot;Murcia&quot;
+    )
+  ) %&gt;%
+  select(&#39;CCAA_arboles_uso&#39;,`Usos`,`0 - 199`,`200 - 399`,`400 - 599`,`600 - 799`,`800 - 999`,`1.000 - 1.199`,`1.200 - 1.399`,`1.400 - 1.599`,`1.600 - 1.799`,`1.800 - 1.999`,`&gt;= 2.000`) %&gt;%
+  na.exclude()
+
+arboles_uso</code></pre>
+<pre><code>## # A tibble: 20 × 13
+##    CCAA_arboles_uso Usos           `0 - 199` `200 - 399` `400 - 599` `600 - 799`
+##    &lt;chr&gt;            &lt;chr&gt;          &lt;chr&gt;           &lt;dbl&gt;       &lt;dbl&gt; &lt;chr&gt;      
+##  1 Andalucia        Forestal arbo… 287.898,…      334.        315.   220.027,98 
+##  2 Andalucia        Forestal arbo… 84.347,91      112.        134.   112.966,01 
+##  3 Andalucia        Forestal desa… 526.444,…      347.        409.   274.928,77 
+##  4 Andalucia        No forestal    1.526.80…      783.        830.   514.875,51 
+##  5 Aragon           Forestal arbo… 7.680,09        41.1        76.6  162.338,14 
+##  6 Aragon           Forestal arbo… 7.986,10        24.3        21.3  36.696,49  
+##  7 Aragon           Forestal desa… 26.484,30      185.        172.   199.243,40 
+##  8 Aragon           No forestal    90.803,81      737.        563.   275.849,87 
+##  9 Canarias         Forestal arbo… 33,83        70885           2.97 6.836,60   
+## 10 Canarias         Forestal arbo… 662,43           1.41        2.51 2.359,08   
+## 11 Canarias         Forestal desa… 144.677,…       88.8        52.2  32.603,36  
+## 12 Canarias         No forestal    115.430,…       67.8        27.5  19.092,46  
+## 13 CyL              Forestal arbo… 158,79           5.84       26.1  271.645,90 
+## 14 CyL              Forestal arbo… 121,58           1.95        7.57 145.465,16 
+## 15 CyL              Forestal desa… 602,61          14.1        38.1  364.323,41 
+## 16 CyL              No forestal    339,01           9.97       84.7  1.675.054,…
+## 17 Cataluña         Forestal arbo… 148.735,…      208.        262.   242.457,99 
+## 18 Cataluña         Forestal arbo… 6.014,75        15.5        14.6  13.274,67  
+## 19 Cataluña         Forestal desa… 44.631,63       57.4        54.6  46.991,60  
+## 20 Cataluña         No forestal    483.761,…      412.        232.   124.058,15 
+## # ℹ 7 more variables: `800 - 999` &lt;chr&gt;, `1.000 - 1.199` &lt;dbl&gt;,
+## #   `1.200 - 1.399` &lt;dbl&gt;, `1.400 - 1.599` &lt;dbl&gt;, `1.600 - 1.799` &lt;chr&gt;,
+## #   `1.800 - 1.999` &lt;dbl&gt;, `&gt;= 2.000` &lt;dbl&gt;</code></pre>
+<pre class="r"><code># Agrupa los datos por CCAA y calcula la media
 aire_agrupado &lt;- aire %&gt;%
   group_by(CCAA_aire) %&gt;%
   summarise(media = mean(VALOR, na.rm = TRUE))%&gt;%
@@ -541,304 +698,104 @@ aire_agrupado &lt;- aire %&gt;%
 aire_media_comunidad &lt;- aire_agrupado %&gt;%
   group_by(COMUNIDADES) %&gt;%
   summarise(media = mean(media, na.rm = TRUE))</code></pre>
-<p>======= &gt;&gt;&gt;&gt;&gt;&gt;&gt;
-ca9ffe3cd247eb90b091e9bb9672cc4dbf6895fa =======</p>
+<pre class="r"><code>tumores&lt;-defuncion_poblacion %&gt;%
+  rename(&quot;Total&quot; = ...2,&quot;&lt;10000&quot; = ...3,&quot;10000-20000&quot; = ...4, &quot;20000-50000&quot; = ...5,&quot;50000-100000&quot; = ...6, &quot;&lt;100000&quot; = ...7, &quot;Capital&quot; = ...8 ) %&gt;%
+  slice(55:58) %&gt;%
+  select(&#39;Defunciones según causa de muerte. Avance enero-mayo 2020&#39;:Capital)
+
+tumores</code></pre>
+<pre><code>## # A tibble: 4 × 8
+##   Defunciones según causa de muerte…¹ Total `&lt;10000` `10000-20000` `20000-50000`
+##   &lt;chr&gt;                               &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;         &lt;chr&gt;        
+## 1 &quot;009-041 II.Tumores&quot;                &lt;NA&gt;  &lt;NA&gt;     &lt;NA&gt;          &lt;NA&gt;         
+## 2 &quot;    Total&quot;                         99,5… 58,835   60,366        81,249       
+## 3 &quot;    Hombres&quot;                       121,… 70,507   71,154        100,094      
+## 4 &quot;    Mujeres&quot;                       78,2… 46,796   49,706        62,719       
+## # ℹ abbreviated name:
+## #   ¹​`Defunciones según causa de muerte. Avance enero-mayo 2020`
+## # ℹ 3 more variables: `50000-100000` &lt;chr&gt;, `&lt;100000` &lt;chr&gt;, Capital &lt;chr&gt;</code></pre>
+<pre class="r"><code>habitantes_refinado &lt;- habitantes %&gt;%
+  filter(Periodo == &quot;1/1/2020&quot;) %&gt;%
+  select(&#39;Comunidades y Ciudades Autónomas&#39;, Total, Periodo) %&gt;%
+  na.exclude()
+
+
+habitantes_refinado &lt;- habitantes_refinado %&gt;%
+  mutate(
+    CCAA_habitantes_refinado = case_when(
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == &quot;Andalucía&quot; ~ &quot;Andalucia&quot;,
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == &quot;Aragón&quot; ~ &quot;Aragon&quot;,
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == &quot;Canarias&quot; ~ &quot;Canarias&quot;,
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == &quot;Cantabria&quot; ~ &quot;Cantabria&quot;,
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == &quot;Castilla - La Mancha&quot; ~ &quot;Castilla la Mancha&quot;,
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == &quot;Castilla y León&quot; ~ &quot;CyL&quot;,
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == &quot;Cataluña&quot; ~ &quot;Cataluña&quot;,
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == &quot;Madrid, Comunidad de&quot; ~ &quot;Madrid&quot;,
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == &quot;Navarra, Comunidad Foral de&quot; ~ &quot;Navarra&quot;,
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == &quot;Comunitat Valenciana&quot; ~ &quot;C.Valencia&quot;,
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == &quot;Extremadura&quot; ~ &quot;Extremadura&quot;,
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == &quot;Galicia&quot; ~ &quot;Galicia&quot;,
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == &quot;Balears, Illes&quot; ~ &quot;Baleares&quot;,
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == &quot;Rioja, La&quot; ~ &quot;La Rioja&quot;,
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == &quot;País Vasco&quot; ~ &quot;País Vasco&quot;,
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == &quot;Asturias, Principado de&quot; ~ &quot;Asturias&quot;,
+      habitantes_refinado$`Comunidades y Ciudades Autónomas` == &quot;Murcia, Región de&quot; ~ &quot;Murcia&quot;
+    ))%&gt;%
+select(&#39;CCAA_habitantes_refinado&#39;,Total,Periodo)%&gt;%
+  na.exclude()
+
+habitantes_refinado</code></pre>
+<pre><code>## # A tibble: 78 × 3
+##    CCAA_habitantes_refinado Total     Periodo 
+##    &lt;chr&gt;                    &lt;chr&gt;     &lt;chr&gt;   
+##  1 Andalucia                8.464.411 1/1/2020
+##  2 Andalucia                727.945   1/1/2020
+##  3 Andalucia                1.244.049 1/1/2020
+##  4 Andalucia                781.451   1/1/2020
+##  5 Andalucia                919.168   1/1/2020
+##  6 Andalucia                524.278   1/1/2020
+##  7 Andalucia                631.381   1/1/2020
+##  8 Andalucia                1.685.920 1/1/2020
+##  9 Andalucia                1.950.219 1/1/2020
+## 10 Aragon                   1.329.391 1/1/2020
+## # ℹ 68 more rows</code></pre>
 <pre class="r"><code>arboles_uso &lt;- arboles_uso %&gt;%
   mutate(
     `0 - 199` = as.numeric(gsub(&#39;,&#39;, &#39;.&#39;, gsub(&#39;\\.&#39;, &#39;&#39;, .$`0 - 199`))),
     `600 - 799` = as.numeric(gsub(&#39;,&#39;, &#39;.&#39;, gsub(&#39;\\.&#39;, &#39;&#39;, .$`600 - 799`))),
+    `800 - 999` = as.numeric(gsub(&#39;,&#39;, &#39;.&#39;, gsub(&#39;\\.&#39;, &#39;&#39;, .$`800 - 999`))),
     `1.600 - 1.799` = as.numeric(gsub(&#39;,&#39;, &#39;.&#39;, gsub(&#39;\\.&#39;, &#39;&#39;, .$`1.600 - 1.799`)))
      )
 
 arboles_uso &lt;- arboles_uso %&gt;% 
   replace_na(list(arboles_uso))
 arboles_uso</code></pre>
-<pre><code>## # A tibble: 68 × 13
-##    Comunidad Usos      `0 - 199` `200 - 399` `400 - 599` `600 - 799` `800 - 999`
-##    &lt;chr&gt;     &lt;chr&gt;         &lt;dbl&gt;       &lt;dbl&gt;       &lt;dbl&gt;       &lt;dbl&gt; &lt;chr&gt;      
-##  1 ANDALUCÍA Forestal…  287899.       334.        315.       220028. 94.562,48  
-##  2 ANDALUCÍA Forestal…   84348.       112.        134.       112966. 38.100,23  
-##  3 ANDALUCÍA Forestal…  526444.       347.        409.       274929. 219.055,47 
-##  4 ANDALUCÍA No fores… 1526810.       783.        830.       514876. 400.609,25 
-##  5 ARAGÓN    Forestal…    7680.        41.1        76.6      162338. 184.427,11 
-##  6 ARAGÓN    Forestal…    7986.        24.3        21.3       36696. 39.454,83  
-##  7 ARAGÓN    Forestal…   26484.       185.        172.       199243. 198.468,25 
-##  8 ARAGÓN    No fores…   90804.       737.        563.       275850. 227.901,78 
-##  9 CANARIAS  Forestal…      33.8    70885           2.97       6837. 13.039,04  
-## 10 CANARIAS  Forestal…     662.         1.41        2.51       2359. 2.331,56   
-## # ℹ 58 more rows
-## # ℹ 6 more variables: `1.000 - 1.199` &lt;dbl&gt;, `1.200 - 1.399` &lt;dbl&gt;,
-## #   `1.400 - 1.599` &lt;dbl&gt;, `1.600 - 1.799` &lt;dbl&gt;, `1.800 - 1.999` &lt;dbl&gt;,
-## #   `&gt;= 2.000` &lt;dbl&gt;</code></pre>
-<pre><code>
-```r
-#library(imputeTS)
-#
-#arboles_uso &lt;- arboles_uso %&gt;% mutate(across(everything(), as.double))
-#arboles_uso &lt;- arboles_uso %&gt;% mutate(across(everything(), type.convert))
-arboles_uso &lt;- setNames(data.frame(lapply(arboles_uso, as.numeric)), colnames(arboles_uso))</code></pre>
-<pre><code>## Warning in lapply(arboles_uso, as.numeric): NAs introducidos por coerción
-
-## Warning in lapply(arboles_uso, as.numeric): NAs introducidos por coerción
-
-## Warning in lapply(arboles_uso, as.numeric): NAs introducidos por coerción</code></pre>
-<pre class="r"><code>aire_media_comunidad</code></pre>
-<pre><code>## # A tibble: 7 × 2
-##   COMUNIDADES         media
-##   &lt;chr&gt;               &lt;dbl&gt;
-## 1 Andalucia          0.361 
-## 2 Aragón             0.165 
-## 3 Asturias           0.0447
-## 4 C.Valencia         0.0839
-## 5 Castilla la Mancha 0.578 
-## 6 Castilla y León    0.241 
-## 7 Cataluña           0.0405</code></pre>
-<pre class="r"><code>fumadores</code></pre>
-<pre><code>## # A tibble: 285 × 3
-##    `Comunidades y Ciudades Autónomas` `Consumo de tabaco` Total 
-##    &lt;chr&gt;                              &lt;chr&gt;               &lt;chr&gt; 
-##  1 Andalucía                          TOTAL               100,00
-##  2 Andalucía                          Fumador diario      20,93 
-##  3 Andalucía                          Fumador ocasional   2,81  
-##  4 Andalucía                          Ex fumador          16,87 
-##  5 Andalucía                          Nunca ha fumado     59,39 
-##  6 Aragón                             TOTAL               100,00
-##  7 Aragón                             Fumador diario      17,76 
-##  8 Aragón                             Fumador ocasional   3,14  
-##  9 Aragón                             Ex fumador          18,48 
-## 10 Aragón                             Nunca ha fumado     60,62 
-## # ℹ 275 more rows</code></pre>
-<pre class="r"><code>arboles_uso</code></pre>
-<pre><code>##    Comunidad Usos    0 - 199   200 - 399 400 - 599  600 - 799 800 - 999
-## 1         NA   NA  287898.60   333.68277 315.34137  220027.98        NA
-## 2         NA   NA   84347.91   111.92655 133.78205  112966.01        NA
-## 3         NA   NA  526444.29   347.05503 409.33211  274928.77        NA
-## 4         NA   NA 1526809.76   783.06001 830.36588  514875.51        NA
-## 5         NA   NA    7680.09    41.07520  76.63849  162338.14        NA
-## 6         NA   NA    7986.10    24.28109  21.28092   36696.49        NA
-## 7         NA   NA   26484.30   185.09602 172.39650  199243.40        NA
-## 8         NA   NA   90803.81   736.79732 563.33594  275849.87        NA
-## 9         NA   NA      33.83 70885.00000   2.97012    6836.60        NA
-## 10        NA   NA     662.43     1.41211   2.50866    2359.08        NA
-## 11        NA   NA  144677.05    88.75444  52.20260   32603.36        NA
-## 12        NA   NA  115430.09    67.76259  27.54536   19092.46        NA
-## 13        NA   NA   29066.43    31.20324  24.39971   22465.73        NA
-## 14        NA   NA       0.00     0.00000   0.00000       0.00         0
-## 15        NA   NA    7426.56    14.51575  21.40809   23319.50        NA
-## 16        NA   NA  100362.04    31.80362  19.81986   16468.07        NA
-## 17        NA   NA       0.00     8.48176  49.11877  154191.65        NA
-## 18        NA   NA       0.00    20.38524 121.24968  170187.18        NA
-## 19        NA   NA       0.00    19.72971 164.69188  481670.70        NA
-## 20        NA   NA       0.00    85.83518 508.71765 2387706.94        NA
-## 21        NA   NA     158.79     5.84093  26.08410  271645.90        NA
-## 22        NA   NA     121.58     1.94610   7.57351  145465.16        NA
-## 23        NA   NA     602.61    14.09573  38.13751  364323.41        NA
-## 24        NA   NA     339.01     9.96616  84.70004 1675054.37        NA
-## 25        NA   NA  148735.20   208.38286 262.39204  242457.99        NA
-## 26        NA   NA    6014.75    15.49416  14.62045   13274.67        NA
-## 27        NA   NA   44631.63    57.42268  54.59148   46991.60        NA
-## 28        NA   NA  483761.97   411.59271 232.10746  124058.15        NA
-## 29        NA   NA       0.00     0.00000  13.46648   52721.51        NA
-## 30        NA   NA       0.00     0.00000   4.72645   10219.14        NA
-## 31        NA   NA       0.00     0.00000  18.35005   50466.73        NA
-## 32        NA   NA       0.00     0.00000  89.84482  277225.07        NA
-## 33        NA   NA    4907.87    25.94080  57.09467  101191.10        NA
-## 34        NA   NA     388.18     1.75341   6.78807   11122.59        NA
-## 35        NA   NA     441.22    36.13866  45.91039   35228.27        NA
-## 36        NA   NA    5162.42   201.27751 226.67405   46285.83        NA
-## 37        NA   NA   17956.86    30.81898  55.03581   92842.60        NA
-## 38        NA   NA   21681.58    35.75890  54.96516   74089.31        NA
-## 39        NA   NA   74219.08   109.33147 115.48128  114049.74        NA
-## 40        NA   NA  485065.13   218.37632 149.80521  149997.46        NA
-## 41        NA   NA   14836.40   326.00443 283.95241  123240.98        NA
-## 42        NA   NA   15332.37   336.77025 252.84582   27719.24        NA
-## 43        NA   NA    8719.38   396.46088 283.65034   66021.49        NA
-## 44        NA   NA   71202.18   965.19284 733.40267   99957.02        NA
-## 45        NA   NA  204476.45   297.81891 315.21485  128928.02        NA
-## 46        NA   NA       0.00     0.00000   0.00000       0.00         0
-## 47        NA   NA   46678.81   111.35907 253.90299  223473.92        NA
-## 48        NA   NA  246340.96   235.35852 294.88508  147153.22        NA
-## 49        NA   NA   79301.11    29.80370   6.86020    5561.82        NA
-## 50        NA   NA       0.00     0.00000   0.00000       0.00         0
-## 51        NA   NA   52957.39    11.51433   9.06592    3592.06        NA
-## 52        NA   NA  275943.52    15.45579   3.41252     361.33        NA
-## 53        NA   NA       0.00     2.17829   5.10607   10408.40        NA
-## 54        NA   NA       0.00     0.00000   0.00000       0.00         0
-## 55        NA   NA       0.00     3.52000  13.51504   29072.39        NA
-## 56        NA   NA       0.00    34.78872 106.87921   55369.31        NA
-## 57        NA   NA   49684.44    90.00527  75.99442   80320.35        NA
-## 58        NA   NA    9202.54    11.86431   7.13669    5671.60        NA
-## 59        NA   NA    9247.27     9.01785  17.11074   18950.39        NA
-## 60        NA   NA   79560.73    42.39754  88.99393   35417.33        NA
-## 61        NA   NA   61345.00    78.31953  55.27539   42196.55        NA
-## 62        NA   NA    4613.12     9.74364   9.09537    9108.16        NA
-## 63        NA   NA   11618.58    27.20307  45.01052   55259.61        NA
-## 64        NA   NA  120924.64    85.90301  62.49716   52115.56        NA
-## 65        NA   NA    1061.03     5.82062  11.29951   21252.80        NA
-## 66        NA   NA    7364.31    28.26637  44.72633   36236.90        NA
-## 67        NA   NA   40252.71    70.78796  59.84423   39890.71        NA
-## 68        NA   NA  201011.95   146.23938 113.60513   95961.66        NA
-##    1.000 - 1.199 1.200 - 1.399 1.400 - 1.599 1.600 - 1.799 1.800 - 1.999
-## 1       99.38462      78.27567      56.74534      39741.48      15.41960
-## 2       35.42631      22.31983      12.69174       6233.50       3.02508
-## 3      156.18496      94.87310      65.05318      55250.07      26.11774
-## 4      316.30272      43.39571      11.09961       4298.19       2.34314
-## 5      178.91346     143.50103     102.94655      58546.58      14.97664
-## 6       38.95016      23.78872      11.88127       4505.82   85622.00000
-## 7      165.45156     135.61067      97.32698      44395.27      28.30210
-## 8      205.13753      92.31578      31.26467       8127.50       9.17327
-## 9       19.54201      16.79360      11.55701      10124.83       7.14337
-## 10       1.54080   41128.00000   81075.00000        728.96   26833.00000
-## 11      12.58213       6.95450       3.45170       1446.41       1.13521
-## 12       6.01274       2.79670   92871.00000        650.20   31212.00000
-## 13      18.64098       8.36442       2.92665        443.89            NA
-## 14       0.00000       0.00000       0.00000          0.00            NA
-## 15      25.63827      11.01027       7.92069      11658.49            NA
-## 16       6.97914       1.66515   92759.00000       3319.36            NA
-## 17     331.52517     230.88335      98.47849      28905.50       2.51549
-## 18     110.08944      45.52910      13.85998       3192.39   71012.00000
-## 19     270.19948     112.15864      49.58236      10496.66       2.39989
-## 20     280.45191      55.13424       9.83188       1798.08   21967.00000
-## 21     478.11123     170.89799      83.51540      31675.04       6.03255
-## 22     103.14162      39.80368      14.27821       3267.17   58305.00000
-## 23     570.80840     321.99710     231.74063     155197.33      67.60015
-## 24     607.88516      88.36572      26.40883      12518.79       9.23134
-## 25      97.06064      62.08606      50.29599      50577.17      25.30341
-## 26       5.70480       5.20629       4.10230       2710.38       2.41912
-## 27      25.63811      29.78834      29.20193      45991.21      20.08472
-## 28      27.64807      16.95347       7.49993       4892.56       1.00935
-## 29      17.99406      16.15715      12.85261      12370.87            NA
-## 30       5.93421       2.29080   59346.00000         47.31            NA
-## 31      35.71426      17.56365      11.26144      14096.23            NA
-## 32       4.65961   42619.00000    4153.00000          0.40            NA
-## 33      47.92483      12.60802       2.49310       1152.83            NA
-## 34       1.93400   37159.00000   10999.00000         13.20            NA
-## 35      13.61530       4.39031   62797.00000        110.84            NA
-## 36       8.15702       3.10909       2.73136       3247.70            NA
-## 37      51.60825      14.45387       4.64963        584.06            NA
-## 38      18.68187       2.61969   62396.00000         16.23            NA
-## 39      55.90418      14.52891       2.69916        298.79            NA
-## 40      21.74510       3.58395   27258.00000        120.67            NA
-## 41      16.11853       5.91800       1.25311          4.29       0.00000
-## 42       4.72323       2.14461   10208.00000          0.19       0.00000
-## 43      11.89480      10.06759       8.36496       5648.99       5.48536
-## 44       2.54604       1.20690   59109.00000        387.94   19163.00000
-## 45      23.56246      14.47225       3.81458        531.31            NA
-## 46       0.00000       0.00000       0.00000          0.00            NA
-## 47      73.10096      44.02078      18.63327       7284.41            NA
-## 48      12.30934       2.22287    6615.00000          0.22            NA
-## 49            NA            NA            NA            NA            NA
-## 50            NA            NA            NA            NA            NA
-## 51            NA            NA            NA            NA            NA
-## 52            NA            NA            NA            NA            NA
-## 53      34.07322      27.72381      15.99317       8957.66            NA
-## 54       0.00000       0.00000       0.00000          0.00            NA
-## 55      35.64620      23.28528      11.97377      11931.17            NA
-## 56       1.49619       1.20474       1.28585       1915.98            NA
-## 57      10.95587            NA            NA            NA            NA
-## 58       1.84290            NA            NA            NA            NA
-## 59       7.46047            NA            NA            NA            NA
-## 60       1.09046            NA            NA            NA            NA
-## 61      27.40813      17.10802       7.07301        836.61            NA
-## 62       2.21587       2.22064       1.47998        430.36            NA
-## 63      38.02407      27.05186      22.35394      22838.64            NA
-## 64      17.41997       9.44815       7.06026       7566.28            NA
-## 65      18.07967      11.55177       5.62575       2165.68            NA
-## 66      13.40046       9.76965       2.08077        149.19            NA
-## 67       5.89165       4.17388       1.80028        406.79            NA
-## 68      21.48993       7.31439   62875.00000          0.00            NA
-##       &gt;= 2.000
-## 1      3.43806
-## 2  91465.00000
-## 3     44.83145
-## 4      1.43031
-## 5      4.35178
-## 6  45467.00000
-## 7     40.45442
-## 8     52.55823
-## 9      2.82357
-## 10 30761.00000
-## 11    15.38164
-## 12     5.85288
-## 13          NA
-## 14          NA
-## 15          NA
-## 16          NA
-## 17          NA
-## 18          NA
-## 19          NA
-## 20          NA
-## 21 36008.00000
-## 22  5888.00000
-## 23    16.94815
-## 24     8.92951
-## 25    20.63669
-## 26     5.38602
-## 27    79.79562
-## 28     9.81463
-## 29          NA
-## 30          NA
-## 31          NA
-## 32          NA
-## 33          NA
-## 34          NA
-## 35          NA
-## 36          NA
-## 37          NA
-## 38          NA
-## 39          NA
-## 40          NA
-## 41          NA
-## 42          NA
-## 43          NA
-## 44          NA
-## 45          NA
-## 46          NA
-## 47          NA
-## 48          NA
-## 49          NA
-## 50          NA
-## 51          NA
-## 52          NA
-## 53          NA
-## 54          NA
-## 55          NA
-## 56          NA
-## 57          NA
-## 58          NA
-## 59          NA
-## 60          NA
-## 61          NA
-## 62          NA
-## 63          NA
-## 64          NA
-## 65          NA
-## 66          NA
-## 67          NA
-## 68          NA</code></pre>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>ddacec9ca2a35faee66b690499cc29fa94addafc</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<div id="including-plots" class="section level3">
-<h3>Including Plots</h3>
-<p>You can also embed plots, for example:</p>
-<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABUAAAAPACAMAAADDuCPrAAAA1VBMVEUAAAAAADoAAGYAOjoAOmYAOpAAZpAAZrY6AAA6OgA6Ojo6OmY6ZmY6ZpA6ZrY6kLY6kNtmAABmADpmOgBmOjpmZjpmZmZmZpBmkLZmkNtmtrZmtttmtv+QOgCQOjqQZgCQZjqQZmaQkJCQkLaQtraQttuQ29uQ2/+2ZgC2Zjq2kDq2kGa2kJC2tpC2tra2ttu227a229u22/+2///bkDrbkGbbtmbbtpDbtrbb25Db27bb29vb2//b/7bb/9vb////tmb/25D/27b/29v//7b//9v///9QcbwyAAAACXBIWXMAAB2HAAAdhwGP5fFlAAAgAElEQVR4nO3dbWPT1rqgYYWGwYVNDwxtyh5gDj0HpmEzTYc2hR7oDCHF+f8/aSS/RX5JYj1Z0dJyrusLwSB5ocQ3kiUtV2cAhFS5BwBQKgEFCBJQgCABBQgSUIAgAQUIElCAIAEFCBJQgCABBQgSUIAgAQUIElCAIAEFCBJQgCABBQgSUIAgAQUIElCAIAEFCBJQgCABBQgSUIAgAQUIElCAIAEFCBJQgCABBQgSUIAgAQUIElCAIAEFCBJQgCABBQgSUIAgAQUIElCAIAEFCBJQgCABBQgSUIAgAQUIElCAIAEFCBJQgCABBQgSUIAgAQUIElCAIAEFCBJQgCABBQgSUIAgAQUIElCAIAEFCBJQgCABBQgSUIAgAQUIElCAIAEFCBJQgCABBQgSUIAgAQUIElCAIAEFCBJQgCABBQgSUIAgAQUIElCAIAEFCBJQgCABBQgSUIAgAQUIElCAIAEFCBJQgCABBQgSUIAgAQUIElCAIAEFCBJQgCABBQgSUIAgAQUIElCAIAEFCBJQgCABBQgSUIAgAQUIElCAIAEFCBJQgCABBQgSUIAgAQUIElCAIAEFCBJQgCABBQgSUIAgAQUIElCAIAEFCBJQgCABBQgSUIAgAQUIElCAIAEFCBJQgCABBQgSUIAgAQUIElCAIAEFCBJQgCABBQgSUIAgAQUIElCAIAEFCBJQgCABBQgSUIAgAQUIElCAIAEFCBJQgCABBQgSUIAgAQUIElCAIAEFCBJQgCABBQgSUIAgAQUIElCAIAEFCBJQgCABBQgSUIAgAQUIElCAIAEFCBJQgCABBQgSUICgYQe0AkgmfaKSrzGh3Fsb2C3JG5V6havGn/48Ojr69dPnwLI38B8GcGuVFtCPL1vtf/iu6+ICCqRTVkBPn6zsPu//3G0FAgqkU1RAT0ZNNO8fTH3b/Gbveac1CCiQTkkB/fq4Dubr1gMf6qDe+b3LKgQUSKekgB6v5bJJ6qMuqxBQIJ2CAjp+UVWrB+wnVXW3y9l4AQXSKSig9e7m2vH6pscuI6BAOgIKEFRQQOtD+L3Vq5YcwgP5FBTQs8O1WjZvi97rsgoBBdIpKaBfRnVBf2s9cFr3c22n9FICCqRTUkCb65jqYh68Omr8Mr2SvtNVTAIKJFRUQM/ej1Zu5dx71m0FAgqkU1ZAz8Zv2wnde9p1RiYBBS7XZaK6wgJaG388entwcPD06F1gPjsBBS7VaarP8gJ6LQIKXGYRzq0KKqAAc61s7mhAzUgP3JB2IrbIRWkBNSM9cHN2OqBmpAdu0i4H1Iz0wI3a4YCakR64WTscUDPSAzdrdwNqRnrghu3uZUzdJ1SuNrip0QG7YGcvpBdQ4Mbt6q2cZqQHbt6uTiZiRnpgUEoKqBnpgUEpKaBmpAcGpaiAmpEeGJKyAmpGemBACgvomRnpgcEoL6DXIqBAOgIKEFRuQMcff/2r80ICCqRTWkD/PDqaXAk6nVp5758dFxdQIJ2yAjq9jOnu59nUylXHGzkFFEipqIAez6p5bzK18nRO+k53cgookFBJAW1u5dx/9Ut98P7D7A6kpqidPtNDQIF0SgrobDKRZgaR+Y7noclEgGwKCuhiRvqT8ylE6p1S09kBmRQU0MXkya1ZlC+fUHmdgALpCChAUEEBXcxIXx+3O4QH8isooIszRofn04AeO4kEZFNSQE/qcH736dObqrp/vi/qMiYgl5ICOtn1nNx+9F91OB8eHb3sfCuSgALpFBXQ8ZvpPMo/L+5J6nYKSUCBlIoK6NnZx5/uP5hMQ//H9Gb4hx0nVRZQIJ3CAnpu/OdPB686z2cnoEA6xQY0RkCBdAQUIEhAAYIEFCBIQAGCBBQgSEABggQUIEhAAYIEFCBIQAGCBBQgSEABggQUIEhAAYIEFCBIQAGCBBQgSEABggQUIEhAAYIEFCBIQAGCBBQgSEABggQUIEhAAYIEFCBIQAGCBBQgSEABggQUIEhAAYIEFCBIQAGCBBQgSEABggQUIEhAAYIEFCBIQAGCBBQgSEABggQUIEhAAYIEFCBIQAGCBBQgSEABggQUIEhAAYIEFCBIQAGCBBQgSEABggQUIEhAAYIEFCBIQAGCBBQgSEABggQUIEhAAYIEFCBIQAGCBBQgSEABggQUIEhAAYIEFCBIQAGCBBQgSEABggQUIEhAAYIEFCBIQAGCBBQgSEABggQUIEhAAYIEFCBIQAGCBBQgSEABggQUIEhAAYIKDOj4059HR0e/fvocWFZAgXRKC+jHl9W5h++6Li6gQDplBfT0SbVs/+duKxBQIJ2iAnoyaqJ5/2Dq2+Y3e887rUFAgXRKCujXx3UwX7ce+FAH9c7vXVYhoEA6JQX0eC2XTVIfdVmFgALpFBTQ8YuqWj1gP6mqu13OxgsokE5BAa13N9eO1zc9dhkBBdIRUICgggJaH8LvrV615BAeyKeggJ4drtWyeVv0XpdVCCiQTkkB/TKqC/pb64HTup9rO6WXElAgnZIC2lzHVBfz4NVR45fplfSdrmISUCChogJ69n60civn3rNuKxBQIJ2yAno2fttO6N7TrjMyCSiQTmEBrY0/Hr09ODh4evQuMJ+dgALplBfQaxFQIB0BBQgqMKBmpAeGobSAmpEeGIyyAmpGemBAigqoGemBISkpoGakBwalpICakR4YlIICakZ6YFgKCmj3CZWrDW5qdMDtI6AAQQUF1Iz0wLAUFFAz0gPDUlJAzUgPDEpJATUjPTAoRQXUjPTAkJQVUDPSAwNSWEDPzEgPDEZ5Ab0WAQXSEVCAoGID+vefkWN4AQXSKSygH7+f3Lk5P5e0//rKJZYJKJBOUQEdv5xOaNfcgDTzXbe9UAEF0ikpoJNu1gGd/Lp3cHDQ7IZ2upNTQIGESgroSd3Lf/s8/XVyA9L4X27lBPIpKaCHs24enu93HppMBMimoIB+fTzd3Zz/2vgyMp0dkEtZAZ2cgm9Ponz5hMrrBBRIp8CAjl8IKDAEBQV08aFyh+eH8GakB/IpKKCLjzX+MpqfOWqa6mONgUxKCmjzKfD7zYz0x/PLmN64jAnIp6SAnp00V84/ePXp07/qkj795eXIjPTAZr18EG9RAZ18KtKybv0UULgl+vko87ICujIjvclEgI0W4bzZghYW0Nrfvxx8f7/24MdXprMDNmllU0DTEVC4Ddqv9Jt81QsosHME9EYIKNwGAnojBBRuAwG9EQIKt4GA3ggBhdtAQG+EgMJt4DKmGyGgcCu4kP4mCCjcDm7lvAECCreEyUTSE1AgHQEFCBJQgCABBQgSUIAgAQUIElCAIAEFCBJQgCABBQgSUIAgAQUIElCAIAEFCBJQgCABBQgSUIAgAQUIElCAIAEFCBJQgCABBQgSUIAgAQUIElCAIAEFCBJQgCABBQgSUIAgAQUIElCAIAEFCBJQgCABBQgSUIAgAQUIElCAIAEFCBJQgKD+Avr30dGvn8/Gf6V+vk4EFEinr4C+/7aqqju/n319vP9b6mfsQECBdHoK6Juqmge02vs59VNuT0CBdPoJ6HFdz/3/GNUBHb+oqrufUz/n1gQUSKeXgH4ZVdWzeuezDuikoM9TP+fWBBRIp5eAHlbVvbNZQM9OJr/JRECBdPoIaL3T2bzvOQtovTua7xheQIF0+gjo18fN6aN5QGe/y0NAgXQEFCDIITxAUF8nkR4tAnrsJBKwG3oJ6MnsGvomoPXXLmMCdkIvAW2u/dx73QR0/K/KhfTAjujnTqSvj6tzbuUEdkNP98I3+6AzJhMBdkRv09mdvmzmY9p7+C7183UioEA6JlQGCOoloG/2X6d+liABBdLp8UL6IRBQIJ0eb+UcAgEF0ulpD1RAgd3Ty3ugWe/eXCKgQDr9nIV/P6r2X31K/UwBAgqk08sh/E8HP1RtprMDdkFPJ5EqAQV2Ti8B/f7+sgcCCuwAdyIBBAkoQJCAAgQJKEBQT5cxLfvRh8oBO8BlTABBAgoQ1Mt7oH9/mvvlZbX37NNfqZ9zawIKpNP7SaQvo+pZ6qfcnoAC6fR/Fv445+zKAgqk039A613QfHPbCSiQTv8BzTo/vYAC6WTZA71eQMef/jw6Ovr1U+RiUgEF0snxHmh1N34h/ceXrcuhun/IvIAC6fQc0PGnf1XX+HyP0ycrV5TudzwfJaBAOjkupA+fhT8ZNYvfn90Q+u1kXc+7DU5AgWQyBHQveh1os569160HPoy63tUkoEA6vc9I/+Bp+D6k47VcNkl91GlwAgokU9B0duMXVbV6wH7S8YyUgALpFBTQTReQdr2oVECBdAQUIKjfgL4fVdXD34Irrg/h187fO4QH8ukpoB+eNDuKx9e7iulwrZbN26KdLioVUCCdfgI6PX/+ZXS9+ZSb5e+2919PX3TNsYAC6fQS0C/T6zUnGW12GjtdedQy2YPdO3h11PhleiV9t3UJKJBOLwGd3v4+O94+ucatnO9HK7dydr0oX0CBdHr5VM7p2Z9mP/T5NaezG79tJ3TvaddZSQQUSKenWzlnp5Cajl53PtDxx6O3BwcHT4/eBeZ0ElAgnR4Dejg9fWRCZWBH9BfQ+SVH9ZH8NeYDvSYBBdLp6T3Q6vn8LdBmR/R6n4lkRnpgGPo6C7//7t8nR/DjZkLlbnN4LjEjPTAYvQR0PiHoo+lX8R1QM9IDA9LPnUjTe5Dufp4E9LvwO6BmpAeGpKd74ccfDn5sjre//vfuh90LZqQHBqWg6ezMSA8MS0EBNSM9MCwFzQfafULlaoPgkwOsKWg+UAEFhqWg+UDNSA8MS0nzgZqRHhiUkuYDNSM9MChFzQdqRnpgSMqaD9SM9MCAFDYfqBnpgeEobz5QM9IDA1HgfKDXIaBAOqXNB3pNAgqkU9Z8oG3jP49+7XwQL6BQlmHfQ1jUfKBLQiejhvptADYa+F3YJc0HukxAYectwjnQghY0nd3Z35/aPtYBfVf/+leXVQzzmwBs1MrmMF+7BQV0/k7qik67ocP8JgAbtV+wg3zx9hfQv4+akz7jTjuMSwQUbhkBnXn/7bR1Xx/vRydUntzIuXcw98Oo2vtH/euPprODHSWgU2/mO4v1bmR0QuXp7EuL/jqJBLtOQCeaaZT2/2M0u6HzGndy/lHvdv5z+qWAwq4T0EZzGeizunhN8DZ9NFwHp0/mc4IKKOw6AW1Mb3+fBvQaEypPNPeCTiaxE1DYdS5jOltMqDwL6HVnYzr7Uu+EPvwsoLD7XEi/2FecBfRa84FOjN/UO6GvBRR2n1s5kwd0ekHTP0YCCjtv0P0s8RC+0VzQFPl85KF+G4AS9XUS6dEioMdp5rP7YySgQF69BPRkdg19E7yTVBMqn/7U7Sak6eAEFEiml4A21342Z33u/D6ZkP76R/BhAgqk08+dSEvzgMRv5bw+AQXS6WtC5ReLfsYnE0lAQIF0epvO7vRlMx/TXrIJ6WMEFEinoAmVUxBQIJ1eAvpm/3XqZwkSUCCdHi+kHwIBBdLp8VbOIRBQIJ2e9kAFFNg9vbwHmujuzQQEFEinn7Pw70fV/qtPqZ8pQECBdHo5hP/p4If4JxEnJaBAOj2dRLrGR7knJaBAOr0E9Pv7yx4IKLAD3IkEECSgAEECChDUX0DHH4+OjnJfyiSgQDp9BfTDk9kZ+Ac5pwMVUCChfgLamk958vly2QgokE4/AT1s5lL+x38e/e8fMhdUQIF0+vpUzuq76SfJjd9k/VAkAQXS6etz4e9t/k3fBBRIp6dbOVs7nV9GGT/XWECBdPqfUDnr9MoCCqTT/4TKAgrsiL4mVH6++M2J90CB3dBLQL8+qe7Mr5/P+/keAgqk09OF9C+rvWeTr06fZP2ETgEF0ulrPtDmAvpvpr/sZZwVVECBdLLMSJ9vXnoBBdIRUIAg84ECBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShw86qZ3ONITECBG1dVu1lQAQVu2iKcu1ZQAQVuWCubO/YSFFDghrVfd7v1GhRQ4IYJaIc1pl5hSrv1zYMyCGiHNaZeYUq79c2DMghohzWmXmFKu/XNgzIIaIc1pl5hSrv1zYMyCGiHNaZeYUq79c2DMriMqcMaU68wpR377kEZXEi//RpTrzClHfvuQSHcyrn1GlOvMKVd+/ZBIXaznyUGdPzpz6Ojo18/fQ4su3PfPyCj0gL68eX5sUD18F3XxQUUSKesgJ4+qZbt/9xtBQIKpFNUQE9GTTTvH0x92/xm73mnNQgokE5JAf36uA7m69YDH+qg3vm9yyoEFEinpIAer+WySeqjLqsQUCCdggI6flFVqwfsJ1V1t8vZeAEF0ikooPXu5trx+qbHLiOgQDoCChBUUEDrQ/i91auWHMID+RQU0LPDtVo2b4ve67IKAQXSKSmgX0Z1QX9rPXBa93Ntp/RSAgqkU1JAm+uY6mIevDpq/DK9kr7TVUwCCiRUVEDP3o9WbuXce9ZtBQIKpFNWQM/Gb9sJ3XvadUYmAQXSKSygtfHHo7cHBwdPj94F5rMTUCCd8gJ6LQIKpCOgAEEFBtSM9MAwlBZQM9IDg1FWQM1IDwxIUQE1Iz0wJCUF1Iz0wKCUFFAz0gODUlBAzUgPDEtBAe0+oXK1wU2NDrh9BBQgqKCAmpEeGJaCAmpGemBYSgqoGemBQSkpoGakBwalqICakR4YkrICakZ6YEAKC+iZGemBwSgvoNcioEA6AgoQJKAAQYUFdPz2+/v/+M/zNz8vv5VznYAC6ZQV0D9GK2ffBRTIp6iAHi8uYJrf0imgQD4lBbS5lXP/9adPb5pfp9kUUCCfkgJ6PN/zbD5bblpQAQXyKSigrRnpmy8nLRVQIJ+CAtqO5XweOwEF8ik0oPOPkxNQIJ9SA9qcUdr7WUCBjAoK6Mqncp5U1Z3fBBTIp6CANmfh7y3/9s7/EVAgm5IC2lwH+vCv898fTq6pF1Agk5ICOrkTqd3LNwIKvfLx4MuKCmjzkR5LvWw+4kNAoS/nHweReyQDUVZAz8Yfflyah378ZiSg0JNFOBV0prCAXpdvO4S1sumVNCWgwHbaLx8vpQkBBbYjoGsEFNiOgK4RUGA7ArpGQIHtCOgaAQW2I6BrBBTYjsuY1ggosCUX0q8SUGBbbuVcIaDA1vRzmYACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgMLtU83kHkfxBBRunapS0DQEFG6bRTgV9LoEFG6ZVja9IK5JQOGWab8KvCKuR0DhlhHQdAQUbhkBTUdA4ZYR0HQEFG4ZAU1HQOGWEdB0BBRuGZcxpSOgcNu4kD4ZAYVbx62cqQgo3D76mYiAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKJTLrEqZCSgUy7yeuQkolMrM8tkJKBTKZxvlJ6BQKJ+umZ+AQqEEND8BhUIJaH4CCoUS0PwEFAoloPkJKBRKQPMTUCiUy5jyE1AolQvpsxNQKJZbOXMTUCiXfmYmoABBAgoQJKAAQQIKECSgkJ1zQaUSUMjN1UjFElDIzPXw5RJQyMsdmQUTUMjLnCAFE1DIS0ALJqCQl4AWTEAhLwEtmIBCXgJaMAGFvAS0YAIKqcQuh3cZU8EEFBKJ3lDkQvpyCSikEe+gWzmLJaCQxHWOxPWzVAIKSTgXdBsJKCQhoLeRgMKK6KmgzV+zywQUlgVP6QjobSSgsCR6Ml1AbyMBZVf1fFm7gN5GAsqO6vtI3A1Ft1GBAR1/+vPo6OjXT58Dy/rJLk/wGsn+j8TdUHQLlRbQjy/Pdyyqh++6Lr7dPzd8WXM5C5Y30s47kv0fibuh6PYpK6CnT6pl+z93W8FW/9zw66CcBYsa6coX2y63+eubW/DMDUW3UFEBPRk1P533D6a+bX6z97zTGrb550ZfsgUtWOBIe9uRdC6IDkoK6NfHdTBftx74UAf1zu9dVrHFP/caL9lSFixnpBk6KKB0UFJAj9dy2ST1UZdVbBXQTn+9xAXLGWmWBZ1MZ2sFBXT8oqpWD9hPqupul7PxAprlCUta0Ml0OigooPXu5trx+qbHWkPZ4MqnKei1LqA3sOA1TpRx+wjo+kKbv96hBcsZaZ4jcf1kWwUFtD6E31u9askhfGTBckbqSJxhKyigZ4drtWzeFr3XZRUCmuUJs+xIOhLn5pUU0C+juqC/tR44rfu5tlN6qa0CGnzJlrNgOSO91o6kfnLjSgpocx1TXcyDV0eNX6ZX0ne6immrf245V5mHFyxnpHYkGbSiAnr2frRySmjvWbcVbPXPDb9ky1mwnJHakWTIygro2fhtO6F7T7vOyLTdPzf8ki1nwXJGCgNWWEBr449Hbw8ODp4evQvMZ+f1C6RTXkCvRUCBdAQUIEhAAYIEFCBIQAGCBBQgSEABggQUIEhAAYIEFCBIQAGCBBQgSEABggQUIOjWBRQgneSNSr3ClHJvbGC3JG9U6hVmMaxjfaO5xLCGYzQXM5ptDHRYHQ1r6xrNJYY1HKO5mNFsY6DD6mhYW9doLjGs4RjNxYxmGwMdVkfD2rpGc4lhDcdoLmY02xjosDoa1tY1mksMazhGczGj2cZAh9XRsLau0VxiWMMxmosZzTYGOqyOhrV1jeYSwxqO0VzMaLYx0GF1NKytazSXGNZwjOZiRrONgQ6ro2FtXaO5xLCGYzQXM5ptDHRYHQ1r6xrNJYY1HKO5mNFsY6DD6mhYW9doLjGs4RjNxYxmGwMdVkfD2rpGc4lhDcdoLmY02xjosDoa1tY1mksMazhGczGj2cZAh9XRsLau0VxiWMMxmosZzTYGOqyOhrV1jeYSwxqO0VzMaLYx0GF1NKytazSXGNZwjOZiRrONgQ6ro2FtXaO5xLCGYzQXM5ptDHRYHQ1r6xrNJYY1HKO5mNFsY6DD6mhYW9doLjGs4RjNxYxmGwMdFsDwCShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBO1AQE9fjqpq7+FvGYcwflEtPM87rK+P7/x+/rv1QfQ8rPZwsm6l8dv79dN+c/mmyDeavD9BH75vRvP08/kjOX9wVkczoFfXuvID+n403bR7/8w3hq+P177FmYZV/7C1Aro+iJ6HtTScnFtp/kRV9d3qQxk2zvpocm6bRaD25nnKuW3WRzOcV9cGxQf0ZP1/p6yDmI0i07DGh1WrWOuD6HlYFw6n763Ufup7aw/1vXEuH03f22bDDl7GbXP5aPK+ujYpPaDN/0779Y78xyftl2rfjle/kZmGNfnpWzzf+iB6HtbycDJupckTvTubPtPez5ufO+docv4E1U+91xwv/1f9THc/b37unKMZzKtro9IDejzfzM2L9VGuURyufh/zDOvD5MBmMZT1QfQ7rJXhZNxKJ4s9veaZ7m1+7pyjybht6vXPIl53afpVxm2zYTRDeXVtVnhAz7f32ZfR/H+sHKNYfuoswzqt/z+uHj5Z/LStD6LXYa0OJ+dWOjzfh7lwU+QcTc5tU69+lvP5rl7ObbM+moG8ui5SeEDr/6bmG7C1WTOM4t7qA/0Pqzn4edY6a7M+iF6HtTqcgWyl2ZNm3jgroxnItpmVfSDbZv7/zDC2zUUKD+j50dDSf+z9j+L5aXPtxYPXGYd1vPfd5/Zp7/VB9Dqs1eEMZCvNXn2ZN87KaIaxberBTL5Zw9g289EMY9tcqPyALt4DWXuvuTfH1d4Ps5OCDz9nG9bfs2PBVkBXBtHrsFaHM5CtNHv1Zd44K6MZwrYZvx3NnmcI2+Z8NEPYNpcoPKDt7XeS7Q3lw9Z1FpMdinzDahVrfRD9D6sd0EFspfmpiSFsnNaJkuzbZjKAvWeTr/Nvm/Zo8m+bSwno9TXnAieXXpy+rKZjEND14QxiKzUXps5PwmffOOejyb9tJpX65tlkDy//tmmPJv+2uZSAXt/5BRfNeJpgCOj6cIawlc4v7B/ExjlsXWaZd9uM/+f970cX7+HlHE32bXM5AU2q+e/yuYBuGs7yo1m20mRnZv3C9UwbpzWalUcz/QQ1F541O8QD2Dat0bRkf3VtIKBpHWf7gZsqIqCZttLp+Y0/A9g47dG0ZfwJmu3s5d827dG05X51bVB4QAd1Qq4xHVC+YQ3nLPzqcNqybKVmAor91jVVeTfO0mjacv4EHV/w3DlH05b71bVB+QEdziVhjcW3ONOwhnMd6Opw2nJspfqlVn23uGsl98ZZHk1bzp+gi54752i2GV9GhQd0UDclNKb/I+Yb1nDuRFodTluGrfSmWno5Zt44K6Npy/kTNA3UEH5wzkfTlvvVtUHhAR3EbbGtQ43Z+zb5hrV83VDOe+FXh5N3Kx2vvOGYd+OsjibntmkfKE/353Jum/XRDOnVtUHhAR3ExCz1d3FWifZlhnmGtXzrT97ZmJaHk3Ur1Tszd5ZnL8+5cdZGk3Pb1M+9cplQzm2zPpohvbo2KD2g87kVc04NOLkepbnqd2W2yRzDWpm9Y2UQvQ9r9UL6TFtpwwndjBtnfTQ5t83iuRcXqufcNuujGdKra4PSAzqIyam/jM4H8SjvsJbedFwfRN/Dag8n41Y6rtqmr8J8G2fDaHL+BJ22PjEj/2z966MZ0Ktrg+IDevbHAD4e5cuTajwVN5MAAAV4SURBVHUQmYa1fNZmfRA9D2tpONm2UvtjIqrF24+5Ns7G0eT8CTqdP/f5dQEZf3DWRzOcV9cG5Qd0EB/QN559kuBf5w/lGdbKae/cn8q5PJxcW6n9qWTnAc21cTaPJutP0PS5B/KJpeujGcyra4MdCChAHgIKECSgAEECChAkoABBAgoQJKAAQQIKECSgAEECChAkoABBAgoQJKAAQQIKECSgAEECChAkoABBAgoQJKAAQQIKECSgAEECChAkoABBAgoQJKAAQQIKECSgAEECChAkoABBAgoQJKAAQQIKECSgAEECChAkoABBAgoQJKAAQQIKECSgAEECChAkoABBAgoQJKAAQQIKECSgAEECChAkoABBAgoQJKAAQQIKECSgAEECChAkoABBAgoQJKD07/T1bXhKbgEBpW/jN9Wj3X9KbgUBpW8nVe81y/CU3AoCSt8ElJ0hoPRNQNkZAkrfBJSdIaD0q27ZxPPmN+P39+svH7z+PPmjr4+ru5/H77+tqv3mnPn47aiqvnk2+aMvo+re2en3VbX33V/zNS0vfHZYL/yhXvbBb/Vv/n7b/Nneg9fLTzl+Ue39fDZf493Pq4utrBKuIKD0qx3QOmJT+029JgH9fy+mjzw6O30y/ere2fRv3pv97VYB2ws3JXw///Pjaq6J5FUBXSy2ukq4goDSr1ZAF72qqju/n00D+u+zB/b+14vq/G82f/W/zR+YJnB14bqE34xmwT3v5+TQ/YqALhZbWyVcQUDp2/wNybqXk2P18fvRdD+zeaDaf3d2dvp4vhv4YfZHk7Y1D7T/7tLCdQnr/c35nmw1OdL/+GS6C7p4yo0BbS+2vEq4goDSt3nNTmZ1m6Sr6VpTsOkjJ1Xrq+aLJqDTB+qvmr+7tnBTwtkjJ4v+1X95si95eUDPF1tZJVxBQOnbvGaH55WaPtQEdHJuqVWw+qsmgbNsThdr/u7awrPHl82WviKgj+YrXl0lXEFA6dusTpNz7rOHJifZF7nb8NU8d2ez/cv1hZsSPl96nr///GlUbRPQRbRXVwlXEFD6dh7Qtjpelwd0XrTJl+sLt3cgz8Yfvp+fELo6oOf7uqurhCsIKH2b1ax1zrtrQO9+Xl+4HdD2n24d0A2rhCsIKH07D+hKpDrsga4v3ArodF/ymwc/vvq/27wHeh5Q0aQjAaVv54fwK1dbdnsPdPVSzfOAHi+uhN/qJNLy6SroQEDp26xmdcxWzvpcHtB53Q5nV8SvLHxewlYlT1YO4ZcruxzQDauEKwgofZvXrE7Yndktk8fzy5guCejsGH6W0rWFNwW0uSB/NaCz1Zw+Xg3ohlXCFQSUvs0vWG/eqtx7Vn/195tqfiH9ZQGtHv62fNfS0sKtEh5OD+Enk5FMH1xcI9/c5Pnd5+lqVgO6vkq4goDSt+np7ufn96g3lt8V3RTQb5YuTFpbuFXC9h9NH1w85fm1Sv/j8WpA11cJVxBQ+jZ+MS/UyWipV1echZ/1bX/2XujKwu0SvpnH8+nsfc31p3z0dT2ga6uEKwgovRu/bA6kJ19Npu385ul0js+rLmP68mQxP+j6wksl/PD95E8+L26LP3/Kv9+Mmhk/zzYFdHWVcAUBpQTurWSQBJQSCCiDJKCUQEAZJAGlBALKIAkoJRBQBklAKYGAMkgCChAkoABBAgoQJKAAQQIKECSgAEECChAkoABBAgoQJKAAQQIKECSgAEECChAkoABBAgoQJKAAQQIKECSgAEECChAkoABBAgoQJKAAQQIKECSgAEECChAkoABBAgoQJKAAQQIKECSgAEECChAkoABBAgoQJKAAQQIKECSgAEECChAkoABBAgoQJKAAQQIKECSgAEECChD0/wFK7xw9alqwUgAAAABJRU5ErkJggg==" width="672" /></p>
-<p>Note that the <code>echo = FALSE</code> parameter was added to the
-code chunk to prevent printing of the R code that generated the
-plot.</p>
-</div>
+<pre><code>## # A tibble: 20 × 13
+##    CCAA_arboles_uso Usos           `0 - 199` `200 - 399` `400 - 599` `600 - 799`
+##    &lt;chr&gt;            &lt;chr&gt;              &lt;dbl&gt;       &lt;dbl&gt;       &lt;dbl&gt;       &lt;dbl&gt;
+##  1 Andalucia        Forestal arbo…  287899.       334.        315.       220028.
+##  2 Andalucia        Forestal arbo…   84348.       112.        134.       112966.
+##  3 Andalucia        Forestal desa…  526444.       347.        409.       274929.
+##  4 Andalucia        No forestal    1526810.       783.        830.       514876.
+##  5 Aragon           Forestal arbo…    7680.        41.1        76.6      162338.
+##  6 Aragon           Forestal arbo…    7986.        24.3        21.3       36696.
+##  7 Aragon           Forestal desa…   26484.       185.        172.       199243.
+##  8 Aragon           No forestal      90804.       737.        563.       275850.
+##  9 Canarias         Forestal arbo…      33.8    70885           2.97       6837.
+## 10 Canarias         Forestal arbo…     662.         1.41        2.51       2359.
+## 11 Canarias         Forestal desa…  144677.        88.8        52.2       32603.
+## 12 Canarias         No forestal     115430.        67.8        27.5       19092.
+## 13 CyL              Forestal arbo…     159.         5.84       26.1      271646.
+## 14 CyL              Forestal arbo…     122.         1.95        7.57     145465.
+## 15 CyL              Forestal desa…     603.        14.1        38.1      364323.
+## 16 CyL              No forestal        339.         9.97       84.7     1675054.
+## 17 Cataluña         Forestal arbo…  148735.       208.        262.       242458.
+## 18 Cataluña         Forestal arbo…    6015.        15.5        14.6       13275.
+## 19 Cataluña         Forestal desa…   44632.        57.4        54.6       46992.
+## 20 Cataluña         No forestal     483762.       412.        232.       124058.
+## # ℹ 7 more variables: `800 - 999` &lt;dbl&gt;, `1.000 - 1.199` &lt;dbl&gt;,
+## #   `1.200 - 1.399` &lt;dbl&gt;, `1.400 - 1.599` &lt;dbl&gt;, `1.600 - 1.799` &lt;dbl&gt;,
+## #   `1.800 - 1.999` &lt;dbl&gt;, `&gt;= 2.000` &lt;dbl&gt;</code></pre>
 </div>
 
 
