@@ -41,7 +41,7 @@ arboles_uso
 #arboles_extension <- read_delim("./Datos_arboles/provincia_extensionterritorio.csv", delim = ";")
 
 habitantes <- read_delim("./DATA/48254.csv", delim = ";")
-habitantes
+
 ```
 
 
@@ -50,7 +50,7 @@ habitantes
 ```{r}
 fumadores <- fumadores%>%
   mutate(
-    CCAA_fumadores= case_when( ## cambiamos el nombre con un case_When
+    CCAA= case_when( ## cambiamos el nombre con un case_When
       fumadores$`Comunidades y Ciudades Autónomas`== "Andalucía" ~ "Andalucia",
       fumadores$`Comunidades y Ciudades Autónomas`== "Aragón" ~ "Aragon",
       fumadores$`Comunidades y Ciudades Autónomas`== "Asturias (Principado de)" ~ "Asturias",
@@ -71,13 +71,14 @@ fumadores <- fumadores%>%
       fumadores$`Comunidades y Ciudades Autónomas`== "Ceuta (Ciudad Autónoma de)" ~ "Ceuta",
       fumadores$`Comunidades y Ciudades Autónomas`== "Melilla (Ciudad Autónoma de)" ~ "Melilla",
     )) %>%
-select(`CCAA_fumadores`,`Consumo de tabaco`,Total,) %>%
-  na.exclude()
+select(`CCAA`,`Consumo de tabaco`,Total,) %>%
+  na.exclude()%>%
+  filter(`Consumo de tabaco` != "TOTAL")
 fumadores
       
-    
+```
 
-  
+```{r}
 aire<- aire%>%
   mutate(
     CCAA_aire=case_when(
@@ -131,7 +132,6 @@ aire_media_comunidad
 
 
 
-
 ```{r}
 # Usa la función mutate() y case_when() para cambiar los valores de la columna
 arboles_uso <- arboles_uso %>%
@@ -165,13 +165,6 @@ arboles_uso
 ```
 
 
-
-
-```{r}
-
-```
-
-
 ```{r}
 tumores<-defuncion_poblacion %>%
   rename("Total" = ...2,"<10000" = ...3,"10000-20000" = ...4, "20000-50000" = ...5,"50000-100000" = ...6, "<100000" = ...7, "Capital" = ...8 ) %>%
@@ -193,7 +186,7 @@ habitantes_refinado$Total <- as.numeric(habitantes_refinado$Total)
 
 habitantes_refinado <- habitantes_refinado %>%
   mutate(
-    CCAA_habitantes_refinado = case_when(
+    CCAA = case_when(
       habitantes_refinado$`Comunidades y Ciudades Autónomas` == "Andalucía" ~ "Andalucia",
       habitantes_refinado$`Comunidades y Ciudades Autónomas` == "Aragón" ~ "Aragon",
       habitantes_refinado$`Comunidades y Ciudades Autónomas` == "Canarias" ~ "Canarias",
@@ -212,9 +205,9 @@ habitantes_refinado <- habitantes_refinado %>%
       habitantes_refinado$`Comunidades y Ciudades Autónomas` == "Asturias, Principado de" ~ "Asturias",
       habitantes_refinado$`Comunidades y Ciudades Autónomas` == "Murcia, Región de" ~ "Murcia"
     ))%>%
-select('CCAA_habitantes_refinado',Total,Periodo)%>%
+select('CCAA',Total,Periodo)%>%
   na.exclude()%>%
-  group_by(CCAA_habitantes_refinado)%>%
+  group_by(CCAA)%>%
   summarise(Total = mean(Total, na.rm = TRUE))
 habitantes_refinado
 
@@ -223,5 +216,17 @@ habitantes_refinado
 
 ```
 
+```{r}
+fumadores_habitantes <- full_join(x = fumadores, 
+                              y = habitantes_refinado,
+                              by = "CCAA")
+fumadores_habitantes$Personas <- as.numeric(gsub(",", ".", fumadores_habitantes$Total.x)) * fumadores_habitantes$Total.y / 100
+fumadores_habitantes<-fumadores_habitantes%>%
+  na.omit(fumadores_habitantes)%>%
+  select(CCAA,`Consumo de tabaco`,Personas)
+fumadores_habitantes
+
+
+```
 
 
