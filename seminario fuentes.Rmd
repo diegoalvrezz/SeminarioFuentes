@@ -19,6 +19,7 @@ When you click the **Knit** button a document will be generated that includes bo
 Importamos las bases de datos
 ```{r}
 library(readr)
+library(ggplot2)
 library(tidyverse)
 library(dplyr)
 library(stringr)
@@ -81,7 +82,7 @@ fumadores
 ```{r}
 aire<- aire%>%
   mutate(
-    CCAA_aire=case_when(
+    CCAA=case_when(
       PROVINCIA=="18" ~ "Granada",
       PROVINCIA=="33" ~ "Asturias",
       PROVINCIA=="46" ~ "Valencia",
@@ -104,26 +105,26 @@ aire<- aire%>%
       PROVINCIA=="12" ~ "Castellón",
     )
   )%>%
-select(VALOR,CCAA_aire)%>%
-  distinct(CCAA_aire, .keep_all = TRUE)
+select(VALOR,CCAA)%>%
+  distinct(CCAA, .keep_all = TRUE)
 
 aire_agrupado <- aire %>%
-  group_by(CCAA_aire) %>%
+  group_by(CCAA) %>%
   summarise(media = mean(VALOR, na.rm = TRUE))%>%
    mutate(
-    COMUNIDADES = case_when(
-      CCAA_aire %in% c("Granada", "Almería", "Sevilla", "Jaén", "Córdoba", "Málaga") ~ "Andalucia",
-      CCAA_aire %in% c("León", "Burgos", "Valladolid") ~ "Castilla y León",
-      CCAA_aire %in% c("Huesca", "Zaragoza") ~ "Aragón",
-      CCAA_aire %in% c("Cuenca", "Toledo", "Ciudad Real", "Guadalajara", "Albacete") ~ "Castilla la Mancha",
-      CCAA_aire %in% c("Castellón", "Valencia") ~ "C.Valencia",
+    CCAA = case_when(
+      CCAA %in% c("Granada", "Almería", "Sevilla", "Jaén", "Córdoba", "Málaga") ~ "Andalucia",
+      CCAA %in% c("León", "Burgos", "Valladolid") ~ "Castilla y León",
+      CCAA %in% c("Huesca", "Zaragoza") ~ "Aragón",
+      CCAA %in% c("Cuenca", "Toledo", "Ciudad Real", "Guadalajara", "Albacete") ~ "Castilla la Mancha",
+      CCAA  %in% c("Castellón", "Valencia") ~ "C.Valencia",
      
-      TRUE ~ CCAA_aire
+      TRUE ~ CCAA 
       )
   )
 # Calcula la media por grupo
 aire_media_comunidad <- aire_agrupado %>%
-  group_by(COMUNIDADES) %>%
+  group_by(CCAA) %>%
   summarise(media = mean(media, na.rm = TRUE))
 aire_media_comunidad
 
@@ -226,7 +227,27 @@ fumadores_habitantes<-fumadores_habitantes%>%
   select(CCAA,`Consumo de tabaco`,Personas)
 fumadores_habitantes
 
-
 ```
 
+```{r}
+fumadores_aire <- full_join(x= fumadores_habitantes,
+                            y = aire_media_comunidad,
+                            by = "CCAA"
+                            )
+fumadores_aire <- na.omit(fumadores_aire)
+fumadores_aire_diario <- fumadores_aire%>%
+  filter(`Consumo de tabaco` == "Fumador diario")
+
+
+
+ggplot(data = fumadores_aire_diarios,
+       aes(x = media, y = Personas)) +
+  geom_point(aes(factor = CCAA))
+  xlab("Calidad del Aire") +
+  ylab("Número de Fumadores Diarios") +
+  ggtitle("Relación Calidad del Aire y el Número de Fumadores Diarios ")
+
+
+
+```
 
