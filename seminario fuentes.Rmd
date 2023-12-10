@@ -163,6 +163,35 @@ aire_agrupado <- aire %>%
     )
     
   )
+aire_dis<- aire%>%
+  mutate(
+    CCAA_aire=case_when(
+      PROVINCIA=="18" ~ "Granada",
+      PROVINCIA=="33" ~ "Asturias",
+      PROVINCIA=="46" ~ "Valencia",
+      PROVINCIA=="25" ~ "Cataluña",
+      PROVINCIA=="45" ~ "Toledo",
+      PROVINCIA=="50" ~ "Zaragoza",
+      PROVINCIA=="41" ~ "Sevilla",
+      PROVINCIA=="23" ~ "Jaén",
+      PROVINCIA=="13" ~ "Ciudad Real",
+      PROVINCIA=="16" ~ "Cuenca",
+      PROVINCIA=="4" ~ "Almería",
+      PROVINCIA=="14" ~ "Córdoba",
+      PROVINCIA=="29" ~ "Málaga",
+      PROVINCIA=="19"~ "Guadalajara",
+      PROVINCIA=="2" ~ "Albacete",
+      PROVINCIA=="47" ~ "Valladolid",
+      PROVINCIA=="24" ~ "León",
+      PROVINCIA=="9" ~ "Burgos",
+      PROVINCIA=="22" ~ "Huesca",
+      PROVINCIA=="12" ~ "Castellón",
+    )
+  )%>%
+select(VALOR,CCAA_aire)%>%
+  distinct(CCAA_aire, .keep_all =TRUE)
+
+aire_dis
 ```
 
 
@@ -216,6 +245,12 @@ select('CCAA_habitantes_refinado',Total,Periodo)%>%
   na.exclude()
 
 habitantes_refinado
+habitantes_refinado <- habitantes %>%
+  filter(Periodo == "1/1/2020") %>%
+  select('Comunidades y Ciudades Autónomas', Total, Periodo) %>%
+  distinct('Comunidades y Ciudades Autónomas', .keep_all = TRUE)%>%
+  na.exclude()
+habitantes
 
 ```
 
@@ -233,6 +268,8 @@ arboles_uso <- arboles_uso %>%
 arboles_uso <- arboles_uso %>% 
   replace_na(list(arboles_uso))
 arboles_uso
+
+
 
 
 ```
