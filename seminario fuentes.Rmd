@@ -20,7 +20,10 @@ Importamos las bases de datos
 ```{r}
 library(readr)
 library(tidyverse)
+library(dplyr)
+library(stringr)
 aire <- read_delim("./C6H6_BaP__2021_Irreg.csv")
+
 
 fumadores<-read_delim("./Datos_fumadores/Fumadores.csv", delim = ";")
 fumadores
@@ -45,7 +48,6 @@ habitantes
 
 
 ```{r}
-library(dplyr)
 fumadores <- fumadores%>%
   mutate(
     CCAA_fumadores= case_when( ## cambiamos el nombre con un case_When
@@ -74,34 +76,56 @@ select(`CCAA_fumadores`,`Consumo de tabaco`,Total,) %>%
 fumadores
       
     
-  
+
   
 aire<- aire%>%
   mutate(
     CCAA_aire=case_when(
-      aire$PROVINCIA=="18" ~ "Granada",
-      aire$PROVINCIA=="33" ~ "Asturias",
-      aire$PROVINCIA=="46" ~ "Valencia",
-      aire$PROVINCIA=="25" ~ "Cataluña",
-      aire$PROVINCIA=="45" ~ "Toledo",
-      aire$PROVINCIA=="50" ~ "Zaragoza",
-      aire$PROVINCIA=="41" ~ "Sevilla",
-      aire$PROVINCIA=="23" ~ "Jaén",
-      aire$PROVINCIA=="13" ~ "Ciudad Real",
-      aire$PROVINCIA=="16" ~ "Cuenca",
-      aire$PROVINCIA=="4" ~ "Almería",
-      aire$PROVINCIA=="14" ~ "Córdoba",
-      aire$PROVINCIA=="29" ~ "Málaga",
-      aire$PROVINCIA=="19"~ "Guadalajara",
-      aire$PROVINCIA=="2" ~ "Albacete",
-      aire$PROVINCIA=="47" ~ "Valladolid",
-      aire$PROVINCIA=="24" ~ "León",
-      aire$PROVINCIA=="9" ~ "Burgos",
-      aire$PROVINCIA=="22" ~ "Huesca",
-      aire$PROVINCIA=="12" ~ "Castellón",
+      PROVINCIA=="18" ~ "Granada",
+      PROVINCIA=="33" ~ "Asturias",
+      PROVINCIA=="46" ~ "Valencia",
+      PROVINCIA=="25" ~ "Cataluña",
+      PROVINCIA=="45" ~ "Toledo",
+      PROVINCIA=="50" ~ "Zaragoza",
+      PROVINCIA=="41" ~ "Sevilla",
+      PROVINCIA=="23" ~ "Jaén",
+      PROVINCIA=="13" ~ "Ciudad Real",
+      PROVINCIA=="16" ~ "Cuenca",
+      PROVINCIA=="4" ~ "Almería",
+      PROVINCIA=="14" ~ "Córdoba",
+      PROVINCIA=="29" ~ "Málaga",
+      PROVINCIA=="19"~ "Guadalajara",
+      PROVINCIA=="2" ~ "Albacete",
+      PROVINCIA=="47" ~ "Valladolid",
+      PROVINCIA=="24" ~ "León",
+      PROVINCIA=="9" ~ "Burgos",
+      PROVINCIA=="22" ~ "Huesca",
+      PROVINCIA=="12" ~ "Castellón",
     )
+  )%>%
+select(VALOR,CCAA_aire)%>%
+  distinct(CCAA_aire, .keep_all = TRUE)
+
+aire_agrupado <- aire %>%
+  group_by(CCAA_aire) %>%
+  summarise(media = mean(VALOR, na.rm = TRUE))%>%
+   mutate(
+    COMUNIDADES = case_when(
+      CCAA_aire %in% c("Granada", "Almería", "Sevilla", "Jaén", "Córdoba", "Málaga") ~ "Andalucia",
+      CCAA_aire %in% c("León", "Burgos", "Valladolid") ~ "Castilla y León",
+      CCAA_aire %in% c("Huesca", "Zaragoza") ~ "Aragón",
+      CCAA_aire %in% c("Cuenca", "Toledo", "Ciudad Real", "Guadalajara", "Albacete") ~ "Castilla la Mancha",
+      CCAA_aire %in% c("Castellón", "Valencia") ~ "C.Valencia",
+     
+      TRUE ~ CCAA_aire
+      )
   )
-aire
+# Calcula la media por grupo
+aire_media_comunidad <- aire_agrupado %>%
+  group_by(COMUNIDADES) %>%
+  summarise(media = mean(media, na.rm = TRUE))
+aire_media_comunidad
+
 
 ```
 
@@ -109,11 +133,6 @@ aire
 
 
 ```{r}
-# Carga el paquete dplyr
-library(dplyr)
-library(stringr)
-
-
 # Usa la función mutate() y case_when() para cambiar los valores de la columna
 arboles_uso <- arboles_uso %>%
   mutate(
@@ -146,60 +165,10 @@ arboles_uso
 ```
 
 
-```{r}
-# Agrupa los datos por CCAA y calcula la media
-aire_agrupado <- aire %>%
-  group_by(CCAA_aire) %>%
-  summarise(media = mean(VALOR, na.rm = TRUE))%>%
-   mutate(
-    COMUNIDADES = case_when(
-      CCAA_aire %in% c("Granada", "Almería", "Sevilla", "Jaén", "Córdoba", "Málaga") ~ "Andalucia",
-      CCAA_aire %in% c("León", "Burgos", "Valladolid") ~ "Castilla y León",
-      CCAA_aire %in% c("Huesca", "Zaragoza") ~ "Aragón",
-      CCAA_aire %in% c("Cuenca", "Toledo", "Ciudad Real", "Guadalajara", "Albacete") ~ "Castilla la Mancha",
-      CCAA_aire %in% c("Castellón", "Valencia") ~ "C.Valencia",
-     
-      TRUE ~ CCAA_aire
-    )
-    
-  )
-aire_dis<- aire%>%
-  mutate(
-    CCAA_aire=case_when(
-      PROVINCIA=="18" ~ "Granada",
-      PROVINCIA=="33" ~ "Asturias",
-      PROVINCIA=="46" ~ "Valencia",
-      PROVINCIA=="25" ~ "Cataluña",
-      PROVINCIA=="45" ~ "Toledo",
-      PROVINCIA=="50" ~ "Zaragoza",
-      PROVINCIA=="41" ~ "Sevilla",
-      PROVINCIA=="23" ~ "Jaén",
-      PROVINCIA=="13" ~ "Ciudad Real",
-      PROVINCIA=="16" ~ "Cuenca",
-      PROVINCIA=="4" ~ "Almería",
-      PROVINCIA=="14" ~ "Córdoba",
-      PROVINCIA=="29" ~ "Málaga",
-      PROVINCIA=="19"~ "Guadalajara",
-      PROVINCIA=="2" ~ "Albacete",
-      PROVINCIA=="47" ~ "Valladolid",
-      PROVINCIA=="24" ~ "León",
-      PROVINCIA=="9" ~ "Burgos",
-      PROVINCIA=="22" ~ "Huesca",
-      PROVINCIA=="12" ~ "Castellón",
-    )
-  )%>%
-select(VALOR,CCAA_aire)%>%
-  distinct(CCAA_aire, .keep_all =TRUE)
-
-aire_dis
-```
 
 
 ```{r}
-# Calcula la media por grupo
-aire_media_comunidad <- aire_agrupado %>%
-  group_by(COMUNIDADES) %>%
-  summarise(media = mean(media, na.rm = TRUE))
+
 ```
 
 
@@ -214,10 +183,12 @@ tumores
 
 
 ```{r}
+
 habitantes_refinado <- habitantes %>%
   filter(Periodo == "1/1/2020") %>%
   select('Comunidades y Ciudades Autónomas', Total, Periodo) %>%
   na.exclude()
+habitantes_refinado$Total <- as.numeric(habitantes_refinado$Total)
 
 
 habitantes_refinado <- habitantes_refinado %>%
@@ -242,67 +213,15 @@ habitantes_refinado <- habitantes_refinado %>%
       habitantes_refinado$`Comunidades y Ciudades Autónomas` == "Murcia, Región de" ~ "Murcia"
     ))%>%
 select('CCAA_habitantes_refinado',Total,Periodo)%>%
-  na.exclude()
-
+  na.exclude()%>%
+  group_by(CCAA_habitantes_refinado)%>%
+  summarise(Total = mean(Total, na.rm = TRUE))
 habitantes_refinado
-habitantes_refinado <- habitantes %>%
-  filter(Periodo == "1/1/2020") %>%
-  select('Comunidades y Ciudades Autónomas', Total, Periodo) %>%
-  distinct('Comunidades y Ciudades Autónomas', .keep_all = TRUE)%>%
-  na.exclude()
-habitantes
-
-```
-
-
-
-```{r}
-arboles_uso <- arboles_uso %>%
-  mutate(
-    `0 - 199` = as.numeric(gsub(',', '.', gsub('\\.', '', .$`0 - 199`))),
-    `600 - 799` = as.numeric(gsub(',', '.', gsub('\\.', '', .$`600 - 799`))),
-    `800 - 999` = as.numeric(gsub(',', '.', gsub('\\.', '', .$`800 - 999`))),
-    `1.600 - 1.799` = as.numeric(gsub(',', '.', gsub('\\.', '', .$`1.600 - 1.799`)))
-     )
-
-arboles_uso <- arboles_uso %>% 
-  replace_na(list(arboles_uso))
-arboles_uso
-
-arboles_uso_aux <- arboles_uso %>%
-  mutate(
-    Comunidad = toupper(str_trim(Comunidad)), #Usamos la funcion toupper para converir Comunidad en mayusculas ya que si no no se lee la fuente de datos
-    CCAA_arboles_uso = case_when(
-      Comunidad == "ANDALUCÍA" ~ "Andalucia",
-      Comunidad == "ARAGÓN" ~ "Aragon",
-      Comunidad == "CANARIAS" ~ "Canarias",
-      Comunidad == "CANTABRIA" ~ "Cantabria",
-      Comunidad == "CASTILLA LA MANCHA" ~ "Castilla la Mancha",
-      Comunidad == "CASTILLA Y LEÓN" ~ "CyL",
-      Comunidad == "CATALUÑA" ~ "Cataluña",
-      Comunidad == "COMUNIDAD DE MADRID" ~ "Madrid",
-      Comunidad == "COMUNIDAD FORAL DE NAVARRA" ~ "Navarra",
-      Comunidad == "COMUNIDAD VALENCIANA" ~ "C.Valencia",
-      Comunidad == "EXTREMADURA" ~ "Extremadura",
-      Comunidad == "GALICIA" ~ "Galicia",
-      Comunidad == "ILLES BALEARS" ~ "Baleares",
-      Comunidad == "LA RIOJA" ~ "La Rioja",
-      Comunidad == "PAÍS VASCO" ~ "País Vasco",
-      Comunidad == "PRINCIPADO DE ASTURIAS" ~ "Asturias",
-      Comunidad == "REGIÓN DE MURCIA" ~ "Murcia"
-    )
-  ) %>%
-  select('CCAA_arboles_uso',Usos,`0 - 199`,`200 - 399`,`400 - 599`,`600 - 799`,`800 - 999`,`1.000 - 1.199`,`1.200 - 1.399`,`1.400 - 1.599`,`1.600 - 1.799`,`1.800 - 1.999`,`>= 2.000`) %>%
-  filter( Usos== "Forestal arbolado")%>%
-  na.exclude()
-arboles_uso_aux
 
 
 
 
 ```
-
-
 
 
 
