@@ -23,8 +23,14 @@ library(ggplot2)
 library(tidyverse)
 library(dplyr)
 library(stringr)
-aire <- read_delim("./C6H6_BaP__2021_Irreg.csv")
+library(gridExtra)
+```
 
+
+```{r}
+aire <- read_delim("./C6H6_BaP__2021_Irreg.csv")
+aireespaña <- read_delim("./DATA/calidad_aire_dos.csv", delim = ";", locale = locale(encoding = "ISO-8859-1"))
+aireespaña
 
 fumadores<-read_delim("./Datos_fumadores/Fumadores.csv", delim = ";")
 fumadores
@@ -42,6 +48,8 @@ arboles_uso
 #arboles_extension <- read_delim("./Datos_arboles/provincia_extensionterritorio.csv", delim = ";")
 
 habitantes <- read_delim("./DATA/48254.csv", delim = ";")
+
+cancer_nuevo <- read_delim("./DATA/cancer_nuevo.csv", delim = ";")
 
 ```
 
@@ -131,6 +139,69 @@ aire_media_comunidad
 
 ```
 
+```{r}
+aireespaña_mod <- aireespaña %>%
+  mutate(
+    CCAA= case_when(
+      aireespaña$`Comunidades y Ciudades Autónomas` == "01 Andalucía" ~ "Andalucia",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "02 Aragón" ~ "Aragon",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "03 Asturias, Principado de" ~ "Asturias",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "04 Balears, Illes" ~ "Baleares",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "05 Canarias" ~ "Canarias",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "06 Cantabria" ~ "Cantabria",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "07 Castilla y León" ~ "CyL",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "08 Castilla - La Mancha" ~ "Castilla la Mancha",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "09 Cataluña" ~ "Cataluña",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "10 Comunitat Valenciana" ~ "C.Valencia",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "11 Extremadura" ~ "Extremadura",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "12 Galicia" ~ "Galicia",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "13 Madrid, Comunidad de" ~ "Madrid",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "14 Murcia, Región de" ~ "Murcia",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "15 Navarra, Comunidad Foral de" ~ "Navarra",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "16 País Vasco" ~ "País Vasco",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "17 Rioja, La" ~ "La Rioja",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "18 Ceuta" ~ "Ceuta",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "19 Melilla" ~ "Melilla"
+    )
+  )%>%
+  na.exclude()%>%
+  filter( `Tipo de partículas`== "PM10")%>%
+  select("CCAA","Total")
+#NECESARIO
+aireespaña_mod$Total <- as.numeric(aireespaña_mod$Total)
+#2
+aireespaña_mod2 <- aireespaña %>%
+  mutate(
+    CCAA= case_when(
+      aireespaña$`Comunidades y Ciudades Autónomas` == "01 Andalucía" ~ "Andalucia",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "02 Aragón" ~ "Aragon",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "03 Asturias, Principado de" ~ "Asturias",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "04 Balears, Illes" ~ "Baleares",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "05 Canarias" ~ "Canarias",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "06 Cantabria" ~ "Cantabria",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "07 Castilla y León" ~ "CyL",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "08 Castilla - La Mancha" ~ "Castilla la Mancha",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "09 Cataluña" ~ "Cataluña",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "10 Comunitat Valenciana" ~ "C.Valencia",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "11 Extremadura" ~ "Extremadura",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "12 Galicia" ~ "Galicia",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "13 Madrid, Comunidad de" ~ "Madrid",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "14 Murcia, Región de" ~ "Murcia",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "15 Navarra, Comunidad Foral de" ~ "Navarra",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "16 País Vasco" ~ "País Vasco",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "17 Rioja, La" ~ "La Rioja",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "18 Ceuta" ~ "Ceuta",
+      aireespaña$`Comunidades y Ciudades Autónomas` == "19 Melilla" ~ "Melilla"
+    )
+  )%>%
+  na.exclude()%>%
+  filter( `Tipo de partículas`== "PM2,5")%>%
+  select("CCAA","Total")
+#NECESARIO
+aireespaña_mod2$Total <- as.numeric(aireespaña_mod2$Total)
+
+aireespaña_mod2
+```
 
 
 ```{r}
@@ -138,7 +209,7 @@ aire_media_comunidad
 arboles_uso <- arboles_uso %>%
   mutate(
     Comunidad = toupper(str_trim(Comunidad)), #Usamos la funcion toupper para converir Comunidad en mayusculas ya que si no no se lee la fuente de datos
-    CCAA_arboles_uso = case_when(
+    CCAA = case_when(
       Comunidad == "ANDALUCÍA" ~ "Andalucia",
       Comunidad == "ARAGÓN" ~ "Aragon",
       Comunidad == "CANARIAS" ~ "Canarias",
@@ -158,13 +229,29 @@ arboles_uso <- arboles_uso %>%
       Comunidad == "REGIÓN DE MURCIA" ~ "Murcia"
     )
   ) %>%
-  select('CCAA_arboles_uso',`Usos`,`0 - 199`,`200 - 399`,`400 - 599`,`600 - 799`,`800 - 999`,`1.000 - 1.199`,`1.200 - 1.399`,`1.400 - 1.599`,`1.600 - 1.799`,`1.800 - 1.999`,`>= 2.000`) %>%
+  select('CCAA',`Usos`,`0 - 199`,`200 - 399`,`400 - 599`,`600 - 799`,`800 - 999`,`1.000 - 1.199`,`1.200 - 1.399`,`1.400 - 1.599`,`1.600 - 1.799`,`1.800 - 1.999`,`>= 2.000`) %>%
   na.exclude()
 
 arboles_uso
-
 ```
 
+```{r}
+testjoin <- full_join(arboles_uso,aire_media_comunidad) %>%
+  na.omit()
+testjoin
+tabla <- testjoin %>%
+  select(CCAA,`1.000 - 1.199`,`1.200 - 1.399`,`1.400 - 1.599`,media) %>%
+  pivot_longer(cols = c(`1.000 - 1.199`,`1.200 - 1.399`,`1.400 - 1.599`)) 
+tabla
+
+#LA MEDIA SE DESPLAZA MAS A LA DERECHA CUANTO MAS ARRIBA ESTA
+grafico<-ggplot(data = tabla, aes(x = media, y = value)) +
+  geom_point(aes(colour = factor(CCAA))) +
+  facet_grid(CCAA ~ name) +
+  labs(x="Media", y="Value") +
+  theme_bw()
+grafico
+```
 
 ```{r}
 tumores<-defuncion_poblacion %>%
@@ -181,9 +268,13 @@ tumores
 habitantes_refinado <- habitantes %>%
   filter(Periodo == "1/1/2020") %>%
   select('Comunidades y Ciudades Autónomas', Total, Periodo) %>%
-  na.exclude()
-habitantes_refinado$Total <- as.numeric(habitantes_refinado$Total)
+   distinct(`Comunidades y Ciudades Autónomas`, .keep_all = TRUE)%>%
+    na.exclude()
 
+
+habitantes_refinado$Total <- gsub("\\.", "", habitantes_refinado$Total)
+habitantes_refinado$Total <- as.numeric(habitantes_refinado$Total)
+habitantes_refinado
 
 habitantes_refinado <- habitantes_refinado %>%
   mutate(
@@ -207,9 +298,7 @@ habitantes_refinado <- habitantes_refinado %>%
       habitantes_refinado$`Comunidades y Ciudades Autónomas` == "Murcia, Región de" ~ "Murcia"
     ))%>%
 select('CCAA',Total,Periodo)%>%
-  na.exclude()%>%
-  group_by(CCAA)%>%
-  summarise(Total = mean(Total, na.rm = TRUE))
+  na.exclude()
 habitantes_refinado
 
 
@@ -218,13 +307,19 @@ habitantes_refinado
 ```
 
 ```{r}
+
+fumadores$Total <-gsub(",", ".", fumadores$Total)
+fumadores$Total <- as.numeric(fumadores$Total)
+
 fumadores_habitantes <- full_join(x = fumadores, 
                               y = habitantes_refinado,
-                              by = "CCAA")
-fumadores_habitantes$Personas <- as.numeric(gsub(",", ".", fumadores_habitantes$Total.x)) * fumadores_habitantes$Total.y / 100
-fumadores_habitantes<-fumadores_habitantes%>%
-  na.omit(fumadores_habitantes)%>%
-  select(CCAA,`Consumo de tabaco`,Personas)
+                              by = "CCAA")%>%
+  filter(`Consumo de tabaco` == "Fumador diario")%>%
+  distinct(`Total.x`,`Total.y`, .keep_all = TRUE)%>%
+  slice(1:16)%>%
+  mutate(Hab_Fum = (`Total.x` * `Total.y`)/100)%>%
+  select(`CCAA`,`Hab_Fum`)
+  
 fumadores_habitantes
 
 ```
@@ -232,20 +327,122 @@ fumadores_habitantes
 ```{r}
 fumadores_aire <- full_join(x= fumadores_habitantes,
                             y = aire_media_comunidad,
-                            by = "CCAA"
-                            )
-fumadores_aire <- na.omit(fumadores_aire)
-fumadores_aire_diario <- fumadores_aire%>%
-  filter(`Consumo de tabaco` == "Fumador diario")
+                            by = c("CCAA" )
+                            )%>%
+  na.exclude()
+fumadores_aire
+
+fumadores_habitantes
+aire_media_comunidad
+
+
+options(repr.plot.width=10, repr.plot.height=8)
+
+ggplot(fumadores_aire, aes(x = Hab_Fum, y = media, color = CCAA)) +
+  geom_point(size = 5) +  # Ajusta el tamaño de los puntos
+  labs(x = "Hab_Fum", y = "Media") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+```
+
+```{r}
+cancer_nuevo
+cancer_nuevo$Cáncer <-gsub("\\.", "", cancer_nuevo$Cáncer)
+cancer_nuevo$Cáncer <-as.numeric(cancer_nuevo$Cáncer)
+#cancer_nuevo$Cáncer <- as.numeric(cancer_nuevo$Cáncer)
+cancer_nuevo
+cancer_año <- cancer_nuevo %>%
+  select(Parámetro, Cáncer) %>%
+  rename(
+    CCAA = Parámetro,
+    Tasa = Cáncer
+  )
+
+relacion_cancer_fum <- full_join(cancer_año,fumadores_habitantes) %>%
+  filter(CCAA != "Canarias")%>%
+  na.exclude()
+
+relacion_cancer_fum
+
+options(repr.plot.width=10, repr.plot.height=8)
+
+ggplot(relacion_cancer_fum, aes(x = Hab_Fum, y = Tasa, color = CCAA)) +
+  geom_point(size = 5) +  # Ajusta el tamaño de los puntos
+  geom_smooth(method = "lm", se = FALSE, color = "black", linetype = "dashed") +  # Añade una línea de tendencia
+  labs(x = "Hab_Fum", y = "Media") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+```
+
+```{r}
+colnames(arboles_uso)
+arboles_uso
+cancer_año
+habitantes_refinado
+cancer_proporcion<-full_join(cancer_año, habitantes_refinado, by = "CCAA") %>%
+  select("CCAA","Tasa","Total")%>%
+  na.exclude()%>%
+  mutate(proporcion_cancer = (`Tasa` / `Total`)*100)
+cancer_proporcion
+
+rel_cancer_arboles<-full_join(arboles_uso,cancer_proporcion, by = c("CCAA")) %>%
+  pivot_longer(cols = c(`1.000 - 1.199`,`1.200 - 1.399`,`1.400 - 1.599`)) %>%
+  filter(!(CCAA %in% "Canarias"))%>%
+  select("CCAA","name","value","proporcion_cancer")%>%
+  rename(Tramo = name,
+         Arboles = value)%>%
+  na.exclude()
+  
+rel_cancer_arboles
+rel_cancer_arboles_plotted <- ggplot(data = rel_cancer_arboles, aes(x = proporcion_cancer, y = Arboles)) +
+  geom_point(aes(colour = factor(CCAA))) +
+  facet_wrap(~ CCAA) +
+  labs(x="proporcion_cancer", y="Arboles") +
+  theme_bw()
+
+
+rel_cancer_arboles_plotted
+
+```
+
+```{r}
+
+aire_media_comunidad
+cancer_proporcion
+aireespaña_mod
+rel_aire_cancer_part1 <- full_join(aireespaña_mod,cancer_proporcion, by = "CCAA")%>%
+  select("CCAA","Total.x","proporcion_cancer")%>%
+  na.exclude()
+
+rel_aire_cancer_part2 <- full_join(aireespaña_mod2,cancer_proporcion, by = "CCAA")%>%
+  select("CCAA","Total.x","proporcion_cancer")%>%
+  na.exclude()
+
+
+aireespaña_mod
+aireespaña_mod2
 
 
 
-ggplot(data = fumadores_aire_diarios,
-       aes(x = media, y = Personas)) +
-  geom_point(aes(factor = CCAA))
-  xlab("Calidad del Aire") +
-  ylab("Número de Fumadores Diarios") +
-  ggtitle("Relación Calidad del Aire y el Número de Fumadores Diarios ")
+
+g1 <- ggplot(rel_aire_cancer_part1, aes(x = Total.x, y = proporcion_cancer, color = CCAA)) +
+  geom_point(size = 5) +
+  geom_smooth(method = "lm", se = FALSE, color = "black", linetype = "dashed") +
+  labs(x = "Particulas Nocivas", y = "Prop. Cancer") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+g2 <- ggplot(rel_aire_cancer_part2, aes(x = Total.x, y = proporcion_cancer, color = CCAA)) +
+  geom_point(size = 5) +
+  geom_smooth(method = "lm", se = FALSE, color = "black", linetype = "dashed") +
+  labs(x = "Particulas Nocivas", y = "Prop. Cancer") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+# Combina los gráficos
+grid.arrange(g1, g2, ncol = 1)
+```
 
 
 
