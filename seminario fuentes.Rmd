@@ -229,7 +229,9 @@ arboles_uso <- arboles_uso %>%
       Comunidad == "REGIÓN DE MURCIA" ~ "Murcia"
     )
   ) %>%
-  select('CCAA',`Usos`,`0 - 199`,`200 - 399`,`400 - 599`,`600 - 799`,`800 - 999`,`1.000 - 1.199`,`1.200 - 1.399`,`1.400 - 1.599`,`1.600 - 1.799`,`1.800 - 1.999`,`>= 2.000`) %>%
+  select(CCAA,`Usos`,`1.000 - 1.199`,`1.200 - 1.399`,`1.400 - 1.599`) %>%
+  filter( `Usos`== "Forestal arbolado")%>%
+
   na.exclude()
 
 arboles_uso
@@ -300,9 +302,6 @@ habitantes_refinado <- habitantes_refinado %>%
 select('CCAA',Total,Periodo)%>%
   na.exclude()
 habitantes_refinado
-
-
-
 
 ```
 
@@ -387,7 +386,7 @@ cancer_proporcion<-full_join(cancer_año, habitantes_refinado, by = "CCAA") %>%
 cancer_proporcion
 
 rel_cancer_arboles<-full_join(arboles_uso,cancer_proporcion, by = c("CCAA")) %>%
-  pivot_longer(cols = c(`1.000 - 1.199`,`1.200 - 1.399`,`1.400 - 1.599`)) %>%
+  pivot_longer(cols = c(1.000 - 1.199,1.200 - 1.399,1.400 - 1.599)) %>%
   filter(!(CCAA %in% "Canarias"))%>%
   select("CCAA","name","value","proporcion_cancer")%>%
   rename(Tramo = name,
