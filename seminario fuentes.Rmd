@@ -426,33 +426,33 @@ Este análisis representa un primer paso hacia la comprensión de cómo la canti
 
 ```{r}
 
-#colnames(arboles_uso)
-#arboles_uso
-#cancer_año
-#habitantes_refinado
-#cancer_proporcion<-full_join(cancer_año, habitantes_refinado, by = "CCAA") %>%
- # select("CCAA","Tasa","Total")%>%
- # na.exclude()%>%
-  #mutate(proporcion_cancer = (`Tasa` / `Total`)*100)
-#cancer_proporcion
+colnames(arboles_uso)
+arboles_uso
+cancer_año
+habitantes_refinado
+cancer_proporcion<-full_join(cancer_año, habitantes_refinado, by = "CCAA") %>%
+  select("CCAA","Tasa","Total")%>%
+  na.exclude()%>%
+  mutate(proporcion_cancer = (`Tasa` / `Total`)*100)
+cancer_proporcion
 
-#rel_cancer_arboles<-full_join(arboles_uso,cancer_proporcion, by = c("CCAA")) %>%
- # pivot_longer(cols = c(1.000 - 1.199,1.200 - 1.399,1.400 - 1.599)) %>%
-  #filter(!(CCAA %in% "Canarias"))%>%
-  #select("CCAA","name","value","proporcion_cancer")%>%
-  #rename(Tramo = name,
-   #      Arboles = value)%>%
-  #na.exclude()
+rel_cancer_arboles<-full_join(arboles_uso,cancer_proporcion, by = c("CCAA")) %>%
+  pivot_longer(cols = c(1.000 - 1.199,1.200 - 1.399,1.400 - 1.599)) %>%
+  filter(!(CCAA %in% "Canarias"))%>%
+  select("CCAA","name","value","proporcion_cancer")%>%
+  rename(Tramo = name,
+         Arboles = value)%>%
+  na.exclude()
   
-#rel_cancer_arboles
-#rel_cancer_arboles_plotted <- ggplot(data = rel_cancer_arboles, aes(x = proporcion_cancer, y = Arboles)) +
-#  geom_point(aes(colour = factor(CCAA))) +
-#  facet_wrap(~ CCAA) +
-#  labs(x="proporcion_cancer", y="Arboles") +
-#  theme_bw()
+rel_cancer_arboles
+rel_cancer_arboles_plotted <- ggplot(data = rel_cancer_arboles, aes(x = proporcion_cancer, y = Arboles)) +
+  geom_point(aes(colour = factor(CCAA))) +
+  facet_wrap(~ CCAA) +
+  labs(x="proporcion_cancer", y="Arboles") +
+  theme_bw()
 
 
-#rel_cancer_arboles_plotted
+rel_cancer_arboles_plotted
 
 ```
 # Relacion entre particulas nocivas y cancer
@@ -471,43 +471,44 @@ Este análisis representa un primer paso hacia la comprensión de cómo la calid
 
 ```{r}
 
-#aire_media_comunidad
-#cancer_proporcion
-#aireespaña_mod
-#rel_aire_cancer_part1 <- full_join(aireespaña_mod,cancer_proporcion, by = "CCAA")%>%
-  #select("CCAA","Total.x","proporcion_cancer")%>%
-  #na.exclude()
+aire_media_comunidad
+cancer_proporcion
+aireespaña_mod
+rel_aire_cancer_part1 <- full_join(aireespaña_mod,cancer_proporcion, by = "CCAA")%>%
+  select("CCAA","Total.x","proporcion_cancer")%>%
+  na.exclude()
 
-#rel_aire_cancer_part2 <- full_join(aireespaña_mod2,cancer_proporcion, by = "CCAA")%>%
- # select("CCAA","Total.x","proporcion_cancer")%>%
-  #na.exclude()
-
-
-#aireespaña_mod
-#aireespaña_mod2
+rel_aire_cancer_part2 <- full_join(aireespaña_mod2,cancer_proporcion, by = "CCAA")%>%
+  select("CCAA","Total.x","proporcion_cancer")%>%
+  na.exclude()
 
 
+aireespaña_mod
+aireespaña_mod2
 
 
-#g1 <- ggplot(rel_aire_cancer_part1, aes(x = Total.x, y = proporcion_cancer, color = CCAA)) +
- # geom_point(size = 5) +
-  #geom_smooth(method = "lm", se = FALSE, color = "black", linetype = "dashed") +
-  #labs(x = "Particulas Nocivas", y = "Prop. Cancer") +
-  #theme_minimal() +
-  #theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
-#g2 <- ggplot(rel_aire_cancer_part2, aes(x = Total.x, y = proporcion_cancer, color = CCAA)) +
-#  geom_point(size = 5) +
- # geom_smooth(method = "lm", se = FALSE, color = "black", linetype = "dashed") +
-  #labs(x = "Particulas Nocivas", y = "Prop. Cancer") +
-  #theme_minimal() +
-  #theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+g1 <- ggplot(rel_aire_cancer_part1, aes(x = Total.x, y = proporcion_cancer, color = CCAA)) +
+  geom_point(size = 5) +
+  geom_smooth(method = "lm", se = FALSE, color = "black", linetype = "dashed") +
+  labs(x = "Particulas Nocivas", y = "Prop. Cancer") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+g2 <- ggplot(rel_aire_cancer_part2, aes(x = Total.x, y = proporcion_cancer, color = CCAA)) +
+  geom_point(size = 5) +
+  geom_smooth(method = "lm", se = FALSE, color = "black", linetype = "dashed") +
+  labs(x = "Particulas Nocivas", y = "Prop. Cancer") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
 # Combina los gráficos
-#grid.arrange(g1, g2, ncol = 1)
+grid.arrange(g1, g2, ncol = 1)
 ```
 
-
+# Referencias
+Fumadores - https://www.ine.es/jaxi/files/tpx/csv_bd/48011.csv
 
 ```
 
