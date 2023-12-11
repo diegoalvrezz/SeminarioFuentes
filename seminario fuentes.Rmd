@@ -9,15 +9,40 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+# Resumen
+Para este trabajo hemos buscado la relacion entre la cantidad de fumadores y la población forestal de las diferentes comunidades autonomas que hay en España con la calidad del aire que estas presentan y las enfermedades con cancer, en busca de hallar una relacion entre la calidad de vida con la calidad medioambiental.
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+# Introducción
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+El impacto de la calidad del aire en la salud humana es un tema de creciente interés en la sociedad actual. En particular, la relación entre la calidad del aire, el tabaquismo, la presencia de áreas verdes y la incidencia del cáncer es un área de estudio que ha captado la atención de la comunidad científica.
+
+El tabaquismo es un factor de riesgo bien conocido para varias formas de cáncer, especialmente el cáncer de pulmón. Sin embargo, la calidad del aire que respiramos también juega un papel crucial en nuestra salud. La exposición a partículas nocivas en el aire puede tener efectos perjudiciales en la salud humana, incluyendo un mayor riesgo de enfermedades respiratorias y cardiovasculares, así como ciertos tipos de cáncer.
+
+Por otro lado, los árboles y las áreas verdes tienen un papel importante en la mejora de la calidad del aire. Los árboles absorben dióxido de carbono y liberan oxígeno, además de capturar partículas nocivas, lo que contribuye a un aire más limpio. Además, las áreas verdes pueden tener un efecto positivo en la salud mental y física de las personas, lo que podría influir indirectamente en la incidencia del cáncer.
+
+En este trabajo, exploraremos la relación entre estos factores: el tabaquismo, la cantidad de árboles, la calidad del aire y la incidencia del cáncer. Nuestro objetivo es entender mejor cómo estos elementos interactúan y cómo pueden influir en la salud humana. A través de un análisis detallado, esperamos proporcionar una visión más completa de este complejo problema de salud pública.
+
+# Objetivos
+
+El propósito principal de este estudio es explorar y entender la relación entre el tabaquismo, la cantidad de árboles, la calidad del aire y la incidencia del cáncer. Para lograr esto, hemos establecido los siguientes objetivos específicos:
+
+1. **Analizar la prevalencia del tabaquismo**: Estudiar la prevalencia del tabaquismo en diferentes regiones y su correlación con la incidencia del cáncer.
+
+2. **Evaluar la calidad del aire**: Investigar la calidad del aire en diferentes regiones y su posible relación con la incidencia del cáncer.
+
+3. **Estudiar la presencia de áreas verdes**: Examinar la cantidad de árboles y áreas verdes en diferentes regiones y su impacto en la calidad del aire.
+
+4. **Investigar la incidencia del cáncer**: Analizar la incidencia del cáncer en diferentes regiones y su posible correlación con el tabaquismo y la calidad del aire.
+
+5. **Explorar la interacción entre estos factores**: Investigar cómo el tabaquismo, la calidad del aire y la presencia de áreas verdes pueden interactuar entre sí y su impacto conjunto en la incidencia del cáncer.
+
+A través de estos objetivos, esperamos proporcionar una visión más completa de cómo estos factores pueden influir en la salud humana y contribuir a la incidencia del cáncer.
 
 
-## Importación de las librerias necesarias -------------------------------------
-# En este apartado nos centramos en añadir todas las librerias necesarias para realizar el trabajo
+
+
+# Importación de las librerias necesarias 
+En este apartado nos centramos en añadir todas las librerias necesarias para realizar el trabajo
 ```{r}
 library(readr)
 library(ggplot2)
@@ -26,7 +51,9 @@ library(dplyr)
 library(stringr)
 library(gridExtra)
 ```
-## Importacion de las fuentes de datos ----------------------------------
+# Importacion de las fuentes de datos 
+
+En este apartado añadimos las diferentes fuentes de datos que hemos utilizado para el estudio directamente desde un formato csv que es como nos parecia mas comodo de añadir y manipular
 
 
 ```{r}
@@ -55,8 +82,8 @@ cancer_nuevo <- read_delim("./DATA/cancer_nuevo.csv", delim = ";")
 
 ```
 
-
-
+# Cambios en las fuentes de datos
+Este paso es necesario ya que al relacionar todas las tablas entre si necesitamos que aquellas columnas que son comunes tengan los mismos nombres, por ello se ha requerido que todos los nombres de las comunidades y ciudades autonomas presentes sean cambiados a nombres comunes elegidos por el grupo. Por otro lado hemos usado el select para seleccionar las columnas de datos que nos resultan de interes para el estudio.
 
 ```{r}
 fumadores <- fumadores%>%
@@ -239,6 +266,12 @@ arboles_uso <- arboles_uso %>%
 arboles_uso
 ```
 
+# Resultados y discusión
+
+# Cantidad de arboles y calidad de aire
+
+En este grafico podemos observar una relacion directa entre la cantidad de arboles de cada comunidad y la calidad del aire, hemos seleccionado unos valores determinados que hemos considerado que son los significativos para que sea una comparacion justa, es apreciable que Castilla la Mancha tiene la mejor relacion entre la cantidad forestal y la calidad del aire
+
 ```{r}
 testjoin <- full_join(arboles_uso,aire_media_comunidad) %>%
   na.omit()
@@ -266,7 +299,9 @@ tumores<-defuncion_poblacion %>%
 tumores
 ```
 
+# Relacion de habitantes, fumadores y calidad del aire
 
+En este apartado nos centramos en la media de habitantes fumadores que hay por comunidad autonoma para posteriormente estudiar la relacion entre los fumadores que hay de media y la calidad del aire en las comunidades seleccionadas de manera que resulte un grafico representativo
 ```{r}
 
 habitantes_refinado <- habitantes %>%
@@ -324,7 +359,7 @@ fumadores_habitantes <- full_join(x = fumadores,
 fumadores_habitantes
 
 ```
-
+Como podemos observar de las 4 Comunidades seleccionadas Andalucia es claramente destacada con respecto del resto en cuanto a la media de fumadores en dicho territorio
 ```{r}
 fumadores_aire <- full_join(x= fumadores_habitantes,
                             y = aire_media_comunidad,
@@ -346,6 +381,8 @@ ggplot(fumadores_aire, aes(x = Hab_Fum, y = media, color = CCAA)) +
   theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
 ```
+
+En este apartado ya relacionamos tanto la calidad del aire y los fumadores como hemos hecho en el apartado anterior con la presencia de casos de cancer en la poblacion. Como podemos observar tiene una tendecia ascendente lo que nos indica que cuanto mayor es el numero de fumadores, mas casos de cancer se presentan siendo esto una relación directa entre las variables
 
 ```{r}
 cancer_nuevo
@@ -375,126 +412,99 @@ ggplot(relacion_cancer_fum, aes(x = Hab_Fum, y = Tasa, color = CCAA)) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 90, hjust = 1))
 ```
+# Relacion entre cancer y calidad forestal
+
+En este análisis, hemos explorado la relación entre la proporción de cáncer y la cantidad de árboles en las comunidades autónomas de España. Para ello, hemos utilizado dos conjuntos de datos: uno que contiene información sobre la proporción de cáncer (`cancer_proporcion`) y otro que contiene información sobre la cantidad de árboles (`arboles_uso`).
+
+Primero, hemos unido estos dos conjuntos de datos en uno solo (`rel_cancer_arboles`) basándonos en la columna `CCAA`, que representa las comunidades autónomas. Hemos excluido las filas correspondientes a la comunidad autónoma de Canarias y las filas con valores NA.
+
+A continuación, hemos creado un gráfico de dispersión para visualizar la relación entre la proporción de cáncer (representada por la variable `proporcion_cancer`) y la cantidad de árboles (representada por la variable `Arboles`). Los puntos en el gráfico están coloreados según la comunidad autónoma, lo que nos permite ver cómo varía esta relación entre las diferentes comunidades.
+
+El gráfico resultante muestra una posible correlación entre la proporción de cáncer y la cantidad de árboles. Sin embargo, la interpretación exacta de esta correlación puede depender del contexto específico de los datos y requeriría un análisis más detallado.
+
+Este análisis representa un primer paso hacia la comprensión de cómo la cantidad de árboles puede influir en la salud humana. Sin embargo, es importante recordar que la correlación no implica causalidad, y se necesitarían más investigaciones para determinar si existe una relación causal entre la cantidad de árboles y la proporción de cáncer.
 
 ```{r}
 
-# Obtenemos los nombres de las columnas del dataframe 'arboles_uso'
 #colnames(arboles_uso)
-
-# Mostramos el dataframe 'arboles_uso'
 #arboles_uso
-
-# Mostramos el dataframe 'cancer_año'
 #cancer_año
-
-# Mostramos el dataframe 'habitantes_refinado'
 #habitantes_refinado
-
-# Unimos los dataframes 'cancer_año' y 'habitantes_refinado' por la columna 'CCAA'
 #cancer_proporcion<-full_join(cancer_año, habitantes_refinado, by = "CCAA") %>%
-  # Seleccionamos las columnas "CCAA","Tasa","Total"
-  #select("CCAA","Tasa","Total")%>%
-  # Excluimos las filas con valores NA
-  #na.exclude()%>%
-  # Creamos una nueva columna 'proporcion_cancer' que es la división de 'Tasa' entre 'Total' multiplicado por 100
+ # select("CCAA","Tasa","Total")%>%
+ # na.exclude()%>%
   #mutate(proporcion_cancer = (`Tasa` / `Total`)*100)
-
-# Mostramos el dataframe 'cancer_proporcion'
 #cancer_proporcion
 
-# Unimos los dataframes 'arboles_uso' y 'cancer_proporcion' por la columna 'CCAA'
 #rel_cancer_arboles<-full_join(arboles_uso,cancer_proporcion, by = c("CCAA")) %>%
-  # Transformamos las columnas '1.000 - 1.199', '1.200 - 1.399', '1.400 - 1.599' en filas
-  #pivot_longer(cols = c(1.000 - 1.199,1.200 - 1.399,1.400 - 1.599)) %>%
-  # Filtramos las filas donde 'CCAA' no es igual a 'Canarias'
+ # pivot_longer(cols = c(1.000 - 1.199,1.200 - 1.399,1.400 - 1.599)) %>%
   #filter(!(CCAA %in% "Canarias"))%>%
-  # Seleccionamos las columnas "CCAA","name","value","proporcion_cancer"
   #select("CCAA","name","value","proporcion_cancer")%>%
-  # Renombramos las columnas 'name' a 'Tramo' y 'value' a 'Arboles'
   #rename(Tramo = name,
-         #Arboles = value)%>%
-  # Excluimos las filas con valores NA
+   #      Arboles = value)%>%
   #na.exclude()
-
-# Mostramos el dataframe 'rel_cancer_arboles'
+  
 #rel_cancer_arboles
-
-# Creamos un gráfico de puntos con los datos de 'rel_cancer_arboles' donde el eje x es 'proporcion_cancer' y el eje y es 'Arboles'
 #rel_cancer_arboles_plotted <- ggplot(data = rel_cancer_arboles, aes(x = proporcion_cancer, y = Arboles)) +
-  # Añadimos los puntos al gráfico con colores según la variable 'CCAA'
-  #geom_point(aes(colour = factor(CCAA))) +
-  # Creamos facetas según la variable 'CCAA'
-  #facet_wrap(~ CCAA) +
-  # Añadimos etiquetas a los ejes x e y
-  #labs(x="proporcion_cancer", y="Arboles") +
-  # Aplicamos un tema blanco al gráfico
-  #theme_bw()
+#  geom_point(aes(colour = factor(CCAA))) +
+#  facet_wrap(~ CCAA) +
+#  labs(x="proporcion_cancer", y="Arboles") +
+#  theme_bw()
 
-# Mostramos el gráfico 'rel_cancer_arboles_plotted'
+
 #rel_cancer_arboles_plotted
 
 ```
+# Relacion entre particulas nocivas y cancer
+
+En este análisis, hemos explorado la relación entre la proporción de cáncer y las partículas nocivas en el aire en las comunidades autónomas de España. Para ello, hemos utilizado dos conjuntos de datos: uno que contiene información sobre la proporción de cáncer (`cancer_proporcion`) y otro que contiene información sobre las partículas nocivas en el aire (`aireespaña_mod` y `aireespaña_mod2`).
+
+Primero, hemos unido estos dos conjuntos de datos en uno solo (`rel_aire_cancer_part1` y `rel_aire_cancer_part2`) basándonos en la columna `CCAA`, que representa las comunidades autónomas. Hemos excluido las filas con valores NA.
+
+A continuación, hemos creado dos gráficos de dispersión para visualizar la relación entre las partículas nocivas en el aire (representadas por la variable `Total.x`) y la proporción de cáncer (representada por la variable `proporcion_cancer`). Los puntos en el gráfico están coloreados según la comunidad autónoma, lo que nos permite ver cómo varía esta relación entre las diferentes comunidades.
+
+Los gráficos resultantes muestran una posible correlación entre las partículas nocivas en el aire y la proporción de cáncer. Sin embargo, la interpretación exacta de esta correlación puede depender del contexto específico de los datos y requeriría un análisis más detallado.
+
+Este análisis representa un primer paso hacia la comprensión de cómo la calidad del aire puede influir en la salud humana. Sin embargo, es importante recordar que la correlación no implica causalidad, y se necesitarían más investigaciones para determinar si existe una relación causal entre las partículas nocivas en el aire y la proporción de cáncer.
+
+
 
 ```{r}
 
-# Mostramos el dataframe 'aire_media_comunidad'
 #aire_media_comunidad
-
-# Mostramos el dataframe 'cancer_proporcion'
 #cancer_proporcion
-
-# Mostramos el dataframe 'aireespaña_mod'
 #aireespaña_mod
-
-# Unimos los dataframes 'aireespaña_mod' y 'cancer_proporcion' por la columna 'CCAA'
 #rel_aire_cancer_part1 <- full_join(aireespaña_mod,cancer_proporcion, by = "CCAA")%>%
-  # Seleccionamos las columnas "CCAA","Total.x","proporcion_cancer"
   #select("CCAA","Total.x","proporcion_cancer")%>%
-  # Excluimos las filas con valores NA
   #na.exclude()
 
-# Unimos los dataframes 'aireespaña_mod2' y 'cancer_proporcion' por la columna 'CCAA'
 #rel_aire_cancer_part2 <- full_join(aireespaña_mod2,cancer_proporcion, by = "CCAA")%>%
-  # Seleccionamos las columnas "CCAA","Total.x","proporcion_cancer"
-  #select("CCAA","Total.x","proporcion_cancer")%>%
-  # Excluimos las filas con valores NA
+ # select("CCAA","Total.x","proporcion_cancer")%>%
   #na.exclude()
 
-# Mostramos el dataframe 'aireespaña_mod'
-#aireespaña_mod
 
-# Mostramos el dataframe 'aireespaña_mod2'
+#aireespaña_mod
 #aireespaña_mod2
 
-# Creamos un gráfico de puntos con los datos de 'rel_aire_cancer_part1' donde el eje x es 'Total.x' y el eje y es 'proporcion_cancer'
+
+
+
 #g1 <- ggplot(rel_aire_cancer_part1, aes(x = Total.x, y = proporcion_cancer, color = CCAA)) +
-  # Añadimos los puntos al gráfico con colores según la variable 'CCAA'
-  #geom_point(size = 5) +
-  # Añadimos una línea de tendencia al gráfico
+ # geom_point(size = 5) +
   #geom_smooth(method = "lm", se = FALSE, color = "black", linetype = "dashed") +
-  # Añadimos etiquetas a los ejes x e y
   #labs(x = "Particulas Nocivas", y = "Prop. Cancer") +
-  # Aplicamos un tema minimalista al gráfico
   #theme_minimal() +
-  # Rotamos los textos del eje x 90 grados
   #theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
-# Creamos un gráfico de puntos con los datos de 'rel_aire_cancer_part2' donde el eje x es 'Total.x' y el eje y es 'proporcion_cancer'
 #g2 <- ggplot(rel_aire_cancer_part2, aes(x = Total.x, y = proporcion_cancer, color = CCAA)) +
-  # Añadimos los puntos al gráfico con colores según la variable 'CCAA'
-  #geom_point(size = 5) +
-  # Añadimos una línea de tendencia al gráfico
-  #geom_smooth(method = "lm", se = FALSE, color = "black", linetype = "dashed") +
-  # Añadimos etiquetas a los ejes x e y
+#  geom_point(size = 5) +
+ # geom_smooth(method = "lm", se = FALSE, color = "black", linetype = "dashed") +
   #labs(x = "Particulas Nocivas", y = "Prop. Cancer") +
-  # Aplicamos un tema minimalista al gráfico
   #theme_minimal() +
-  # Rotamos los textos del eje x 90 grados
   #theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
-# Combinamos los gráficos 'g1' y 'g2' en una sola columna
+# Combina los gráficos
 #grid.arrange(g1, g2, ncol = 1)
-
 ```
 
 
