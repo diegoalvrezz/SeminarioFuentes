@@ -16,7 +16,8 @@ This is an R Markdown document. Markdown is a simple formatting syntax for autho
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
 
-Importamos las bases de datos
+## Importación de las librerias necesarias -------------------------------------
+# En este apartado nos centramos en añadir todas las librerias necesarias para realizar el trabajo
 ```{r}
 library(readr)
 library(ggplot2)
@@ -25,6 +26,7 @@ library(dplyr)
 library(stringr)
 library(gridExtra)
 ```
+## Importacion de las fuentes de datos ----------------------------------
 
 
 ```{r}
@@ -375,72 +377,124 @@ ggplot(relacion_cancer_fum, aes(x = Hab_Fum, y = Tasa, color = CCAA)) +
 ```
 
 ```{r}
-colnames(arboles_uso)
-arboles_uso
-cancer_año
-habitantes_refinado
-cancer_proporcion<-full_join(cancer_año, habitantes_refinado, by = "CCAA") %>%
-  select("CCAA","Tasa","Total")%>%
-  na.exclude()%>%
-  mutate(proporcion_cancer = (`Tasa` / `Total`)*100)
-cancer_proporcion
 
-rel_cancer_arboles<-full_join(arboles_uso,cancer_proporcion, by = c("CCAA")) %>%
-  pivot_longer(cols = c(1.000 - 1.199,1.200 - 1.399,1.400 - 1.599)) %>%
-  filter(!(CCAA %in% "Canarias"))%>%
-  select("CCAA","name","value","proporcion_cancer")%>%
-  rename(Tramo = name,
-         Arboles = value)%>%
-  na.exclude()
-  
-rel_cancer_arboles
-rel_cancer_arboles_plotted <- ggplot(data = rel_cancer_arboles, aes(x = proporcion_cancer, y = Arboles)) +
-  geom_point(aes(colour = factor(CCAA))) +
-  facet_wrap(~ CCAA) +
-  labs(x="proporcion_cancer", y="Arboles") +
-  theme_bw()
+# Obtenemos los nombres de las columnas del dataframe 'arboles_uso'
+#colnames(arboles_uso)
 
+# Mostramos el dataframe 'arboles_uso'
+#arboles_uso
 
-rel_cancer_arboles_plotted
+# Mostramos el dataframe 'cancer_año'
+#cancer_año
+
+# Mostramos el dataframe 'habitantes_refinado'
+#habitantes_refinado
+
+# Unimos los dataframes 'cancer_año' y 'habitantes_refinado' por la columna 'CCAA'
+#cancer_proporcion<-full_join(cancer_año, habitantes_refinado, by = "CCAA") %>%
+  # Seleccionamos las columnas "CCAA","Tasa","Total"
+  #select("CCAA","Tasa","Total")%>%
+  # Excluimos las filas con valores NA
+  #na.exclude()%>%
+  # Creamos una nueva columna 'proporcion_cancer' que es la división de 'Tasa' entre 'Total' multiplicado por 100
+  #mutate(proporcion_cancer = (`Tasa` / `Total`)*100)
+
+# Mostramos el dataframe 'cancer_proporcion'
+#cancer_proporcion
+
+# Unimos los dataframes 'arboles_uso' y 'cancer_proporcion' por la columna 'CCAA'
+#rel_cancer_arboles<-full_join(arboles_uso,cancer_proporcion, by = c("CCAA")) %>%
+  # Transformamos las columnas '1.000 - 1.199', '1.200 - 1.399', '1.400 - 1.599' en filas
+  #pivot_longer(cols = c(1.000 - 1.199,1.200 - 1.399,1.400 - 1.599)) %>%
+  # Filtramos las filas donde 'CCAA' no es igual a 'Canarias'
+  #filter(!(CCAA %in% "Canarias"))%>%
+  # Seleccionamos las columnas "CCAA","name","value","proporcion_cancer"
+  #select("CCAA","name","value","proporcion_cancer")%>%
+  # Renombramos las columnas 'name' a 'Tramo' y 'value' a 'Arboles'
+  #rename(Tramo = name,
+         #Arboles = value)%>%
+  # Excluimos las filas con valores NA
+  #na.exclude()
+
+# Mostramos el dataframe 'rel_cancer_arboles'
+#rel_cancer_arboles
+
+# Creamos un gráfico de puntos con los datos de 'rel_cancer_arboles' donde el eje x es 'proporcion_cancer' y el eje y es 'Arboles'
+#rel_cancer_arboles_plotted <- ggplot(data = rel_cancer_arboles, aes(x = proporcion_cancer, y = Arboles)) +
+  # Añadimos los puntos al gráfico con colores según la variable 'CCAA'
+  #geom_point(aes(colour = factor(CCAA))) +
+  # Creamos facetas según la variable 'CCAA'
+  #facet_wrap(~ CCAA) +
+  # Añadimos etiquetas a los ejes x e y
+  #labs(x="proporcion_cancer", y="Arboles") +
+  # Aplicamos un tema blanco al gráfico
+  #theme_bw()
+
+# Mostramos el gráfico 'rel_cancer_arboles_plotted'
+#rel_cancer_arboles_plotted
 
 ```
 
 ```{r}
 
-aire_media_comunidad
-cancer_proporcion
-aireespaña_mod
-rel_aire_cancer_part1 <- full_join(aireespaña_mod,cancer_proporcion, by = "CCAA")%>%
-  select("CCAA","Total.x","proporcion_cancer")%>%
-  na.exclude()
+# Mostramos el dataframe 'aire_media_comunidad'
+#aire_media_comunidad
 
-rel_aire_cancer_part2 <- full_join(aireespaña_mod2,cancer_proporcion, by = "CCAA")%>%
-  select("CCAA","Total.x","proporcion_cancer")%>%
-  na.exclude()
+# Mostramos el dataframe 'cancer_proporcion'
+#cancer_proporcion
 
+# Mostramos el dataframe 'aireespaña_mod'
+#aireespaña_mod
 
-aireespaña_mod
-aireespaña_mod2
+# Unimos los dataframes 'aireespaña_mod' y 'cancer_proporcion' por la columna 'CCAA'
+#rel_aire_cancer_part1 <- full_join(aireespaña_mod,cancer_proporcion, by = "CCAA")%>%
+  # Seleccionamos las columnas "CCAA","Total.x","proporcion_cancer"
+  #select("CCAA","Total.x","proporcion_cancer")%>%
+  # Excluimos las filas con valores NA
+  #na.exclude()
 
+# Unimos los dataframes 'aireespaña_mod2' y 'cancer_proporcion' por la columna 'CCAA'
+#rel_aire_cancer_part2 <- full_join(aireespaña_mod2,cancer_proporcion, by = "CCAA")%>%
+  # Seleccionamos las columnas "CCAA","Total.x","proporcion_cancer"
+  #select("CCAA","Total.x","proporcion_cancer")%>%
+  # Excluimos las filas con valores NA
+  #na.exclude()
 
+# Mostramos el dataframe 'aireespaña_mod'
+#aireespaña_mod
 
+# Mostramos el dataframe 'aireespaña_mod2'
+#aireespaña_mod2
 
-g1 <- ggplot(rel_aire_cancer_part1, aes(x = Total.x, y = proporcion_cancer, color = CCAA)) +
-  geom_point(size = 5) +
-  geom_smooth(method = "lm", se = FALSE, color = "black", linetype = "dashed") +
-  labs(x = "Particulas Nocivas", y = "Prop. Cancer") +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+# Creamos un gráfico de puntos con los datos de 'rel_aire_cancer_part1' donde el eje x es 'Total.x' y el eje y es 'proporcion_cancer'
+#g1 <- ggplot(rel_aire_cancer_part1, aes(x = Total.x, y = proporcion_cancer, color = CCAA)) +
+  # Añadimos los puntos al gráfico con colores según la variable 'CCAA'
+  #geom_point(size = 5) +
+  # Añadimos una línea de tendencia al gráfico
+  #geom_smooth(method = "lm", se = FALSE, color = "black", linetype = "dashed") +
+  # Añadimos etiquetas a los ejes x e y
+  #labs(x = "Particulas Nocivas", y = "Prop. Cancer") +
+  # Aplicamos un tema minimalista al gráfico
+  #theme_minimal() +
+  # Rotamos los textos del eje x 90 grados
+  #theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
-g2 <- ggplot(rel_aire_cancer_part2, aes(x = Total.x, y = proporcion_cancer, color = CCAA)) +
-  geom_point(size = 5) +
-  geom_smooth(method = "lm", se = FALSE, color = "black", linetype = "dashed") +
-  labs(x = "Particulas Nocivas", y = "Prop. Cancer") +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+# Creamos un gráfico de puntos con los datos de 'rel_aire_cancer_part2' donde el eje x es 'Total.x' y el eje y es 'proporcion_cancer'
+#g2 <- ggplot(rel_aire_cancer_part2, aes(x = Total.x, y = proporcion_cancer, color = CCAA)) +
+  # Añadimos los puntos al gráfico con colores según la variable 'CCAA'
+  #geom_point(size = 5) +
+  # Añadimos una línea de tendencia al gráfico
+  #geom_smooth(method = "lm", se = FALSE, color = "black", linetype = "dashed") +
+  # Añadimos etiquetas a los ejes x e y
+  #labs(x = "Particulas Nocivas", y = "Prop. Cancer") +
+  # Aplicamos un tema minimalista al gráfico
+  #theme_minimal() +
+  # Rotamos los textos del eje x 90 grados
+  #theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
-# Combina los gráficos
-grid.arrange(g1, g2, ncol = 1)
+# Combinamos los gráficos 'g1' y 'g2' en una sola columna
+#grid.arrange(g1, g2, ncol = 1)
+
 ```
 
 
